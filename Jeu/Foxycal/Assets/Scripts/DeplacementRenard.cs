@@ -68,7 +68,7 @@ public class DeplacementRenard : MonoBehaviour
         /* ANIMATIONS */
         /**************/
 
-
+        // ...
     }
 
     void GererTranslation(string dir)
@@ -76,10 +76,10 @@ public class DeplacementRenard : MonoBehaviour
         // Bouger le personnage selon sa direction
         switch (dir)
         {
-            case "Haut"  : transform.Translate(0, 0, 1);  break;
-            case "Gauche": transform.Translate(-1, 0, 0); break;
-            case "Bas"   : transform.Translate(0, 0, -1); break;
-            case "Droite": transform.Translate(1, 0, 0);  break;
+            case "Haut"  : transform.Translate(0, 0, vitesseTranslation);  break;
+            case "Gauche": transform.Translate(-vitesseTranslation, 0, 0); break;
+            case "Bas"   : transform.Translate(0, 0, -vitesseTranslation); break;
+            case "Droite": transform.Translate(vitesseTranslation, 0, 0);  break;
         }
     }
 
