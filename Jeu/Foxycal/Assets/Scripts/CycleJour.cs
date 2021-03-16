@@ -10,5 +10,13 @@ public class CycleJour : MonoBehaviour
     void Update()
     {
         lumiere.Rotate(vitesseRotation * Time.deltaTime, 0, 0);
+        if(lumiere.eulerAngles.x > 179)
+        {
+            vitesseRotation = 50;
+        }
+        else
+        {
+            vitesseRotation = 25;
+        }
     }
 }
