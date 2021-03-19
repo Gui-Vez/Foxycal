@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1245,7 +1245,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 588606829}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.202, z: -3.11}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 627552811}
@@ -1371,7 +1371,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 627552810}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.76, z: 1.51}
+  m_LocalPosition: {x: 0, y: 0.76, z: 0.663}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 963194228}
@@ -1394,9 +1394,15 @@ MonoBehaviour:
   camSurPerso: {fileID: 1007259784}
   cam3ePerso: {fileID: 963194225}
   positionRayCastCam: {fileID: 588606829}
-  hauteurPivot: 0
-  distanceCamLoin: -5
+<<<<<<< HEAD
+  hauteurPivot: 0.76
+  distanceCamLoin: -3.11
+  distanceCamProche: -1
+=======
+  hauteurPivot: 1.35
+  distanceCamLoin: -6
   distanceCamProche: -0.5
+>>>>>>> 964ceb43ae7a8746999c4ef5c408effbff59ac55
 --- !u!1 &630285388
 GameObject:
   m_ObjectHideFlags: 0

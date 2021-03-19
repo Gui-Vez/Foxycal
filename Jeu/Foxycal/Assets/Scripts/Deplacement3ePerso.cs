@@ -21,11 +21,14 @@ public class Deplacement3ePerso : MonoBehaviour
     {
         rig = GetComponent<Rigidbody>();
         saut = new Vector3(0f, 2f, 0f);
+        // Verouiller la souris
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     // Update is called once per frame
     void Update()
     {
+        
         // Gestion du mouvement WASD
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");

@@ -9,7 +9,7 @@ public class ScriptPivot : MonoBehaviour
     public GameObject cam3ePerso;
     public GameObject positionRayCastCam;
     public float hauteurPivot;
-    public float distanceCamLoin = -4f;
+    public float distanceCamLoin;
     public float distanceCamProche = -0.5f;
 
     // Update is called once per frame
