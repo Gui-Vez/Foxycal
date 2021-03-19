@@ -1395,10 +1395,13 @@ MonoBehaviour:
   cam3ePerso: {fileID: 963194225}
   positionRayCastCam: {fileID: 588606829}
 <<<<<<< HEAD
+<<<<<<< HEAD
   hauteurPivot: 0.76
   distanceCamLoin: -3.11
   distanceCamProche: -1
 =======
+=======
+>>>>>>> 964ceb43ae7a8746999c4ef5c408effbff59ac55
   hauteurPivot: 1.35
   distanceCamLoin: -6
   distanceCamProche: -0.5
