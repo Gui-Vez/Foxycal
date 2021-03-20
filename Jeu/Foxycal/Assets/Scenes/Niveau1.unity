@@ -3794,9 +3794,9 @@ MonoBehaviour:
   camSurPerso: {fileID: 1007259784}
   cam3ePerso: {fileID: 963194225}
   positionRayCastCam: {fileID: 291248739}
-  hauteurPivot: 0.782
-  distanceCamLoin: -1.5
-  distanceCamProche: -0.5
+  hauteurPivot: 1
+  distanceCamLoin: -2
+  distanceCamProche: -1
 --- !u!4 &868606757 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 409248, guid: da8e893168526164591f81d60c0e06b1, type: 3}
@@ -4420,8 +4420,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85f3f1fb0cd367c49813a2da21a0ca1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vitesse: 10
-  forceSaut: 1
+  vitesse: 12
+  forceSaut: 3
   isGrounded: 0
   saut: {x: 0, y: 0, z: 0}
   pivotVide: {fileID: 855299952}
