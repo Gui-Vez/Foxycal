@@ -6,6 +6,7 @@ public class CycleJour : MonoBehaviour
 {
     public Transform lumiere;
     public int vitesseRotation;
+    public static bool tempsJournee;
 
     void Update()
     {
@@ -13,10 +14,12 @@ public class CycleJour : MonoBehaviour
         if(lumiere.eulerAngles.x > 179)
         {
             vitesseRotation = 25;
+            tempsJournee = true;
         }
         else
         {
             vitesseRotation = 50;
+            tempsJournee = false;
         }
     }
 }

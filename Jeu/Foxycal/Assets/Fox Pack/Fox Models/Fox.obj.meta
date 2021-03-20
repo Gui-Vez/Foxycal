@@ -3,7 +3,12 @@ guid: 7fb6b2c66edc3b54b916e5000eba9ce2
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FoxMat
+    second: {fileID: 2100000, guid: af3a7daa4e44b814d8193ab256a1f9d7, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

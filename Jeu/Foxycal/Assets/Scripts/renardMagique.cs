@@ -15,7 +15,7 @@ public class renardMagique : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (lumiere.eulerAngles.x > 179)
+        if (CycleJour.tempsJournee == true)
         {
             SkinnedMeshRenderer mesh = magieRenard.GetComponent<SkinnedMeshRenderer>();
             mesh.enabled = true;
