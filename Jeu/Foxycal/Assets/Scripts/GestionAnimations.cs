@@ -29,13 +29,12 @@ public class GestionAnimations : MonoBehaviour
         List<bool> ListeTouchesAttaques = new List<bool>()
         { E, R, T, LMC, RMC };
 
-        ListeTouches.Add(ListeTouchesAttaques);
+        // ListeTouches.Add(ListeTouchesAttaques);
+        // foreach (bool Touches in ListeTouches)
 
 
         if (Input.anyKeyDown)
         {
-            /* foreach (bool Touches in ListeTouches) */
-
             if (E) StartCoroutine(AppuyerTouche("E"));
             if (E) StartCoroutine(AppuyerTouche("R"));
         }
