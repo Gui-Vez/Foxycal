@@ -4707,7 +4707,6 @@ GameObject:
   - component: {fileID: 1007259788}
   - component: {fileID: 1007259789}
   - component: {fileID: 1007259787}
-  - component: {fileID: 1007259790}
   m_Layer: 20
   m_Name: Fox Principal
   m_TagString: Player
@@ -4723,7 +4722,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1007259784}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: b4dc3c74541def84191303ea727d9a51, type: 3}
   m_Controller: {fileID: 9100000, guid: 7c05beb634bfdce4092d676300bd461d, type: 2}
   m_CullingMode: 0
@@ -4787,7 +4786,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1007259784}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 85f3f1fb0cd367c49813a2da21a0ca1a, type: 3}
   m_Name: 
@@ -4798,20 +4797,6 @@ MonoBehaviour:
   saut: {x: 0, y: 0, z: 0}
   pivotVide: {fileID: 855299952}
   cam3ePerso: {fileID: 963194225}
---- !u!114 &1007259790
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1007259784}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3d877f65fbff5246bbc1fc52dfd6377, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  vitesseRotation: 1
-  vitesseTranslation: 1
 --- !u!1 &1012539617
 GameObject:
   m_ObjectHideFlags: 0
