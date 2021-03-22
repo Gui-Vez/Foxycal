@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.6806765, g: 0.74878466, b: 0.8195164, a: 1}
+  m_IndirectSpecularColor: {r: 0.6806765, g: 0.74878466, b: 0.81951636, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1699,7 +1699,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 291248739}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -1.5}
+  m_LocalPosition: {x: -0.073013306, y: 0.10500002, z: -1.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 855299953}
@@ -4110,7 +4110,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 855299952}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.782, z: -330.43}
+  m_LocalPosition: {x: -21.954, y: 0.665, z: -221.809}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 963194228}
@@ -4133,7 +4133,7 @@ MonoBehaviour:
   camSurPerso: {fileID: 1007259784}
   cam3ePerso: {fileID: 963194225}
   positionRayCastCam: {fileID: 291248739}
-  hauteurPivot: 1
+  hauteurPivot: 0.665
   distanceCamLoin: -2
   distanceCamProche: -1
 --- !u!1001 &856771439
@@ -4453,7 +4453,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -1.5}
+  m_LocalPosition: {x: -0.073, y: 0.105, z: -1.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 855299953}
@@ -4707,6 +4707,7 @@ GameObject:
   - component: {fileID: 1007259788}
   - component: {fileID: 1007259789}
   - component: {fileID: 1007259787}
+  - component: {fileID: 1007259790}
   m_Layer: 20
   m_Name: Fox Principal
   m_TagString: Player
@@ -4741,7 +4742,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1007259784}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -22, y: 0.123, z: -221.7}
+  m_LocalPosition: {x: -22, y: 0, z: -221.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2042610576}
@@ -4786,7 +4787,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1007259784}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 85f3f1fb0cd367c49813a2da21a0ca1a, type: 3}
   m_Name: 
@@ -4797,6 +4798,20 @@ MonoBehaviour:
   saut: {x: 0, y: 0, z: 0}
   pivotVide: {fileID: 855299952}
   cam3ePerso: {fileID: 963194225}
+--- !u!114 &1007259790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1007259784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3d877f65fbff5246bbc1fc52dfd6377, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vitesseRotation: 1
+  vitesseTranslation: 1
 --- !u!1 &1012539617
 GameObject:
   m_ObjectHideFlags: 0
