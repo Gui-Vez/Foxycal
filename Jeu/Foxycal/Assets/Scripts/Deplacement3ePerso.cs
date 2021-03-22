@@ -25,6 +25,16 @@ public class Deplacement3ePerso : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
     }
 
+    void OnCollisionStay()
+    {
+        isGrounded = true;
+    }
+
+    void OnCollisionExit()
+    {
+        isGrounded = false;
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -56,10 +66,5 @@ public class Deplacement3ePerso : MonoBehaviour
             isGrounded = false;
         }
 
-    }
-
-    private void OnCollisionStay()
-    {
-        isGrounded = true;
     }
 }
