@@ -11,4 +11,9 @@ public class gestionScene : MonoBehaviour
         //Commencer le jeu
         SceneManager.LoadScene("Niveau1");
     }
+
+    public void QuitterJeu()
+    {
+        Application.Quit();
+    }
 }
