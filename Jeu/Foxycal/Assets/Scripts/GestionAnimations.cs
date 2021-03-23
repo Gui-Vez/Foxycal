@@ -2,8 +2,23 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AnimationPouvoirs : MonoBehaviour
+public class GestionAnimations : MonoBehaviour
 {
+    // Liste des touches (Inutilisée)
+    List<List<bool>> ListeTouches;
+
+    // WASD
+    bool W;
+    bool A;
+    bool S;
+    bool D;
+
+    // Flèches
+    bool Up;
+    bool Left;
+    bool Down;
+    bool Right;
+
     // Attaques
     bool E;
     bool R;
@@ -13,32 +28,58 @@ public class AnimationPouvoirs : MonoBehaviour
     bool LMC;
     bool RMC;
 
-    List<List<bool>> ListeTouches;
+    // Liste des actions
+    bool action;
+    bool attaque;
+    bool pouvoir;
+    bool manger;
 
-    public static bool attaque;
-    public static bool pouvoir;
-    public static bool manger;
 
 
     void Update()
     {
+        /***********/
+        /* TOUCHES */
+        /***********/
+
+        // Liste des touches
+        List<bool> ListeTouches = new List<bool>()
+        { W, A, S, D, Up, Left, Down, Right, E, R, T, LMC, RMC };
+
+        // Touches WASD
+        W = Input.GetKey(KeyCode.W);
+        A = Input.GetKey(KeyCode.A);
+        S = Input.GetKey(KeyCode.S);
+        D = Input.GetKey(KeyCode.D);
+
+        // Touches Flèchées
+        Up    = Input.GetKey(KeyCode.UpArrow);
+        Left  = Input.GetKey(KeyCode.LeftArrow);
+        Down  = Input.GetKey(KeyCode.DownArrow);
+        Right = Input.GetKey(KeyCode.RightArrow);
+
+        // Touches Pouvoirs
         E = Input.GetKey(KeyCode.E);
         R = Input.GetKey(KeyCode.R);
         T = Input.GetKey(KeyCode.T);
 
+        // Touche Attaque
         LMC = Input.GetKey(KeyCode.Mouse0);
+
+        // Touche Manger
         RMC = Input.GetKey(KeyCode.Mouse1);
 
 
-        List<bool> ListeTouchesAttaques = new List<bool>()
-        { E, R, T, LMC, RMC };
+        // Animation de marche
+        if      (W || Up)    GetComponent<Animator>().SetBool("Marche", true);
+        else if (A || Left)  GetComponent<Animator>().SetBool("Marche", true);
+        else if (S || Down)  GetComponent<Animator>().SetBool("Marche", true);
+        else if (D || Right) GetComponent<Animator>().SetBool("Marche", true);
+        else                 GetComponent<Animator>().SetBool("Marche", false);
 
-        // ListeTouches.Add(ListeTouchesAttaques);
-        // foreach (bool Touches in ListeTouches)
 
-
-        // Si l'on touche n'importe quelle touche du clavier,
-        if (Input.anyKeyDown)
+        // Si l'on touche n'importe quelle touche du clavier ET que le renard n'agit pas,
+        if (Input.anyKeyDown && !action)
         {
             // Si une attaque n'est pas en cours,
             if (!attaque)
@@ -66,9 +107,12 @@ public class AnimationPouvoirs : MonoBehaviour
     }
 
 
-    IEnumerator GestionAttaques(string Attaque)
+    IEnumerator GestionAttaques(string Animation)
     {
-        switch (Attaque)
+        // Le renard agit
+        action = true;
+
+        switch (Animation)
         {
             /************/
             /* ATTAQUES */
@@ -94,12 +138,18 @@ public class AnimationPouvoirs : MonoBehaviour
                 // Le renard n'agit plus
                 attaque = false;
 
+                // Le renard n'agit plus
+                action = false;
+
                 break;
 
 
-            case "RMC":
 
-                print("mange");
+            /**********/
+            /* MANGER */
+            /**********/
+
+            case "RMC":
 
                 // Le renard mange
                 manger = true;
@@ -116,7 +166,8 @@ public class AnimationPouvoirs : MonoBehaviour
                 // Le renard n'agit plus
                 manger = false;
 
-                print("mange pu");
+                // Le renard n'agit plus
+                action = false;
 
                 break;
 
@@ -147,14 +198,17 @@ public class AnimationPouvoirs : MonoBehaviour
                 // Désactiver l'animation d'attaque
                 GetComponent<Animator>().SetBool("Attaque", false);
 
+                // Désactiver l'animation de pouvoir
+                GetComponent<Animator>().SetBool("Pouvoir_Bool", false);
+
+                // Le renard n'agit plus
+                action = false;
+
                 // Attendre 4.25 secondes
                 yield return new WaitForSeconds(4.25f);
 
                 // Le renard n'agit plus
                 pouvoir = false;
-
-                // Désactiver l'animation de pouvoir
-                GetComponent<Animator>().SetBool("Pouvoir_Bool", false);
 
                 break;
 
@@ -179,14 +233,17 @@ public class AnimationPouvoirs : MonoBehaviour
                 // Désactiver l'animation d'attaque
                 GetComponent<Animator>().SetBool("Attaque", false);
 
+                // Désactiver l'animation de pouvoir
+                GetComponent<Animator>().SetBool("Pouvoir_Bool", false);
+
+                // Le renard n'agit plus
+                action = false;
+
                 // Attendre 7.25 secondes
                 yield return new WaitForSeconds(7.25f);
 
                 // Le renard n'agit plus
                 pouvoir = false;
-
-                // Désactiver l'animation de pouvoir
-                GetComponent<Animator>().SetBool("Pouvoir_Bool", false);
 
                 break;
 
@@ -211,11 +268,14 @@ public class AnimationPouvoirs : MonoBehaviour
                 // Désactiver l'animation d'attaque
                 GetComponent<Animator>().SetBool("Attaque", false);
 
-                // Attendre 12.25 secondes
-                yield return new WaitForSeconds(12.25f);
-
                 // Désactiver l'animation de pouvoir
                 GetComponent<Animator>().SetBool("Pouvoir_Bool", false);
+
+                // Le renard n'agit plus
+                action = false;
+
+                // Attendre 12.25 secondes
+                yield return new WaitForSeconds(12.25f);
 
                 // Le renard n'agit plus
                 pouvoir = false;

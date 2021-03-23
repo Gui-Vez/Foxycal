@@ -11,6 +11,12 @@ AnimatorStateTransition:
   - m_ConditionMode: 1
     m_ConditionEvent: Attaque_L
     m_EventTreshold: 0
+  - m_ConditionMode: 2
+    m_ConditionEvent: Pouvoir_Bool
+    m_EventTreshold: 0
+  - m_ConditionMode: 2
+    m_ConditionEvent: Mange
+    m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1584719724747131204}
   m_Solo: 0
@@ -110,6 +116,12 @@ AnimatorStateTransition:
   - m_ConditionMode: 1
     m_ConditionEvent: Attaque_R
     m_EventTreshold: 0
+  - m_ConditionMode: 2
+    m_ConditionEvent: Pouvoir_Bool
+    m_EventTreshold: 0
+  - m_ConditionMode: 2
+    m_ConditionEvent: Mange
+    m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 573288895673465435}
   m_Solo: 0
@@ -140,6 +152,9 @@ AnimatorStateTransition:
     m_EventTreshold: 0
   - m_ConditionMode: 2
     m_ConditionEvent: Mange
+    m_EventTreshold: 0
+  - m_ConditionMode: 2
+    m_ConditionEvent: Pouvoir_Bool
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 4937124559410572250}
@@ -420,6 +435,12 @@ AnimatorStateTransition:
   m_Conditions:
   - m_ConditionMode: 1
     m_ConditionEvent: Mange
+    m_EventTreshold: 0
+  - m_ConditionMode: 2
+    m_ConditionEvent: Attaque
+    m_EventTreshold: 0
+  - m_ConditionMode: 2
+    m_ConditionEvent: Pouvoir_Bool
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -2676226890152844866}
@@ -861,7 +882,7 @@ AnimatorStateMachine:
     m_Position: {x: 290, y: -70, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102262541539859504}
-    m_Position: {x: 288, y: -12, z: 0}
+    m_Position: {x: 290, y: -10, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102518907341415992}
     m_Position: {x: 288, y: 48, z: 0}
@@ -1168,6 +1189,12 @@ AnimatorStateTransition:
   m_Conditions:
   - m_ConditionMode: 1
     m_ConditionEvent: Pouvoir_Trigger
+    m_EventTreshold: 0
+  - m_ConditionMode: 2
+    m_ConditionEvent: Attaque
+    m_EventTreshold: 0
+  - m_ConditionMode: 2
+    m_ConditionEvent: Mange
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -4336260769437560809}
