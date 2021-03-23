@@ -9,6 +9,8 @@ public class Deplacement3ePerso : MonoBehaviour
     public float forceSaut;
     public bool isGrounded;
     public Vector3 saut;
+
+    // Acces de Rigidbody
     private Rigidbody rig;
 
     // Variables pour la gestion de la caméra 3e personne

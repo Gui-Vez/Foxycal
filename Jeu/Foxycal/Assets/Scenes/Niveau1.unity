@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.6806765, g: 0.74878466, b: 0.8195164, a: 1}
+  m_IndirectSpecularColor: {r: 0.6806765, g: 0.74878466, b: 0.81951636, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -14184,12 +14184,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8412db6ac945de4b99928e7e0f6b0c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  camSurPerso: {fileID: 1007259784}
+  personnage: {fileID: 1007259784}
   cam3ePerso: {fileID: 963194225}
   positionRayCastCam: {fileID: 291248739}
   hauteurPivot: 0.665
   distanceCamLoin: -2
   distanceCamProche: -1
+  rotationVert: 0
 --- !u!1001 &856771439
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16658,7 +16659,6 @@ GameObject:
   - component: {fileID: 1007259789}
   - component: {fileID: 1007259787}
   - component: {fileID: 1007259790}
-  - component: {fileID: 1007259791}
   m_Layer: 20
   m_Name: Fox Principal
   m_TagString: Player
@@ -16756,23 +16756,9 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1007259784}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3d877f65fbff5246bbc1fc52dfd6377, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  vitesseRotation: 1
-  vitesseTranslation: 1
---- !u!114 &1007259791
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1007259784}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0435553c6c7f12c499ac62327b9bb09f, type: 3}
+  m_Script: {fileID: 11500000, guid: 668f28305d799ec46a4709d8c122c915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &1013562674
