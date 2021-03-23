@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class renardMagique : MonoBehaviour
 {
-    public Transform lumiere;
+    
     public GameObject magieRenard;
     // Start is called before the first frame update
     void Start()
