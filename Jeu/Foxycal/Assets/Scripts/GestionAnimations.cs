@@ -7,6 +7,9 @@ public class GestionAnimations : MonoBehaviour
     // Liste des touches (Inutilisée)
     List<List<bool>> ListeTouches;
 
+    // Raccourci du RigidBody (Inutilisé)
+    Rigidbody rb;
+
     // WASD
     bool W;
     bool A;
@@ -18,6 +21,9 @@ public class GestionAnimations : MonoBehaviour
     bool Left;
     bool Down;
     bool Right;
+
+    // Saut
+    bool Space;
 
     // Attaques
     bool E;
@@ -33,8 +39,17 @@ public class GestionAnimations : MonoBehaviour
     bool attaque;
     bool pouvoir;
     bool manger;
+    bool saute;
 
 
+
+    void Start()
+    {
+        // Raccourci du rigidbody
+        rb = GetComponent<Rigidbody>();
+
+        
+    }
 
     void Update()
     {
@@ -44,7 +59,7 @@ public class GestionAnimations : MonoBehaviour
 
         // Liste des touches
         List<bool> ListeTouches = new List<bool>()
-        { W, A, S, D, Up, Left, Down, Right, E, R, T, LMC, RMC };
+        { W, A, S, D, Up, Left, Down, Right, Space, E, R, T, LMC, RMC };
 
         // Touches WASD
         W = Input.GetKey(KeyCode.W);
@@ -57,6 +72,9 @@ public class GestionAnimations : MonoBehaviour
         Left  = Input.GetKey(KeyCode.LeftArrow);
         Down  = Input.GetKey(KeyCode.DownArrow);
         Right = Input.GetKey(KeyCode.RightArrow);
+
+        // Touche de Saut
+        Space = Input.GetKey(KeyCode.Space);
 
         // Touches Pouvoirs
         E = Input.GetKey(KeyCode.E);
@@ -103,6 +121,13 @@ public class GestionAnimations : MonoBehaviour
                 if (R) StartCoroutine(GestionAttaques("R"));
                 if (T) StartCoroutine(GestionAttaques("T"));
             }
+
+            // Si le renard ne saute pas,
+            if (!saute)
+            {
+                // Touche du saut
+                if (Space) StartCoroutine(GestionAttaques("Space"));
+            }
         }
     }
 
@@ -135,7 +160,7 @@ public class GestionAnimations : MonoBehaviour
                 // Désactiver l'animation d'attaque
                 GetComponent<Animator>().SetBool("Attaque", false);
 
-                // Le renard n'agit plus
+                // Le renard n'attaque plus
                 attaque = false;
 
                 // Le renard n'agit plus
@@ -157,13 +182,15 @@ public class GestionAnimations : MonoBehaviour
                 // Activer l'animation de manger
                 GetComponent<Animator>().SetBool("Mange", true);
 
+                // GetComponent<UnScript>().faim -= 1f * Time.deltaTime;
+
                 // Attendre 3 secondes
                 yield return new WaitForSeconds(3f);
 
                 // Désactiver l'animation de manger
                 GetComponent<Animator>().SetBool("Mange", false);
 
-                // Le renard n'agit plus
+                // Le renard ne mange plus
                 manger = false;
 
                 // Le renard n'agit plus
@@ -171,6 +198,33 @@ public class GestionAnimations : MonoBehaviour
 
                 break;
 
+
+
+            /********/
+            /* SAUT */
+            /********/
+
+            case "Space":
+
+                // Le renard saute
+                saute = true;
+
+                // Activer l'animation de saut
+                GetComponent<Animator>().SetBool("Saute", true);
+
+                // Attendre 1 seconde
+                yield return new WaitForSeconds(1f);
+
+                // Désactiver l'animation de saut
+                GetComponent<Animator>().SetBool("Saute", false);
+
+                // Le renard ne saute plus
+                saute = false;
+
+                // Le renard n'agit plus
+                action = false;
+
+                break;
 
 
 
@@ -183,29 +237,20 @@ public class GestionAnimations : MonoBehaviour
                 // Le renard envoie un pouvoir
                 pouvoir = true;
 
-                // Activer l'animation d'attaque
-                GetComponent<Animator>().SetBool("Attaque", true);
-
                 // Activer l'animation de pouvoir
-                GetComponent<Animator>().SetBool("Pouvoir_Bool", true);
+                GetComponent<Animator>().SetBool("Pouvoir", true);
 
-                // Activer l'animation de pouvoir
-                GetComponent<Animator>().SetTrigger("Pouvoir_Trigger");
-
-                // Attendre 0.75 secondes
-                yield return new WaitForSeconds(0.75f);
-
-                // Désactiver l'animation d'attaque
-                GetComponent<Animator>().SetBool("Attaque", false);
+                // Attendre 1 seconde
+                yield return new WaitForSeconds(1f);
 
                 // Désactiver l'animation de pouvoir
-                GetComponent<Animator>().SetBool("Pouvoir_Bool", false);
+                GetComponent<Animator>().SetBool("Pouvoir", false);
 
                 // Le renard n'agit plus
                 action = false;
 
-                // Attendre 4.25 secondes
-                yield return new WaitForSeconds(4.25f);
+                // Attendre 4 secondes
+                yield return new WaitForSeconds(4f);
 
                 // Le renard n'agit plus
                 pouvoir = false;
@@ -218,29 +263,20 @@ public class GestionAnimations : MonoBehaviour
                 // Le renard envoie un pouvoir
                 pouvoir = true;
 
-                // Activer l'animation d'attaque
-                GetComponent<Animator>().SetBool("Attaque", true);
-
                 // Activer l'animation de pouvoir
-                GetComponent<Animator>().SetBool("Pouvoir_Bool", true);
+                GetComponent<Animator>().SetBool("Pouvoir", true);
 
-                // Activer l'animation de pouvoir
-                GetComponent<Animator>().SetTrigger("Pouvoir_Trigger");
-
-                // Attendre 0.75 secondes
-                yield return new WaitForSeconds(0.75f);
-
-                // Désactiver l'animation d'attaque
-                GetComponent<Animator>().SetBool("Attaque", false);
+                // Attendre 1 seconde
+                yield return new WaitForSeconds(1f);
 
                 // Désactiver l'animation de pouvoir
-                GetComponent<Animator>().SetBool("Pouvoir_Bool", false);
+                GetComponent<Animator>().SetBool("Pouvoir", false);
 
                 // Le renard n'agit plus
                 action = false;
 
-                // Attendre 7.25 secondes
-                yield return new WaitForSeconds(7.25f);
+                // Attendre 7 secondes
+                yield return new WaitForSeconds(7f);
 
                 // Le renard n'agit plus
                 pouvoir = false;
@@ -253,29 +289,20 @@ public class GestionAnimations : MonoBehaviour
                 // Le renard envoie un pouvoir
                 pouvoir = true;
 
-                // Activer l'animation d'attaque
-                GetComponent<Animator>().SetBool("Attaque", true);
-
                 // Activer l'animation de pouvoir
-                GetComponent<Animator>().SetBool("Pouvoir_Bool", true);
+                GetComponent<Animator>().SetBool("Pouvoir", true);
 
-                // Activer l'animation de pouvoir
-                GetComponent<Animator>().SetTrigger("Pouvoir_Trigger");
-
-                // Attendre 0.75 secondes
-                yield return new WaitForSeconds(0.75f);
-
-                // Désactiver l'animation d'attaque
-                GetComponent<Animator>().SetBool("Attaque", false);
+                // Attendre 1 seconde
+                yield return new WaitForSeconds(1f);
 
                 // Désactiver l'animation de pouvoir
-                GetComponent<Animator>().SetBool("Pouvoir_Bool", false);
+                GetComponent<Animator>().SetBool("Pouvoir", false);
 
                 // Le renard n'agit plus
                 action = false;
 
-                // Attendre 12.25 secondes
-                yield return new WaitForSeconds(12.25f);
+                // Attendre 11 secondes
+                yield return new WaitForSeconds(11f);
 
                 // Le renard n'agit plus
                 pouvoir = false;
