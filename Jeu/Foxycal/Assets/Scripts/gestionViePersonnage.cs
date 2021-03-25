@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class gestionViePersonnage : MonoBehaviour
 {
@@ -20,7 +21,7 @@ public class gestionViePersonnage : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.L))
         {
-            prendDegats(1);
+            prendDegats(25);
         }
     }
 

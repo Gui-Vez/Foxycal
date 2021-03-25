@@ -17,7 +17,6 @@ public class Deplacement3ePerso : MonoBehaviour
     public GameObject pivotVide;
     public GameObject cam3ePerso;
 
-
     // Start is called before the first frame update
     void Start()
     {
@@ -67,6 +66,5 @@ public class Deplacement3ePerso : MonoBehaviour
             rig.AddForce(saut * forceSaut, ForceMode.Impulse);
             isGrounded = false;
         }
-
     }
 }
