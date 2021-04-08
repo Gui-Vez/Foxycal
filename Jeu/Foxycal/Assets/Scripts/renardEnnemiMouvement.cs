@@ -60,7 +60,12 @@ public class renardEnnemiMouvement : MonoBehaviour
             GetComponent<Animator>().SetTrigger("attaque");
 
         }
-        
+        if (collision.gameObject.tag == "arbre")
+        {
+            chercheArbre();
+
+        }
+
     }
 
 }
