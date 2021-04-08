@@ -13,6 +13,7 @@ public class GestionPouvoirs : MonoBehaviour
     private GameObject ClonePouvoirT;
 
     public float vitessePouvoirT;
+    public float dureePouvoirT;
 
     public void LancerPouvoir(string Pouvoir)
     {
@@ -64,7 +65,7 @@ public class GestionPouvoirs : MonoBehaviour
 
                 ClonePouvoirT.transform.parent = null;
 
-                Destroy(ClonePouvoirT, 3f);
+                Destroy(ClonePouvoirT, dureePouvoirT);
 
                 break;
         }

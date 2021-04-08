@@ -16,11 +16,13 @@ public class changeCiel : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        print(RenderSettings.skybox);
+        // print(RenderSettings.skybox);
+
         if (CycleJour.tempsJournee == true)
         {
             RenderSettings.skybox = cielNuit;
         }
+
         else
         {
             RenderSettings.skybox = cielJour;

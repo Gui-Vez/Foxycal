@@ -4,14 +4,39 @@ using UnityEngine;
 
 public class CollisionPouvoir : MonoBehaviour
 {
+    GameObject RefEnnemi;
+    int pointDeVie;
+
+    void Start()
+    {
+        RefEnnemi = gameObject;
+
+        pointDeVie = 3;
+    }
+
     void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Pouvoir"))
         {
-            if (gameObject.name == "Cube Rouge")
+            if (CompareTag("Ennemi"))
             {
-                Destroy(gameObject);
+                DiminuerVie();
             }
         }
+    }
+
+    void DiminuerVie()
+    {
+        pointDeVie--;
+
+        if (pointDeVie == 0)
+        {
+            EnleverEnnemi();
+        }
+    }
+
+    void EnleverEnnemi()
+    {
+        Destroy(gameObject);
     }
 }

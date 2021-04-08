@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.6806765, g: 0.74878466, b: 0.8195164, a: 1}
+  m_IndirectSpecularColor: {r: 0.6806765, g: 0.74878466, b: 0.81951636, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2792,6 +2792,114 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.2046734, y: 6.4946303, z: 1.3341032}
   m_Center: {x: 0.102336615, y: 2.5374537, z: 0.48859635}
+--- !u!1 &92813985
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 92813989}
+  - component: {fileID: 92813988}
+  - component: {fileID: 92813987}
+  - component: {fileID: 92813986}
+  - component: {fileID: 92813990}
+  m_Layer: 0
+  m_Name: Cube
+  m_TagString: Ennemi
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &92813986
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 92813985}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &92813987
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 92813985}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &92813988
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 92813985}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &92813989
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 92813985}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 122.46, y: 0.52, z: -219}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &92813990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 92813985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28b6d36f9de503346b61f80038a16f72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &94177022
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7638,11 +7746,15 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1526598282}
+    m_TransformParent: {fileID: 493155182}
     m_Modifications:
     - target: {fileID: 1378447913209748, guid: 794569cb02428264db2731b889c4c8c7, type: 3}
       propertyPath: m_Name
       value: Fox Fennec (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1378447913209748, guid: 794569cb02428264db2731b889c4c8c7, type: 3}
+      propertyPath: m_TagString
+      value: Ennemi
       objectReference: {fileID: 0}
     - target: {fileID: 1800230688956882, guid: 794569cb02428264db2731b889c4c8c7, type: 3}
       propertyPath: m_IsActive
@@ -7650,7 +7762,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4549709022218062, guid: 794569cb02428264db2731b889c4c8c7, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4549709022218062, guid: 794569cb02428264db2731b889c4c8c7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7757,6 +7869,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cibleRenard: {fileID: 1007259784}
   test: 0
+--- !u!114 &259279002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 259278998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28b6d36f9de503346b61f80038a16f72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &265341161
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10398,6 +10522,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cibleRenard: {fileID: 1007259784}
   test: 0
+--- !u!114 &353241005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 353241000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28b6d36f9de503346b61f80038a16f72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &355261908
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11012,6 +11148,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cibleRenard: {fileID: 1007259784}
   test: 0
+--- !u!114 &370422912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 370422907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28b6d36f9de503346b61f80038a16f72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &371766461
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12001,11 +12149,15 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1526598282}
+    m_TransformParent: {fileID: 493155182}
     m_Modifications:
     - target: {fileID: 1097153280331918, guid: b170c105bdf207c4d922668aa32993a6, type: 3}
       propertyPath: m_Name
       value: Fox Black
+      objectReference: {fileID: 0}
+    - target: {fileID: 1097153280331918, guid: b170c105bdf207c4d922668aa32993a6, type: 3}
+      propertyPath: m_TagString
+      value: Ennemi
       objectReference: {fileID: 0}
     - target: {fileID: 1639481649239088, guid: b170c105bdf207c4d922668aa32993a6, type: 3}
       propertyPath: m_IsActive
@@ -12013,7 +12165,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4695886485365130, guid: b170c105bdf207c4d922668aa32993a6, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 4695886485365130, guid: b170c105bdf207c4d922668aa32993a6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12124,6 +12276,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cibleRenard: {fileID: 1007259784}
   test: 0
+--- !u!114 &393221649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 393221645}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28b6d36f9de503346b61f80038a16f72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &393221650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 393221645}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28b6d36f9de503346b61f80038a16f72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &394919393
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12508,6 +12684,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cibleRenard: {fileID: 1007259784}
   test: 0
+--- !u!114 &397164677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 397164672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28b6d36f9de503346b61f80038a16f72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &397884090
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15122,7 +15310,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1526598282}
+    m_TransformParent: {fileID: 493155182}
     m_Modifications:
     - target: {fileID: 1445089953396568, guid: d94026bdff771e24d8adcfa505894699, type: 3}
       propertyPath: m_IsActive
@@ -15132,9 +15320,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fox Corgi 1 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1811834618908678, guid: d94026bdff771e24d8adcfa505894699, type: 3}
+      propertyPath: m_TagString
+      value: Ennemi
+      objectReference: {fileID: 0}
     - target: {fileID: 4959245837571292, guid: d94026bdff771e24d8adcfa505894699, type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4959245837571292, guid: d94026bdff771e24d8adcfa505894699, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 4959245837571292, guid: d94026bdff771e24d8adcfa505894699, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.6999999
       objectReference: {fileID: 0}
     - target: {fileID: 4959245837571292, guid: d94026bdff771e24d8adcfa505894699, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15485,11 +15685,15 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1526598282}
+    m_TransformParent: {fileID: 493155182}
     m_Modifications:
     - target: {fileID: 1077125651660242, guid: 6f49472b0bd6e8f42b41fc73d6aaec66, type: 3}
       propertyPath: m_Name
       value: Fox Cub (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1077125651660242, guid: 6f49472b0bd6e8f42b41fc73d6aaec66, type: 3}
+      propertyPath: m_TagString
+      value: Ennemi
       objectReference: {fileID: 0}
     - target: {fileID: 1532307533272276, guid: 6f49472b0bd6e8f42b41fc73d6aaec66, type: 3}
       propertyPath: m_IsActive
@@ -15497,7 +15701,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4324266453923434, guid: 6f49472b0bd6e8f42b41fc73d6aaec66, type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4324266453923434, guid: 6f49472b0bd6e8f42b41fc73d6aaec66, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.55999994
+      objectReference: {fileID: 0}
+    - target: {fileID: 4324266453923434, guid: 6f49472b0bd6e8f42b41fc73d6aaec66, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.55999994
       objectReference: {fileID: 0}
     - target: {fileID: 4324266453923434, guid: 6f49472b0bd6e8f42b41fc73d6aaec66, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15545,6 +15757,52 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: 4e05d1b79e1dc894099f1513c529ecf8, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6f49472b0bd6e8f42b41fc73d6aaec66, type: 3}
+--- !u!1 &493155181
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 493155182}
+  m_Layer: 0
+  m_Name: NPCs
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &493155182
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 493155181}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1862428542}
+  - {fileID: 828399936}
+  - {fileID: 1125146581}
+  - {fileID: 370422908}
+  - {fileID: 1387862269}
+  - {fileID: 1266463916}
+  - {fileID: 1606871723}
+  - {fileID: 1658965144}
+  - {fileID: 353241001}
+  - {fileID: 397164673}
+  - {fileID: 259278997}
+  - {fileID: 696539141}
+  - {fileID: 509330031}
+  - {fileID: 1415480726}
+  - {fileID: 1270082676}
+  - {fileID: 393221644}
+  m_Father: {fileID: 1526598282}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &495344817 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: efb0aaa7d52a7dd48b11980ee26123b6, type: 3}
@@ -16394,11 +16652,15 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1526598282}
+    m_TransformParent: {fileID: 493155182}
     m_Modifications:
     - target: {fileID: 1378447913209748, guid: 794569cb02428264db2731b889c4c8c7, type: 3}
       propertyPath: m_Name
       value: Fox Fennec
+      objectReference: {fileID: 0}
+    - target: {fileID: 1378447913209748, guid: 794569cb02428264db2731b889c4c8c7, type: 3}
+      propertyPath: m_TagString
+      value: Ennemi
       objectReference: {fileID: 0}
     - target: {fileID: 1800230688956882, guid: 794569cb02428264db2731b889c4c8c7, type: 3}
       propertyPath: m_IsActive
@@ -16406,7 +16668,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4549709022218062, guid: 794569cb02428264db2731b889c4c8c7, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 4549709022218062, guid: 794569cb02428264db2731b889c4c8c7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -16513,6 +16775,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cibleRenard: {fileID: 1007259784}
   test: 0
+--- !u!114 &509330036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 509330032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28b6d36f9de503346b61f80038a16f72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &511136504 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 440a33e6d1e61ab49b7a54a1ec02c5bf, type: 3}
@@ -20585,11 +20859,15 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1526598282}
+    m_TransformParent: {fileID: 493155182}
     m_Modifications:
     - target: {fileID: 1077125651660242, guid: 6f49472b0bd6e8f42b41fc73d6aaec66, type: 3}
       propertyPath: m_Name
       value: Fox Cub (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1077125651660242, guid: 6f49472b0bd6e8f42b41fc73d6aaec66, type: 3}
+      propertyPath: m_TagString
+      value: Ennemi
       objectReference: {fileID: 0}
     - target: {fileID: 1532307533272276, guid: 6f49472b0bd6e8f42b41fc73d6aaec66, type: 3}
       propertyPath: m_IsActive
@@ -20597,7 +20875,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4324266453923434, guid: 6f49472b0bd6e8f42b41fc73d6aaec66, type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4324266453923434, guid: 6f49472b0bd6e8f42b41fc73d6aaec66, type: 3}
       propertyPath: m_LocalPosition.x
@@ -22297,7 +22575,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1526598282}
+    m_TransformParent: {fileID: 493155182}
     m_Modifications:
     - target: {fileID: 1445089953396568, guid: d94026bdff771e24d8adcfa505894699, type: 3}
       propertyPath: m_IsActive
@@ -22307,9 +22585,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fox Corgi 1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1811834618908678, guid: d94026bdff771e24d8adcfa505894699, type: 3}
+      propertyPath: m_TagString
+      value: Ennemi
+      objectReference: {fileID: 0}
     - target: {fileID: 4959245837571292, guid: d94026bdff771e24d8adcfa505894699, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 4959245837571292, guid: d94026bdff771e24d8adcfa505894699, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.70000005
+      objectReference: {fileID: 0}
+    - target: {fileID: 4959245837571292, guid: d94026bdff771e24d8adcfa505894699, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.70000005
       objectReference: {fileID: 0}
     - target: {fileID: 4959245837571292, guid: d94026bdff771e24d8adcfa505894699, type: 3}
       propertyPath: m_LocalPosition.x
@@ -22416,6 +22706,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cibleRenard: {fileID: 1007259784}
   test: 0
+--- !u!114 &696539146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 696539142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28b6d36f9de503346b61f80038a16f72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &696539147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 696539142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28b6d36f9de503346b61f80038a16f72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &697992565 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: da57b5edf9009844faeb4973718f4ed3, type: 3}
@@ -22844,7 +23158,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1526598282}
+    m_TransformParent: {fileID: 493155182}
     m_Modifications:
     - target: {fileID: 1445089953396568, guid: d94026bdff771e24d8adcfa505894699, type: 3}
       propertyPath: m_IsActive
@@ -22854,9 +23168,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fox Corgi 1 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1811834618908678, guid: d94026bdff771e24d8adcfa505894699, type: 3}
+      propertyPath: m_TagString
+      value: Ennemi
+      objectReference: {fileID: 0}
     - target: {fileID: 4959245837571292, guid: d94026bdff771e24d8adcfa505894699, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4959245837571292, guid: d94026bdff771e24d8adcfa505894699, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.70000005
+      objectReference: {fileID: 0}
+    - target: {fileID: 4959245837571292, guid: d94026bdff771e24d8adcfa505894699, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.70000005
       objectReference: {fileID: 0}
     - target: {fileID: 4959245837571292, guid: d94026bdff771e24d8adcfa505894699, type: 3}
       propertyPath: m_LocalPosition.x
@@ -24971,6 +25297,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cibleRenard: {fileID: 1007259784}
   test: 0
+--- !u!114 &828399940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 828399935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28b6d36f9de503346b61f80038a16f72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &831905977 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 5cc4afdf37ee99c4f809e941bf329eb6, type: 3}
@@ -25378,11 +25716,15 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1526598282}
+    m_TransformParent: {fileID: 493155182}
     m_Modifications:
     - target: {fileID: 1378447913209748, guid: 794569cb02428264db2731b889c4c8c7, type: 3}
       propertyPath: m_Name
       value: Fox Fennec (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1378447913209748, guid: 794569cb02428264db2731b889c4c8c7, type: 3}
+      propertyPath: m_TagString
+      value: Ennemi
       objectReference: {fileID: 0}
     - target: {fileID: 1800230688956882, guid: 794569cb02428264db2731b889c4c8c7, type: 3}
       propertyPath: m_IsActive
@@ -25390,7 +25732,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4549709022218062, guid: 794569cb02428264db2731b889c4c8c7, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4549709022218062, guid: 794569cb02428264db2731b889c4c8c7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -28723,7 +29065,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 37.8}
+  m_AnchoredPosition: {x: 0, y: 37.80005}
   m_SizeDelta: {x: 1024, y: 128}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &971138860
@@ -28818,7 +29160,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -5.1999884, y: 14.1}
+  m_AnchoredPosition: {x: -5.1999884, y: 14.099976}
   m_SizeDelta: {x: 726, y: 31}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &973750180
@@ -29853,7 +30195,8 @@ MonoBehaviour:
   RefPouvoirE: {fileID: 1080930569}
   RefPouvoirR: {fileID: 789204442}
   RefPouvoirT: {fileID: 880782489}
-  vitessePouvoirT: 0
+  vitessePouvoirT: 3
+  dureePouvoirT: 5
 --- !u!1001 &1011970858
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31835,7 +32178,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1526598282}
+    m_TransformParent: {fileID: 493155182}
     m_Modifications:
     - target: {fileID: 1445089953396568, guid: d94026bdff771e24d8adcfa505894699, type: 3}
       propertyPath: m_IsActive
@@ -31845,9 +32188,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fox Corgi 1 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1811834618908678, guid: d94026bdff771e24d8adcfa505894699, type: 3}
+      propertyPath: m_TagString
+      value: Ennemi
+      objectReference: {fileID: 0}
     - target: {fileID: 4959245837571292, guid: d94026bdff771e24d8adcfa505894699, type: 3}
       propertyPath: m_RootOrder
-      value: 17
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4959245837571292, guid: d94026bdff771e24d8adcfa505894699, type: 3}
       propertyPath: m_LocalPosition.x
@@ -33191,11 +33538,15 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1526598282}
+    m_TransformParent: {fileID: 493155182}
     m_Modifications:
     - target: {fileID: 1097153280331918, guid: b170c105bdf207c4d922668aa32993a6, type: 3}
       propertyPath: m_Name
       value: Fox Black (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1097153280331918, guid: b170c105bdf207c4d922668aa32993a6, type: 3}
+      propertyPath: m_TagString
+      value: Ennemi
       objectReference: {fileID: 0}
     - target: {fileID: 1639481649239088, guid: b170c105bdf207c4d922668aa32993a6, type: 3}
       propertyPath: m_IsActive
@@ -33203,7 +33554,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4695886485365130, guid: b170c105bdf207c4d922668aa32993a6, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695886485365130, guid: b170c105bdf207c4d922668aa32993a6, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.0999998
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695886485365130, guid: b170c105bdf207c4d922668aa32993a6, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.0999998
       objectReference: {fileID: 0}
     - target: {fileID: 4695886485365130, guid: b170c105bdf207c4d922668aa32993a6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -33219,7 +33578,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4695886485365130, guid: b170c105bdf207c4d922668aa32993a6, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.07702371
+      value: 0.077023715
       objectReference: {fileID: 0}
     - target: {fileID: 4695886485365130, guid: b170c105bdf207c4d922668aa32993a6, type: 3}
       propertyPath: m_LocalRotation.x
@@ -33227,7 +33586,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4695886485365130, guid: b170c105bdf207c4d922668aa32993a6, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.99702924
+      value: -0.9970293
       objectReference: {fileID: 0}
     - target: {fileID: 4695886485365130, guid: b170c105bdf207c4d922668aa32993a6, type: 3}
       propertyPath: m_LocalRotation.z
@@ -33314,6 +33673,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cibleRenard: {fileID: 1007259784}
   test: 0
+--- !u!114 &1125146585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1125146580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28b6d36f9de503346b61f80038a16f72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1128508485
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35572,11 +35943,15 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1526598282}
+    m_TransformParent: {fileID: 493155182}
     m_Modifications:
     - target: {fileID: 1077125651660242, guid: 6f49472b0bd6e8f42b41fc73d6aaec66, type: 3}
       propertyPath: m_Name
       value: Fox Cub (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1077125651660242, guid: 6f49472b0bd6e8f42b41fc73d6aaec66, type: 3}
+      propertyPath: m_TagString
+      value: Ennemi
       objectReference: {fileID: 0}
     - target: {fileID: 1532307533272276, guid: 6f49472b0bd6e8f42b41fc73d6aaec66, type: 3}
       propertyPath: m_IsActive
@@ -35584,7 +35959,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4324266453923434, guid: 6f49472b0bd6e8f42b41fc73d6aaec66, type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4324266453923434, guid: 6f49472b0bd6e8f42b41fc73d6aaec66, type: 3}
       propertyPath: m_LocalPosition.x
@@ -37597,6 +37972,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cibleRenard: {fileID: 1007259784}
   test: 0
+--- !u!114 &1266463920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1266463915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28b6d36f9de503346b61f80038a16f72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1269458071 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 5cc4afdf37ee99c4f809e941bf329eb6, type: 3}
@@ -37679,6 +38066,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cibleRenard: {fileID: 1007259784}
   test: 0
+--- !u!114 &1270082680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1270082675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28b6d36f9de503346b61f80038a16f72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1271906491
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -40412,6 +40811,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cibleRenard: {fileID: 1007259784}
   test: 0
+--- !u!114 &1387862273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1387862268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28b6d36f9de503346b61f80038a16f72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1391710114 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 5cc4afdf37ee99c4f809e941bf329eb6, type: 3}
@@ -41009,11 +41420,15 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1526598282}
+    m_TransformParent: {fileID: 493155182}
     m_Modifications:
     - target: {fileID: 1077125651660242, guid: 6f49472b0bd6e8f42b41fc73d6aaec66, type: 3}
       propertyPath: m_Name
       value: Fox Cub
+      objectReference: {fileID: 0}
+    - target: {fileID: 1077125651660242, guid: 6f49472b0bd6e8f42b41fc73d6aaec66, type: 3}
+      propertyPath: m_TagString
+      value: Ennemi
       objectReference: {fileID: 0}
     - target: {fileID: 1532307533272276, guid: 6f49472b0bd6e8f42b41fc73d6aaec66, type: 3}
       propertyPath: m_IsActive
@@ -41021,11 +41436,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4324266453923434, guid: 6f49472b0bd6e8f42b41fc73d6aaec66, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4324266453923434, guid: 6f49472b0bd6e8f42b41fc73d6aaec66, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 25.7
+      value: 25.699997
       objectReference: {fileID: 0}
     - target: {fileID: 4324266453923434, guid: 6f49472b0bd6e8f42b41fc73d6aaec66, type: 3}
       propertyPath: m_LocalPosition.y
@@ -41128,6 +41543,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cibleRenard: {fileID: 1007259784}
   test: 0
+--- !u!114 &1415480731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1415480727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28b6d36f9de503346b61f80038a16f72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1416707675 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 442534, guid: 6c7e01809ee343847a660faeaa78d718, type: 3}
@@ -45220,22 +45647,7 @@ Transform:
   m_Children:
   - {fileID: 855299953}
   - {fileID: 1007259786}
-  - {fileID: 393221644}
-  - {fileID: 1270082676}
-  - {fileID: 1415480726}
-  - {fileID: 509330031}
-  - {fileID: 696539141}
-  - {fileID: 259278997}
-  - {fileID: 397164673}
-  - {fileID: 353241001}
-  - {fileID: 1658965144}
-  - {fileID: 1606871723}
-  - {fileID: 1266463916}
-  - {fileID: 1387862269}
-  - {fileID: 370422908}
-  - {fileID: 1125146581}
-  - {fileID: 828399936}
-  - {fileID: 1862428542}
+  - {fileID: 493155182}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -47722,6 +48134,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cibleRenard: {fileID: 1007259784}
   test: 0
+--- !u!114 &1606871727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1606871722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28b6d36f9de503346b61f80038a16f72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1607124164 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 39ac3d8c306b9a040a433a9ec5954657, type: 3}
@@ -48457,6 +48881,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cibleRenard: {fileID: 1007259784}
   test: 0
+--- !u!114 &1658965148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1658965143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28b6d36f9de503346b61f80038a16f72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1659223665 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: efb0aaa7d52a7dd48b11980ee26123b6, type: 3}
@@ -49213,7 +49649,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1526598282}
+    m_TransformParent: {fileID: 493155182}
     m_Modifications:
     - target: {fileID: 1445089953396568, guid: d94026bdff771e24d8adcfa505894699, type: 3}
       propertyPath: m_IsActive
@@ -49223,9 +49659,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fox Corgi 1 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1811834618908678, guid: d94026bdff771e24d8adcfa505894699, type: 3}
+      propertyPath: m_TagString
+      value: Ennemi
+      objectReference: {fileID: 0}
     - target: {fileID: 4959245837571292, guid: d94026bdff771e24d8adcfa505894699, type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4959245837571292, guid: d94026bdff771e24d8adcfa505894699, type: 3}
       propertyPath: m_LocalPosition.x
@@ -52727,6 +53167,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cibleRenard: {fileID: 1007259784}
   test: 0
+--- !u!114 &1862428546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1862428541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28b6d36f9de503346b61f80038a16f72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1865831624
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -54724,7 +55176,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1526598282}
+    m_TransformParent: {fileID: 493155182}
     m_Modifications:
     - target: {fileID: 1445089953396568, guid: d94026bdff771e24d8adcfa505894699, type: 3}
       propertyPath: m_IsActive
@@ -54734,9 +55186,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fox Corgi 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1811834618908678, guid: d94026bdff771e24d8adcfa505894699, type: 3}
+      propertyPath: m_TagString
+      value: Ennemi
+      objectReference: {fileID: 0}
     - target: {fileID: 4959245837571292, guid: d94026bdff771e24d8adcfa505894699, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 4959245837571292, guid: d94026bdff771e24d8adcfa505894699, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 4959245837571292, guid: d94026bdff771e24d8adcfa505894699, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.6999999
       objectReference: {fileID: 0}
     - target: {fileID: 4959245837571292, guid: d94026bdff771e24d8adcfa505894699, type: 3}
       propertyPath: m_LocalPosition.x
@@ -54756,7 +55220,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4959245837571292, guid: d94026bdff771e24d8adcfa505894699, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4959245837571292, guid: d94026bdff771e24d8adcfa505894699, type: 3}
       propertyPath: m_LocalRotation.y
@@ -54764,7 +55228,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4959245837571292, guid: d94026bdff771e24d8adcfa505894699, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4959245837571292, guid: d94026bdff771e24d8adcfa505894699, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -57211,11 +57675,15 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1526598282}
+    m_TransformParent: {fileID: 493155182}
     m_Modifications:
     - target: {fileID: 1378447913209748, guid: 794569cb02428264db2731b889c4c8c7, type: 3}
       propertyPath: m_Name
       value: Fox Fennec (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1378447913209748, guid: 794569cb02428264db2731b889c4c8c7, type: 3}
+      propertyPath: m_TagString
+      value: Ennemi
       objectReference: {fileID: 0}
     - target: {fileID: 1800230688956882, guid: 794569cb02428264db2731b889c4c8c7, type: 3}
       propertyPath: m_IsActive
@@ -57223,7 +57691,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4549709022218062, guid: 794569cb02428264db2731b889c4c8c7, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4549709022218062, guid: 794569cb02428264db2731b889c4c8c7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -57239,7 +57707,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4549709022218062, guid: 794569cb02428264db2731b889c4c8c7, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9706146
+      value: 0.9706147
       objectReference: {fileID: 0}
     - target: {fileID: 4549709022218062, guid: 794569cb02428264db2731b889c4c8c7, type: 3}
       propertyPath: m_LocalRotation.x
@@ -57247,7 +57715,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4549709022218062, guid: 794569cb02428264db2731b889c4c8c7, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.24063918
+      value: 0.2406392
       objectReference: {fileID: 0}
     - target: {fileID: 4549709022218062, guid: 794569cb02428264db2731b889c4c8c7, type: 3}
       propertyPath: m_LocalRotation.z

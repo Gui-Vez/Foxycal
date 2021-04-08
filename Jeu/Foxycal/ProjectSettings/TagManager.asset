@@ -8,6 +8,7 @@ TagManager:
   - Animal
   - arbre
   - Pouvoir
+  - Ennemi
   layers:
   - Default
   - TransparentFX
