@@ -41,6 +41,11 @@ public class GestionAnimations : MonoBehaviour
     bool manger;
     bool saute;
 
+    // Temps avant les pouvoirs
+    public int TempsE;
+    public int TempsR;
+    public int TempsT;
+
 
 
     void Start()
@@ -262,7 +267,7 @@ public class GestionAnimations : MonoBehaviour
                 action = false;
 
                 // Attendre 4 secondes
-                yield return new WaitForSeconds(4f);
+                yield return new WaitForSeconds(TempsE);
 
                 // Le renard n'agit plus
                 pouvoir = false;
@@ -291,7 +296,7 @@ public class GestionAnimations : MonoBehaviour
                 action = false;
 
                 // Attendre 7 secondes
-                yield return new WaitForSeconds(7f);
+                yield return new WaitForSeconds(TempsR);
 
                 // Le renard n'agit plus
                 pouvoir = false;
@@ -320,7 +325,7 @@ public class GestionAnimations : MonoBehaviour
                 action = false;
 
                 // Attendre 11 secondes
-                yield return new WaitForSeconds(11f);
+                yield return new WaitForSeconds(TempsT);
 
                 // Le renard n'agit plus
                 pouvoir = false;

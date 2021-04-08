@@ -12,6 +12,8 @@ public class GestionPouvoirs : MonoBehaviour
     private GameObject ClonePouvoirR;
     private GameObject ClonePouvoirT;
 
+    public float vitessePouvoirT;
+
     public void LancerPouvoir(string Pouvoir)
     {
         switch (Pouvoir)
@@ -57,6 +59,12 @@ public class GestionPouvoirs : MonoBehaviour
                 ClonePouvoirT.name = "Souffle Électrique";
 
                 ClonePouvoirT.SetActive(true);
+
+                ClonePouvoirT.GetComponent<Rigidbody>().velocity = (transform.forward * vitessePouvoirT);
+
+                ClonePouvoirT.transform.parent = null;
+
+                Destroy(ClonePouvoirT, 3f);
 
                 break;
         }
