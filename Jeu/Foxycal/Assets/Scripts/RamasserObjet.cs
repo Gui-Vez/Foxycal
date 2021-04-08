@@ -5,6 +5,7 @@ using UnityEngine;
 public class RamasserObjet : MonoBehaviour
 {
     private GestionInventaire inventaire;
+    public GameObject fruit;
 
     void Start()
     {
@@ -25,7 +26,8 @@ public class RamasserObjet : MonoBehaviour
                 {
                     // L'objet est rentré dans l'inventaire
                     inventaire.rempli[i] = true;
-
+                    Instantiate(fruit, inventaire.boites[i].transform, false);
+                    Destroy(gameObject);
                     // Arrêter la boucle
                     break;
                 }
