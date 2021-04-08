@@ -7,15 +7,17 @@ public class GestionPouvoirs : MonoBehaviour
     public GameObject RefPouvoirE;
     public GameObject RefPouvoirR;
     public GameObject RefPouvoirT;
+    public GameObject RefComete;
 
     private GameObject ClonePouvoirE;
     private GameObject ClonePouvoirR;
     private GameObject ClonePouvoirT;
+    private GameObject CloneComete;
 
     public float vitessePouvoirT;
     public float dureePouvoirT;
 
-    public void LancerPouvoir(string Pouvoir)
+    public IEnumerator LancerPouvoir(string Pouvoir)
     {
         switch (Pouvoir)
         {
@@ -36,9 +38,23 @@ public class GestionPouvoirs : MonoBehaviour
 
             case "R":
 
+                CloneComete = Instantiate(RefComete);
+
+                CloneComete.transform.parent = RefComete.transform.parent;
+
+                CloneComete.transform.position = RefComete.transform.position;
+
+                CloneComete.name = "Comete";
+
+                CloneComete.SetActive(true);
+
+                Destroy(CloneComete, 1);
+
+                yield return new WaitForSeconds(1);
+
                 ClonePouvoirR = Instantiate(RefPouvoirR);
 
-                ClonePouvoirR.transform.parent = RefPouvoirR.transform.parent;
+                ClonePouvoirR.transform.parent = null;
 
                 ClonePouvoirR.transform.position = RefPouvoirR.transform.position;
 
@@ -69,5 +85,7 @@ public class GestionPouvoirs : MonoBehaviour
 
                 break;
         }
+
+        yield return null;
     }
 }

@@ -255,7 +255,7 @@ public class GestionAnimations : MonoBehaviour
                 GetComponent<Animator>().SetBool("Pouvoir", true);
 
                 // Lancer un pouvoir
-                GetComponent<GestionPouvoirs>().LancerPouvoir("E");
+                GetComponent<GestionPouvoirs>().StartCoroutine("LancerPouvoir", "E");
 
                 // Attendre 1 seconde
                 yield return new WaitForSeconds(1f);
@@ -284,7 +284,7 @@ public class GestionAnimations : MonoBehaviour
                 GetComponent<Animator>().SetBool("Pouvoir", true);
 
                 // Lancer un pouvoir
-                GetComponent<GestionPouvoirs>().LancerPouvoir("R");
+                GetComponent<GestionPouvoirs>().StartCoroutine("LancerPouvoir", "R");
 
                 // Attendre 1 seconde
                 yield return new WaitForSeconds(1f);
@@ -313,7 +313,7 @@ public class GestionAnimations : MonoBehaviour
                 GetComponent<Animator>().SetBool("Pouvoir", true);
 
                 // Lancer un pouvoir
-                GetComponent<GestionPouvoirs>().LancerPouvoir("T");
+                GetComponent<GestionPouvoirs>().StartCoroutine("LancerPouvoir", "T");
 
                 // Attendre 1 seconde
                 yield return new WaitForSeconds(1f);
