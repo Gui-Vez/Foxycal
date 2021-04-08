@@ -10,6 +10,9 @@ public class Deplacement3ePerso : MonoBehaviour
     public bool isGrounded;
     public Vector3 saut;
 
+    public static bool peutSauter;
+    public static bool peutBouger;
+
     // Acces de Rigidbody
     private Rigidbody rig;
 
@@ -24,6 +27,9 @@ public class Deplacement3ePerso : MonoBehaviour
         saut = new Vector3(0f, 2f, 0f);
         // Verouiller la souris
         Cursor.lockState = CursorLockMode.Locked;
+
+        peutBouger = true;
+        peutSauter = true;
     }
 
     void OnCollisionStay()
@@ -48,7 +54,7 @@ public class Deplacement3ePerso : MonoBehaviour
 
         deplacement.y = 0;
 
-        if (deplacement != Vector3.zero)
+        if (deplacement != Vector3.zero && peutBouger == true)
         {
             // Oriente le personnage vers la direction des touches
             transform.forward = deplacement;
@@ -61,10 +67,10 @@ public class Deplacement3ePerso : MonoBehaviour
         }
 
         // Gestion du saut du personnage
-        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
+        if (Input.GetKeyDown(KeyCode.Space) && peutSauter && isGrounded)
         {
             rig.AddForce(saut * forceSaut, ForceMode.Impulse);
-            isGrounded = false;
+            peutSauter = false;
         }
     }
 }

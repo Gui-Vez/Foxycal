@@ -47,8 +47,6 @@ public class GestionAnimations : MonoBehaviour
     {
         // Raccourci du rigidbody
         rb = GetComponent<Rigidbody>();
-
-        
     }
 
     void Update()
@@ -137,6 +135,9 @@ public class GestionAnimations : MonoBehaviour
         // Le renard agit
         action = true;
 
+        // Le renard ne peut pas sauter
+        Deplacement3ePerso.peutSauter = false;
+
         switch (Animation)
         {
             /************/
@@ -165,7 +166,7 @@ public class GestionAnimations : MonoBehaviour
 
                 // Le renard n'agit plus
                 action = false;
-
+                
                 break;
 
 
@@ -176,11 +177,14 @@ public class GestionAnimations : MonoBehaviour
 
             case "RMC":
 
+
                 // Le renard mange
                 manger = true;
 
                 // Activer l'animation de manger
                 GetComponent<Animator>().SetBool("Mange", true);
+
+                Deplacement3ePerso.peutBouger = false;
 
                 // GetComponent<UnScript>().faim -= 1f * Time.deltaTime;
 
@@ -189,6 +193,8 @@ public class GestionAnimations : MonoBehaviour
 
                 // Désactiver l'animation de manger
                 GetComponent<Animator>().SetBool("Mange", false);
+
+                Deplacement3ePerso.peutBouger = true;
 
                 // Le renard ne mange plus
                 manger = false;
@@ -211,6 +217,9 @@ public class GestionAnimations : MonoBehaviour
 
                 // Activer l'animation de saut
                 GetComponent<Animator>().SetBool("Saute", true);
+
+                // Le renard peut sauter
+                Deplacement3ePerso.peutSauter = true;
 
                 // Attendre 1 seconde
                 yield return new WaitForSeconds(1f);
@@ -240,6 +249,9 @@ public class GestionAnimations : MonoBehaviour
                 // Activer l'animation de pouvoir
                 GetComponent<Animator>().SetBool("Pouvoir", true);
 
+                // Lancer un pouvoir
+                GetComponent<GestionPouvoirs>().LancerPouvoir("E");
+
                 // Attendre 1 seconde
                 yield return new WaitForSeconds(1f);
 
@@ -265,6 +277,9 @@ public class GestionAnimations : MonoBehaviour
 
                 // Activer l'animation de pouvoir
                 GetComponent<Animator>().SetBool("Pouvoir", true);
+
+                // Lancer un pouvoir
+                GetComponent<GestionPouvoirs>().LancerPouvoir("R");
 
                 // Attendre 1 seconde
                 yield return new WaitForSeconds(1f);
@@ -292,6 +307,9 @@ public class GestionAnimations : MonoBehaviour
                 // Activer l'animation de pouvoir
                 GetComponent<Animator>().SetBool("Pouvoir", true);
 
+                // Lancer un pouvoir
+                GetComponent<GestionPouvoirs>().LancerPouvoir("T");
+
                 // Attendre 1 seconde
                 yield return new WaitForSeconds(1f);
 
@@ -309,5 +327,7 @@ public class GestionAnimations : MonoBehaviour
 
                 break;
         }
+
+        Deplacement3ePerso.peutSauter = true;
     }
 }
