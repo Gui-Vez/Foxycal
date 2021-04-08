@@ -5,23 +5,26 @@ using UnityEngine;
 public class CollisionPouvoir : MonoBehaviour
 {
     GameObject RefEnnemi;
-    int pointDeVie;
+    public int pointDeVie;
+    
 
     void Start()
     {
         RefEnnemi = gameObject;
 
         pointDeVie = 3;
+
     }
 
     void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Pouvoir"))
         {
-            if (CompareTag("Ennemi"))
-            {
-                DiminuerVie();
-            }
+            DiminuerVie();
+
+            GetComponent<Animator>().SetTrigger("estAttaqué");
+
+            
         }
     }
 
@@ -31,7 +34,8 @@ public class CollisionPouvoir : MonoBehaviour
 
         if (pointDeVie == 0)
         {
-            EnleverEnnemi();
+            GetComponent<Animator>().SetTrigger("mort");
+            Invoke("EnleverEnnemi", 2f);
         }
     }
 
