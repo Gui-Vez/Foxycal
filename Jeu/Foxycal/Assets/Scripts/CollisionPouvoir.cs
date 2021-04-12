@@ -35,7 +35,7 @@ public class CollisionPouvoir : MonoBehaviour
         if (pointDeVie == 0)
         {
             GetComponent<Animator>().SetTrigger("mort");
-            Invoke("EnleverEnnemi", 2f);
+            Invoke("EnleverEnnemi", 1f);
         }
     }
 

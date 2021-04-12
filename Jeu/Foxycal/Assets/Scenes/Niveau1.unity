@@ -2900,6 +2900,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28b6d36f9de503346b61f80038a16f72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pointDeVie: 0
 --- !u!1001 &94177022
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7843,8 +7844,8 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3
-  m_Acceleration: 8
+  m_Speed: 2
+  m_Acceleration: 4
   avoidancePriority: 50
   m_AngularSpeed: 120
   m_StoppingDistance: 1
@@ -7881,6 +7882,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28b6d36f9de503346b61f80038a16f72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pointDeVie: 0
 --- !u!1001 &265341161
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10496,8 +10498,8 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3
-  m_Acceleration: 8
+  m_Speed: 2
+  m_Acceleration: 4
   avoidancePriority: 50
   m_AngularSpeed: 120
   m_StoppingDistance: 1
@@ -10534,6 +10536,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28b6d36f9de503346b61f80038a16f72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pointDeVie: 0
 --- !u!1001 &355261908
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11122,8 +11125,8 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3
-  m_Acceleration: 8
+  m_Speed: 2
+  m_Acceleration: 4
   avoidancePriority: 50
   m_AngularSpeed: 120
   m_StoppingDistance: 1
@@ -11160,6 +11163,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28b6d36f9de503346b61f80038a16f72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pointDeVie: 0
 --- !u!1001 &371766461
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12250,8 +12254,8 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3
-  m_Acceleration: 8
+  m_Speed: 2
+  m_Acceleration: 4
   avoidancePriority: 50
   m_AngularSpeed: 120
   m_StoppingDistance: 1
@@ -12288,6 +12292,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28b6d36f9de503346b61f80038a16f72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pointDeVie: 0
 --- !u!1001 &394919393
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12646,8 +12651,8 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3
-  m_Acceleration: 8
+  m_Speed: 2
+  m_Acceleration: 4
   avoidancePriority: 50
   m_AngularSpeed: 120
   m_StoppingDistance: 1
@@ -12684,6 +12689,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28b6d36f9de503346b61f80038a16f72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pointDeVie: 0
 --- !u!1001 &397884090
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16737,8 +16743,8 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3
-  m_Acceleration: 8
+  m_Speed: 2
+  m_Acceleration: 4
   avoidancePriority: 50
   m_AngularSpeed: 120
   m_StoppingDistance: 1
@@ -16775,6 +16781,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28b6d36f9de503346b61f80038a16f72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pointDeVie: 0
 --- !u!1 &511136504 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 440a33e6d1e61ab49b7a54a1ec02c5bf, type: 3}
@@ -22668,8 +22675,8 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3
-  m_Acceleration: 8
+  m_Speed: 2
+  m_Acceleration: 4
   avoidancePriority: 50
   m_AngularSpeed: 120
   m_StoppingDistance: 1
@@ -22706,6 +22713,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28b6d36f9de503346b61f80038a16f72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pointDeVie: 0
 --- !u!1 &697992565 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: da57b5edf9009844faeb4973718f4ed3, type: 3}
@@ -25247,8 +25255,8 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3
-  m_Acceleration: 8
+  m_Speed: 2
+  m_Acceleration: 4
   avoidancePriority: 50
   m_AngularSpeed: 120
   m_StoppingDistance: 1
@@ -25285,6 +25293,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28b6d36f9de503346b61f80038a16f72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pointDeVie: 0
 --- !u!1 &831905977 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 5cc4afdf37ee99c4f809e941bf329eb6, type: 3}
@@ -30171,6 +30180,7 @@ MonoBehaviour:
   RefPouvoirE: {fileID: 1080930569}
   RefPouvoirR: {fileID: 789204442}
   RefPouvoirT: {fileID: 880782489}
+  RefComete: {fileID: 0}
   vitessePouvoirT: 3
   dureePouvoirT: 5
 --- !u!1001 &1011970858
@@ -33623,8 +33633,8 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3
-  m_Acceleration: 8
+  m_Speed: 2
+  m_Acceleration: 4
   avoidancePriority: 50
   m_AngularSpeed: 120
   m_StoppingDistance: 1
@@ -33661,6 +33671,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28b6d36f9de503346b61f80038a16f72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pointDeVie: 0
 --- !u!1001 &1128508485
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37922,8 +37933,8 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3
-  m_Acceleration: 8
+  m_Speed: 2
+  m_Acceleration: 4
   avoidancePriority: 50
   m_AngularSpeed: 120
   m_StoppingDistance: 1
@@ -37960,6 +37971,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28b6d36f9de503346b61f80038a16f72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pointDeVie: 0
 --- !u!1 &1269458071 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 5cc4afdf37ee99c4f809e941bf329eb6, type: 3}
@@ -38016,8 +38028,8 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3
-  m_Acceleration: 8
+  m_Speed: 2
+  m_Acceleration: 4
   avoidancePriority: 50
   m_AngularSpeed: 120
   m_StoppingDistance: 1
@@ -38054,6 +38066,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28b6d36f9de503346b61f80038a16f72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pointDeVie: 0
 --- !u!1001 &1271906491
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -40761,8 +40774,8 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3
-  m_Acceleration: 8
+  m_Speed: 2
+  m_Acceleration: 4
   avoidancePriority: 50
   m_AngularSpeed: 120
   m_StoppingDistance: 1
@@ -40799,6 +40812,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28b6d36f9de503346b61f80038a16f72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pointDeVie: 0
 --- !u!1 &1391710114 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 5cc4afdf37ee99c4f809e941bf329eb6, type: 3}
@@ -41493,8 +41507,8 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3
-  m_Acceleration: 8
+  m_Speed: 2
+  m_Acceleration: 4
   avoidancePriority: 50
   m_AngularSpeed: 120
   m_StoppingDistance: 1
@@ -41531,6 +41545,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28b6d36f9de503346b61f80038a16f72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pointDeVie: 0
 --- !u!4 &1416707675 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 442534, guid: 6c7e01809ee343847a660faeaa78d718, type: 3}
@@ -48084,8 +48099,8 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3
-  m_Acceleration: 8
+  m_Speed: 2
+  m_Acceleration: 4
   avoidancePriority: 50
   m_AngularSpeed: 120
   m_StoppingDistance: 1
@@ -48122,6 +48137,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28b6d36f9de503346b61f80038a16f72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pointDeVie: 0
 --- !u!1 &1607124164 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 39ac3d8c306b9a040a433a9ec5954657, type: 3}
@@ -48831,8 +48847,8 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3
-  m_Acceleration: 8
+  m_Speed: 2
+  m_Acceleration: 4
   avoidancePriority: 50
   m_AngularSpeed: 120
   m_StoppingDistance: 1
@@ -48869,6 +48885,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28b6d36f9de503346b61f80038a16f72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pointDeVie: 0
 --- !u!1 &1659223665 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: efb0aaa7d52a7dd48b11980ee26123b6, type: 3}
@@ -53117,8 +53134,8 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3
-  m_Acceleration: 8
+  m_Speed: 2
+  m_Acceleration: 4
   avoidancePriority: 50
   m_AngularSpeed: 120
   m_StoppingDistance: 1
@@ -53155,6 +53172,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28b6d36f9de503346b61f80038a16f72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pointDeVie: 0
 --- !u!114 &1862428548
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53167,6 +53185,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28b6d36f9de503346b61f80038a16f72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pointDeVie: 0
 --- !u!1001 &1865831624
 PrefabInstance:
   m_ObjectHideFlags: 0

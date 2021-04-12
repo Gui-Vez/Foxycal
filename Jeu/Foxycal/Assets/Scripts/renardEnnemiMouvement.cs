@@ -50,12 +50,12 @@ public class renardEnnemiMouvement : MonoBehaviour
     {
         GameObject[] arbres = GameObject.FindGameObjectsWithTag("arbre");
         int indexArbres = Random.Range(0, arbres.Length);
-        //navAgent.SetDestination(arbres[indexArbres].transform.position);
+        navAgent.SetDestination(arbres[indexArbres].transform.position);
 
     }
     void OnCollisionEnter (Collision collision)
     {
-        if (collision.gameObject.name == "Fox Principal")
+        if (collision.gameObject.name == "Fox Principal" && CycleJour.tempsJournee == true)
         {
             GetComponent<Animator>().SetTrigger("attaque");
 
