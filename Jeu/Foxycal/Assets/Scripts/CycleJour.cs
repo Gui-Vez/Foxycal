@@ -5,6 +5,9 @@ using UnityEngine.UI;
 
 public class CycleJour : MonoBehaviour
 {
+    /// Auteur : Jonathan Rivest
+    /// Description : Régler le cycle du jour et de la nuit
+
     public Transform lumiere;
     public int vitesseRotation;
     public static bool tempsJournee; // Bool statique indiquant le temps de la journée aux scripts.

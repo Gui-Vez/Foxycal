@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class RamasserObjet : MonoBehaviour
 {
+    /// Auteur : Guillaume Vézina
+    /// Description : Script qui permet au renard de ramasser les objets
+
     private GestionInventaire inventaire;
     public GameObject fruit;
 
@@ -26,8 +29,13 @@ public class RamasserObjet : MonoBehaviour
                 {
                     // L'objet est rentré dans l'inventaire
                     inventaire.rempli[i] = true;
+
+                    // Instancier le fruit dans l'inventaire
                     Instantiate(fruit, inventaire.boites[i].transform, false);
+
+                    // Détruire l'objet
                     Destroy(gameObject);
+
                     // Arrêter la boucle
                     break;
                 }

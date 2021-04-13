@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class renardMagique : MonoBehaviour
 {
-    
+    /// Auteur : Jonathan Rivest
+    /// Description : Ajouter et désactiver l'apparence lumineuse des renards
+
     public GameObject magieRenard; // Pour placer un mesh renderer se trouvant dans un game object enfant.
     
     // Update is called once per frame

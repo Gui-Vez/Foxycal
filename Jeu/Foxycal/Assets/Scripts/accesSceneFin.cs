@@ -5,13 +5,17 @@ using UnityEngine.SceneManagement;
 
 public class accesSceneFin : MonoBehaviour
 {
-    // Start is called before the first frame update
+    /// Auteur : Jonathan Rivest
+    /// Description : Accéder à la fin par le portail magique
 
-    // Update is called once per frame
+    
+    // Collision des objets
     void OnCollisionEnter(Collision collision)
     {
+        // Si le portail entre en contact avec le renard,
         if (collision.gameObject.name == "Fox Principal")
         {
+            // Charger la scène de fin
             SceneManager.LoadScene("sceneFin");
         }
     }

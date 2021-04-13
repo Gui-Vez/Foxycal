@@ -4,11 +4,15 @@ using UnityEngine;
 
 public class introRotationCamera : MonoBehaviour
 {
+    /// Auteur : Tristan Lapointe
+    /// Description : Faire tourner la caméra d'introduction
 
     public float vitesse;
-    // Update is called once per frame
+    
+    // À chaque frame,
     void Update()
     {
+        // Exercer une rotation
         transform.Rotate(0, vitesse * Time.deltaTime, 0);
     }
 }
