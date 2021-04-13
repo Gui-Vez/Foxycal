@@ -2,6 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/**********************************************************************************************************************************************
+ * STATUS: En progrès... la caméra qui se rapproche ne marche pas trop trop, essayé les tests données par Vahik aussi sans succèes
+ * Auteur: Andy
+ * Description: Un script qui gère la position de la caméra comme dans Dark Souls 3 (Exception pour la bataille VS le dragon du Nameless King)
+ * Dernière modification: 16 mars 2021
+ *********************************************************************************************************************************************/
+
 public class ScriptPivot : MonoBehaviour
 {
     // Variables pour les differentes cameras
@@ -17,7 +24,7 @@ public class ScriptPivot : MonoBehaviour
     // Variable pour limiter le deplacement vertical de la camera
     public float rotationVert = 0f;
 
-    // Update is called once per frame
+    // Gestion du déplacment de la caméra ainsi qu'un essai sur le rapprochement de la caméra si sa vue est obtruée
     void Update()
     {
         transform.position = personnage.transform.position + new Vector3(0, hauteurPivot, 0);

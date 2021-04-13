@@ -3,6 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+/*****************************************************************************************************
+ * STATUS: En progrès... à ajuster avec les petits renards qui attaquent le personnage (Health pack aussi?? Pt)
+ * Auteur: Andy
+ * Description: Un script complémentaire avec barreDeVieScript. Celui-ci gère la vie maximale ainsi que le nombre de dégâts que le personnage prend
+ * afin d'avoir un visuel sur combien de dégâts le personnage prend.
+ * Dernière modification: 23 mars 2021
+ ****************************************************************************************************/
+
 public class gestionViePersonnage : MonoBehaviour
 {
 
