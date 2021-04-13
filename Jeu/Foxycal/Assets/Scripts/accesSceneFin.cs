@@ -12,7 +12,7 @@ public class accesSceneFin : MonoBehaviour
     {
         if (collision.gameObject.name == "Fox Principal")
         {
-            SceneManager.LoadScene("Fin");
+            SceneManager.LoadScene("sceneFin");
         }
     }
 }
