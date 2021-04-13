@@ -21,7 +21,7 @@ public class gestionViePersonnage : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.L))
         {
-            prendDegats(25);
+            prendDegats(5);
         }
     }
 
