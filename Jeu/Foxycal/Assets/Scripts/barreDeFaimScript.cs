@@ -3,6 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+/******************************************************************************
+ * Auteur: Andy
+ * Dernière modification: 31 mars 2021
+ *****************************************************************************/
+
 public class barreDeFaimScript : MonoBehaviour
 {
     public Slider sliderFaim;
@@ -10,13 +15,14 @@ public class barreDeFaimScript : MonoBehaviour
     public float faimMax = 100f;
     public float faim;
 
-    // Start is called before the first frame update
+    // Reset la valeur de faim lors du lancement du jeu
     void Start()
     {
         faim = faimMax;
     }
 
-    // Update is called once per frame
+    // Associer le slider avec la valeur de faim
+    // Valeur diminue au fil du temps
     void Update()
     {
         sliderFaim.value = faim;
