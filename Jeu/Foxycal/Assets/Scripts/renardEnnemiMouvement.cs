@@ -50,7 +50,7 @@ public class renardEnnemiMouvement : MonoBehaviour
     {
         GameObject[] arbres = GameObject.FindGameObjectsWithTag("arbre");
         int indexArbres = Random.Range(0, arbres.Length);
-        navAgent.SetDestination(arbres[indexArbres].transform.position);
+        //navAgent.SetDestination(arbres[indexArbres].transform.position);
 
     }
     void OnCollisionEnter (Collision collision)
