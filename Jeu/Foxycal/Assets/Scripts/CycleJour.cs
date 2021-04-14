@@ -13,6 +13,12 @@ public class CycleJour : MonoBehaviour
     public static bool tempsJournee; // Bool statique indiquant le temps de la journée aux scripts.
     public Slider slider; //Slider indiquant le temps restant avant que le jour ou la nuit arrive.
     public float vitesseSlider; //Indique la vitesse du slider (manuelle)
+    public GameObject sonNuit; // Permet d'activer le son se trouvant dans son audio source.
+
+    void Start()
+    {
+        tempsJournee = false;
+    }
 
     void Update()
     {
@@ -22,12 +28,15 @@ public class CycleJour : MonoBehaviour
         {
             tempsJournee = true; // True = la nuit est tombée.
             slider.value -= vitesseSlider; // La vitesse du slider.
+            sonNuit.SetActive(true); // Active le son une seule fois la nuit.
+            
 
         }
         else
         {
             tempsJournee = false; // False = c'est le jour.
             slider.value += vitesseSlider;
+            sonNuit.SetActive(false);
         }
     }
 

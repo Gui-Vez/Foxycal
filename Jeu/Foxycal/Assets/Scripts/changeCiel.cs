@@ -18,6 +18,7 @@ public class changeCiel : MonoBehaviour
         {
             // Mettre le ciel de nuit
             RenderSettings.skybox = cielNuit;
+            
         }
 
         // Sinon,

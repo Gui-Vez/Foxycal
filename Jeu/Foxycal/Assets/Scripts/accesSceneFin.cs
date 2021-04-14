@@ -16,9 +16,16 @@ public class accesSceneFin : MonoBehaviour
         if (collision.gameObject.name == "Fox Principal")
         {
             // Charger la scène de fin
-            SceneManager.LoadScene("sceneFin");
+            Invoke("changementScene", 4f);
+            AudioSource audio = GetComponent<AudioSource>();
+            audio.Play(); //Son à l'activation du portail
             // Remettre le curseur à la normale
             Cursor.lockState = CursorLockMode.None;
         }
+    }
+
+    void changementScene()
+    {
+        SceneManager.LoadScene("sceneFin");
     }
 }
