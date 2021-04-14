@@ -17,6 +17,8 @@ public class accesSceneFin : MonoBehaviour
         {
             // Charger la scène de fin
             SceneManager.LoadScene("sceneFin");
+            // Remettre le curseur à la normale
+            Cursor.lockState = CursorLockMode.None;
         }
     }
 }

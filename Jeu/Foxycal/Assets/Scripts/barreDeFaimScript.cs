@@ -28,6 +28,6 @@ public class barreDeFaimScript : MonoBehaviour
     void Update()
     {
         sliderFaim.value = faim;
-        faim -= 0.5f * Time.deltaTime;
+        faim -= 1f * Time.deltaTime;
     }
 }

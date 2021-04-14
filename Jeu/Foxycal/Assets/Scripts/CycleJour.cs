@@ -12,6 +12,7 @@ public class CycleJour : MonoBehaviour
     public int vitesseRotation;
     public static bool tempsJournee; // Bool statique indiquant le temps de la journée aux scripts.
     public Slider slider; //Slider indiquant le temps restant avant que le jour ou la nuit arrive.
+    public float vitesseSlider; //Indique la vitesse du slider (manuelle)
 
     void Update()
     {
@@ -20,13 +21,13 @@ public class CycleJour : MonoBehaviour
         if(lumiere.eulerAngles.x > 179) // Si la rotation de la lumière atteint cette valeur, la nuit est tombée.
         {
             tempsJournee = true; // True = la nuit est tombée.
-            slider.value -= 0.0009f; // La vitesse du slider.
+            slider.value -= vitesseSlider; // La vitesse du slider.
 
         }
         else
         {
             tempsJournee = false; // False = c'est le jour.
-            slider.value += 0.0009f;
+            slider.value += vitesseSlider;
         }
     }
 

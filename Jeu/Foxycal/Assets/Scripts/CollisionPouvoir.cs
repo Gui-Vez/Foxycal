@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class CollisionPouvoir : MonoBehaviour
 {
@@ -17,8 +18,8 @@ public class CollisionPouvoir : MonoBehaviour
         // Référencer l'ennemi à l'objet qui détient le script
         RefEnnemi = gameObject;
 
-        // Donner trois points de vie
-        pointDeVie = 3;
+        // Donner deux points de vie
+        pointDeVie = 2;
     }
 
     // Lors d'une collision,
@@ -46,8 +47,11 @@ public class CollisionPouvoir : MonoBehaviour
             // Jouer l'animation de mort
             GetComponent<Animator>().SetTrigger("mort");
 
-            // Enlever l'ennemi après 1 seconde
-            Invoke("EnleverEnnemi", 1f);
+            // Enlever le set destination
+            GetComponent<NavMeshAgent>().isStopped = true;
+
+            // Enlever l'ennemi après un délai
+            Invoke("EnleverEnnemi", 2.5f);
         }
     }
 

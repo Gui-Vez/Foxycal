@@ -24,6 +24,7 @@ public class GestionIntro : MonoBehaviour
                 foreach (GameObject menuPrincipal in ObjetsMenuPrincipal) menuPrincipal.SetActive(true);
                 foreach (GameObject menuControle in ObjetsMenuControles) menuControle.SetActive(false);
                 foreach (GameObject menuCredit in ObjetsMenuCredits) menuCredit.SetActive(false);
+                GetComponent<AudioSource>().Play(); // Son au clic des boutons
 
                 menuRetour.SetActive(false);
 
@@ -36,6 +37,7 @@ public class GestionIntro : MonoBehaviour
                 foreach (GameObject menuPrincipal in ObjetsMenuPrincipal) menuPrincipal.SetActive(false);
                 foreach (GameObject menuControle in ObjetsMenuControles) menuControle.SetActive(true);
                 foreach (GameObject menuCredit in ObjetsMenuCredits) menuCredit.SetActive(false);
+                GetComponent<AudioSource>().Play(); // Son au clic des boutons
 
                 menuRetour.SetActive(true);
 
@@ -48,6 +50,7 @@ public class GestionIntro : MonoBehaviour
                 foreach (GameObject menuPrincipal in ObjetsMenuPrincipal) menuPrincipal.SetActive(false);
                 foreach (GameObject menuControle in ObjetsMenuControles) menuControle.SetActive(false);
                 foreach (GameObject menuCredit in ObjetsMenuCredits) menuCredit.SetActive(true);
+                GetComponent<AudioSource>().Play(); // Son au clic des boutons
 
                 menuRetour.SetActive(true);
 
