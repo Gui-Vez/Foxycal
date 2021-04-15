@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class CollisionPouvoir : MonoBehaviour
+public class CollisionAttaque : MonoBehaviour
 {
     /// Auteur : Guillaume Vézina
     /// Description : Gère la collision des pouvoirs avec les ennemis
@@ -19,7 +19,7 @@ public class CollisionPouvoir : MonoBehaviour
         RefEnnemi = gameObject;
 
         // Donner deux points de vie
-        pointDeVie = 2;
+        pointDeVie = 3;
     }
 
     // Lors d'une collision,
@@ -28,21 +28,36 @@ public class CollisionPouvoir : MonoBehaviour
         // Si l'ennemi entre en collision avec un pouvoir,
         if (other.CompareTag("Pouvoir"))
         {
-            // Diminuer la vie
-            DiminuerVie();
+            if (other.name == "Comete" || other.name == "Appel du Ciel")
+            {
+                // Diminuer la vie
+                DiminuerVie(3);
+            }
+
+            else if (other.name == "Souffle Électrique" || other.name == "Foudre Mystique")
+            {
+                // Diminuer la vie
+                DiminuerVie(2);
+            }
+
+            else
+            {
+                // Diminuer la vie
+                DiminuerVie(1);
+            }
 
             // Jouer l'animation d'être attaqué
             GetComponent<Animator>().SetTrigger("estAttaqué");
         }
     }
 
-    void DiminuerVie()
+    void DiminuerVie(int degat)
     {
         // Diminuer le point de vie
-        pointDeVie--;
+        pointDeVie -= degat;
 
         // S'il ne reste plus de point de vie,
-        if (pointDeVie == 0)
+        if (pointDeVie <= 0)
         {
             // Jouer l'animation de mort
             GetComponent<Animator>().SetTrigger("mort");

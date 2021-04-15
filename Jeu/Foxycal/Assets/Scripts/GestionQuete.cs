@@ -30,25 +30,13 @@ public class GestionQuete : MonoBehaviour
         }
     }
 
-    public void AugmenterNombre(int nombre)
+    public void AugmenterNumeroQuete(int numero)
     {
-        switch (nombre)
+        // Si le numéro de la quête est inférieure à son maximum,
+        if (listeNombreQuete[numero] < listeNombreMaxQuete[numero])
         {
-            case 1:
-
-                break;
-
-            case 2:
-
-                break;
-
-            case 3:
-
-                break;
-
-            default:
-
-                break;
+            // Augmenter le numero de la quête
+            listeNombreQuete[numero]++;
         }
     }
 }

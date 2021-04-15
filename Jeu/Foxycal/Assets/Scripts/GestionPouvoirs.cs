@@ -7,11 +7,13 @@ public class GestionPouvoirs : MonoBehaviour
     /// Auteur : Guillaume Vézina
     /// Description : Active les pouvoirs du personnage
 
+    public GameObject RefPouvoirLMC;
     public GameObject RefPouvoirE;
     public GameObject RefPouvoirR;
     public GameObject RefPouvoirT;
     public GameObject RefComete;
 
+    private GameObject ClonePouvoirLMC;
     private GameObject ClonePouvoirE;
     private GameObject ClonePouvoirR;
     private GameObject ClonePouvoirT;
@@ -25,6 +27,29 @@ public class GestionPouvoirs : MonoBehaviour
         // Selon le pouvoir,
         switch (Pouvoir)
         {
+            case "LMC":
+
+                // Faire un clone à ce pouvoir
+                ClonePouvoirLMC = Instantiate(RefPouvoirLMC);
+
+                // Changer le parent du pouvoir
+                ClonePouvoirLMC.transform.parent = RefPouvoirLMC.transform.parent;
+
+                // Réétablir la position du pouvoir
+                ClonePouvoirLMC.transform.position = RefPouvoirLMC.transform.position;
+
+                // Changer le nom du clone
+                ClonePouvoirLMC.name = "Morsure";
+
+                // Activer le clone
+                ClonePouvoirLMC.SetActive(true);
+
+                // Détruire l'objet après 1 seconde
+                Destroy(ClonePouvoirLMC, 1f);
+
+                break;
+
+
             case "E":
 
                 // Faire un clone à ce pouvoir

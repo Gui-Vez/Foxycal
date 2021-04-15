@@ -163,6 +163,9 @@ public class GestionAnimations : MonoBehaviour
                 // Activer l'animation d'attaque Gauche
                 GetComponent<Animator>().SetTrigger("Attaque_L");
 
+                // Lancer un pouvoir
+                GetComponent<GestionPouvoirs>().StartCoroutine("LancerPouvoir", "LMC");
+
                 // Attendre 1 seconde
                 yield return new WaitForSeconds(1f);
 

@@ -1,0 +1,24 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class RamasserArtefact : MonoBehaviour
+{
+    /// Auteur : Guillaume Vézina
+    /// Description : Script qui permet au renard de ramasser les atréfacts
+
+    public GameObject Canvas;
+
+    void OnTriggerEnter(Collider other)
+    {
+        // Si le trigger est le joueur,
+        if (other.CompareTag("Player"))
+        {
+            // Augmenter le numéro de la quête
+            Canvas.GetComponent<GestionQuete>().AugmenterNumeroQuete(0);
+
+            // Détruire l'objet
+            Destroy(gameObject);
+        }
+    }
+}

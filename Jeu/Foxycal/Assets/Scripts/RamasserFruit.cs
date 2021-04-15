@@ -2,13 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RamasserObjet : MonoBehaviour
+public class RamasserFruit : MonoBehaviour
 {
     /// Auteur : Guillaume Vézina
-    /// Description : Script qui permet au renard de ramasser les objets
+    /// Description : Script qui permet au renard de ramasser les fruits
 
     private GestionInventaire inventaire;
     public GameObject fruit;
+    public GameObject Canvas;
 
     void Start()
     {
@@ -32,6 +33,9 @@ public class RamasserObjet : MonoBehaviour
 
                     // Instancier le fruit dans l'inventaire
                     Instantiate(fruit, inventaire.boites[i].transform, false);
+
+                    // Augmenter le numéro de la quête
+                    Canvas.GetComponent<GestionQuete>().AugmenterNumeroQuete(1);
 
                     // Détruire l'objet
                     Destroy(gameObject);
