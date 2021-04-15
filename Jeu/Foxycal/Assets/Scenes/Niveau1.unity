@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.6806765, g: 0.74878466, b: 0.8195164, a: 1}
+  m_IndirectSpecularColor: {r: 0.6806765, g: 0.74878466, b: 0.81951636, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2537,6 +2537,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fruit: {fileID: 8186705383050258052, guid: b320233f79d705f44942500773a2ee87, type: 3}
+  Canvas: {fileID: 254170883}
 --- !u!135 &75964187
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -5759,6 +5760,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fruit: {fileID: 4273658600591002761, guid: 42e3875d20e50834593679dc176bdc96, type: 3}
+  Canvas: {fileID: 254170883}
 --- !u!135 &167680711
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -5945,6 +5947,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fruit: {fileID: 4273658600591002761, guid: 42e3875d20e50834593679dc176bdc96, type: 3}
+  Canvas: {fileID: 254170883}
 --- !u!135 &169194420
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -5963,6 +5966,88 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 442534, guid: 6c7e01809ee343847a660faeaa78d718, type: 3}
   m_PrefabInstance: {fileID: 1573601625}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &169588439
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 169588440}
+  - component: {fileID: 169588442}
+  - component: {fileID: 169588441}
+  m_Layer: 0
+  m_Name: Particule Vert
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &169588440
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 169588439}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.47, z: 1.25}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 431062974}
+  m_Father: {fileID: 1812898016}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &169588441
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 169588439}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: b68ab0d3523ceff4eaadc1d8323c4372, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &169588442
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 169588439}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &177271856
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6222,6 +6307,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fruit: {fileID: 3731209105362631546, guid: a24013af9c1692946b67d7fbd64c4ee6, type: 3}
+  Canvas: {fileID: 254170883}
 --- !u!135 &180185297
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -6932,6 +7018,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fruit: {fileID: 8186705383050258052, guid: b320233f79d705f44942500773a2ee87, type: 3}
+  Canvas: {fileID: 254170883}
 --- !u!135 &207316523
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -7705,6 +7792,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fruit: {fileID: 584691462861986545, guid: 815e10dd209f9f843b59e914646fdeff, type: 3}
+  Canvas: {fileID: 254170883}
 --- !u!135 &224822739
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -9327,6 +9415,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fruit: {fileID: 4273658600591002761, guid: 42e3875d20e50834593679dc176bdc96, type: 3}
+  Canvas: {fileID: 254170883}
 --- !u!135 &257119257
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -10618,6 +10707,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fruit: {fileID: 1597447872277026323, guid: 3f1b9e3a9efac0146b0e616dab72daf0, type: 3}
+  Canvas: {fileID: 254170883}
 --- !u!135 &288608534
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -11903,6 +11993,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fruit: {fileID: 4273658600591002761, guid: 42e3875d20e50834593679dc176bdc96, type: 3}
+  Canvas: {fileID: 254170883}
 --- !u!135 &322736096
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -13276,6 +13367,38 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: efb0aaa7d52a7dd48b11980ee26123b6, type: 3}
+--- !u!1 &357457860
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 357457861}
+  m_Layer: 0
+  m_Name: "|----- ART\xC9FACTS -----|"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &357457861
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 357457860}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 129.17444, y: 0.47000003, z: -220.45}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1714563393}
+  - {fileID: 1717218757}
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &362913792 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 8fb393504a2e44242a9d3f406a03590d, type: 3}
@@ -13447,6 +13570,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fruit: {fileID: 4273658600591002761, guid: 42e3875d20e50834593679dc176bdc96, type: 3}
+  Canvas: {fileID: 254170883}
 --- !u!135 &365069340
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -17086,6 +17210,50 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5cc4afdf37ee99c4f809e941bf329eb6, type: 3}
+--- !u!1 &431062973
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 431062974}
+  - component: {fileID: 431062975}
+  m_Layer: 0
+  m_Name: Prefab LMC
+  m_TagString: Pouvoir
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &431062974
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 431062973}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 169588440}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &431062975
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 431062973}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.75
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &432718510 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 5d2c172a87e07b14f9a7be04ce39d550, type: 3}
@@ -17109,6 +17277,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fruit: {fileID: 3731209105362631546, guid: a24013af9c1692946b67d7fbd64c4ee6, type: 3}
+  Canvas: {fileID: 254170883}
 --- !u!135 &432718513
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -18597,6 +18766,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fruit: {fileID: 3731209105362631546, guid: a24013af9c1692946b67d7fbd64c4ee6, type: 3}
+  Canvas: {fileID: 254170883}
 --- !u!135 &476045989
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -24597,6 +24767,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fruit: {fileID: 584691462861986545, guid: 815e10dd209f9f843b59e914646fdeff, type: 3}
+  Canvas: {fileID: 254170883}
 --- !u!135 &621552222
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -24916,6 +25087,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fruit: {fileID: 8186705383050258052, guid: b320233f79d705f44942500773a2ee87, type: 3}
+  Canvas: {fileID: 254170883}
 --- !u!1 &636338953 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: efb0aaa7d52a7dd48b11980ee26123b6, type: 3}
@@ -26399,6 +26571,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fruit: {fileID: 4273658600591002761, guid: 42e3875d20e50834593679dc176bdc96, type: 3}
+  Canvas: {fileID: 254170883}
 --- !u!135 &673081331
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -28150,6 +28323,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fruit: {fileID: 1597447872277026323, guid: 3f1b9e3a9efac0146b0e616dab72daf0, type: 3}
+  Canvas: {fileID: 254170883}
 --- !u!135 &761620593
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -28931,6 +29105,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fruit: {fileID: 584691462861986545, guid: 815e10dd209f9f843b59e914646fdeff, type: 3}
+  Canvas: {fileID: 254170883}
 --- !u!135 &786178876
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -30062,6 +30237,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fruit: {fileID: 1597447872277026323, guid: 3f1b9e3a9efac0146b0e616dab72daf0, type: 3}
+  Canvas: {fileID: 254170883}
 --- !u!135 &831989759
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -30292,6 +30468,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fruit: {fileID: 584691462861986545, guid: 815e10dd209f9f843b59e914646fdeff, type: 3}
+  Canvas: {fileID: 254170883}
 --- !u!135 &835641295
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -31164,6 +31341,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fruit: {fileID: 3731209105362631546, guid: a24013af9c1692946b67d7fbd64c4ee6, type: 3}
+  Canvas: {fileID: 254170883}
 --- !u!135 &875450789
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -33148,6 +33326,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fruit: {fileID: 1597447872277026323, guid: 3f1b9e3a9efac0146b0e616dab72daf0, type: 3}
+  Canvas: {fileID: 254170883}
 --- !u!135 &922300303
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -34796,6 +34975,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fruit: {fileID: 3731209105362631546, guid: a24013af9c1692946b67d7fbd64c4ee6, type: 3}
+  Canvas: {fileID: 254170883}
 --- !u!135 &986591730
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -35595,6 +35775,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a5a409e4fda69c42aacd047662ff981, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  RefPouvoirLMC: {fileID: 431062973}
   RefPouvoirE: {fileID: 1080930569}
   RefPouvoirR: {fileID: 789204442}
   RefPouvoirT: {fileID: 880782489}
@@ -36310,6 +36491,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fruit: {fileID: 584691462861986545, guid: 815e10dd209f9f843b59e914646fdeff, type: 3}
+  Canvas: {fileID: 254170883}
 --- !u!135 &1032862858
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -38271,6 +38453,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fruit: {fileID: 8186705383050258052, guid: b320233f79d705f44942500773a2ee87, type: 3}
+  Canvas: {fileID: 254170883}
 --- !u!135 &1097154153
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -40521,6 +40704,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fruit: {fileID: 4273658600591002761, guid: 42e3875d20e50834593679dc176bdc96, type: 3}
+  Canvas: {fileID: 254170883}
 --- !u!135 &1151283921
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -42868,6 +43052,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fruit: {fileID: 1597447872277026323, guid: 3f1b9e3a9efac0146b0e616dab72daf0, type: 3}
+  Canvas: {fileID: 254170883}
 --- !u!135 &1199839926
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -43098,6 +43283,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fruit: {fileID: 3731209105362631546, guid: a24013af9c1692946b67d7fbd64c4ee6, type: 3}
+  Canvas: {fileID: 254170883}
 --- !u!135 &1218307995
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -49741,6 +49927,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fruit: {fileID: 584691462861986545, guid: 815e10dd209f9f843b59e914646fdeff, type: 3}
+  Canvas: {fileID: 254170883}
 --- !u!135 &1439193420
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -52155,6 +52342,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fruit: {fileID: 1597447872277026323, guid: 3f1b9e3a9efac0146b0e616dab72daf0, type: 3}
+  Canvas: {fileID: 254170883}
 --- !u!135 &1487538683
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -53732,6 +53920,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fruit: {fileID: 1597447872277026323, guid: 3f1b9e3a9efac0146b0e616dab72daf0, type: 3}
+  Canvas: {fileID: 254170883}
 --- !u!135 &1539410951
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -54946,6 +55135,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fruit: {fileID: 8186705383050258052, guid: b320233f79d705f44942500773a2ee87, type: 3}
+  Canvas: {fileID: 254170883}
 --- !u!135 &1565214683
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -55122,6 +55312,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fruit: {fileID: 1597447872277026323, guid: 3f1b9e3a9efac0146b0e616dab72daf0, type: 3}
+  Canvas: {fileID: 254170883}
 --- !u!135 &1574869750
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -55227,6 +55418,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fruit: {fileID: 3731209105362631546, guid: a24013af9c1692946b67d7fbd64c4ee6, type: 3}
+  Canvas: {fileID: 254170883}
 --- !u!135 &1579418740
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -57034,6 +57226,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fruit: {fileID: 3731209105362631546, guid: a24013af9c1692946b67d7fbd64c4ee6, type: 3}
+  Canvas: {fileID: 254170883}
 --- !u!135 &1635926518
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -57139,6 +57332,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fruit: {fileID: 8186705383050258052, guid: b320233f79d705f44942500773a2ee87, type: 3}
+  Canvas: {fileID: 254170883}
 --- !u!135 &1636925418
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -57198,6 +57392,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fruit: {fileID: 584691462861986545, guid: 815e10dd209f9f843b59e914646fdeff, type: 3}
+  Canvas: {fileID: 254170883}
 --- !u!135 &1644472958
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -57788,6 +57983,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fruit: {fileID: 4273658600591002761, guid: 42e3875d20e50834593679dc176bdc96, type: 3}
+  Canvas: {fileID: 254170883}
 --- !u!135 &1662141306
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -58458,6 +58654,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fruit: {fileID: 1597447872277026323, guid: 3f1b9e3a9efac0146b0e616dab72daf0, type: 3}
+  Canvas: {fileID: 254170883}
 --- !u!135 &1694909260
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -58730,6 +58927,193 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.0684167, y: 7.497174, z: 0.89714766}
   m_Center: {x: 12.940259, y: 2.7175615, z: 0.50983155}
+--- !u!1001 &1714563392
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 357457861}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 04591b131ea292746ab73a7671dd6a8d, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 04591b131ea292746ab73a7671dd6a8d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.6782227
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 04591b131ea292746ab73a7671dd6a8d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.46841067
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 04591b131ea292746ab73a7671dd6a8d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.5057373
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 04591b131ea292746ab73a7671dd6a8d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 04591b131ea292746ab73a7671dd6a8d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 04591b131ea292746ab73a7671dd6a8d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 04591b131ea292746ab73a7671dd6a8d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 04591b131ea292746ab73a7671dd6a8d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 04591b131ea292746ab73a7671dd6a8d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 04591b131ea292746ab73a7671dd6a8d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 04591b131ea292746ab73a7671dd6a8d, type: 3}
+      propertyPath: m_Name
+      value: Artefact2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 04591b131ea292746ab73a7671dd6a8d, type: 3}
+--- !u!4 &1714563393 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 04591b131ea292746ab73a7671dd6a8d, type: 3}
+  m_PrefabInstance: {fileID: 1714563392}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1714563394 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 04591b131ea292746ab73a7671dd6a8d, type: 3}
+  m_PrefabInstance: {fileID: 1714563392}
+  m_PrefabAsset: {fileID: 0}
+--- !u!136 &1714563395
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1714563394}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.32193756
+  m_Height: 2.0047905
+  m_Direction: 1
+  m_Center: {x: 0.14372253, y: 0.5023953, z: -0.034339905}
+--- !u!114 &1714563396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1714563394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bca4db0a68b84145839a11b96234201, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Canvas: {fileID: 254170883}
+--- !u!1001 &1717218756
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 357457861}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 2a2e18226de4e604b9e253b6aa658430, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2a2e18226de4e604b9e253b6aa658430, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.959427
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2a2e18226de4e604b9e253b6aa658430, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.44703004
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2a2e18226de4e604b9e253b6aa658430, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.4895172
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2a2e18226de4e604b9e253b6aa658430, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2a2e18226de4e604b9e253b6aa658430, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2a2e18226de4e604b9e253b6aa658430, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2a2e18226de4e604b9e253b6aa658430, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2a2e18226de4e604b9e253b6aa658430, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2a2e18226de4e604b9e253b6aa658430, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2a2e18226de4e604b9e253b6aa658430, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2a2e18226de4e604b9e253b6aa658430, type: 3}
+      propertyPath: m_Name
+      value: Artefact1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2a2e18226de4e604b9e253b6aa658430, type: 3}
+--- !u!4 &1717218757 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2a2e18226de4e604b9e253b6aa658430, type: 3}
+  m_PrefabInstance: {fileID: 1717218756}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1717218758 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 2a2e18226de4e604b9e253b6aa658430, type: 3}
+  m_PrefabInstance: {fileID: 1717218756}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1717218759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1717218758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bca4db0a68b84145839a11b96234201, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Canvas: {fileID: 254170883}
+--- !u!135 &1717218760
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1717218758}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1
+  m_Center: {x: 1.56, y: 0.39, z: 0}
 --- !u!1 &1719475747
 GameObject:
   m_ObjectHideFlags: 0
@@ -59580,6 +59964,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fruit: {fileID: 3731209105362631546, guid: a24013af9c1692946b67d7fbd64c4ee6, type: 3}
+  Canvas: {fileID: 254170883}
 --- !u!135 &1756205133
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -59713,6 +60098,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fruit: {fileID: 8186705383050258052, guid: b320233f79d705f44942500773a2ee87, type: 3}
+  Canvas: {fileID: 254170883}
 --- !u!135 &1759190719
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -60904,6 +61290,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fruit: {fileID: 8186705383050258052, guid: b320233f79d705f44942500773a2ee87, type: 3}
+  Canvas: {fileID: 254170883}
 --- !u!135 &1798345556
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -61380,6 +61767,7 @@ Transform:
   - {fileID: 38874115}
   - {fileID: 813273389}
   - {fileID: 913494702}
+  - {fileID: 169588440}
   m_Father: {fileID: 1007259786}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -62145,7 +62533,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1840505412}
   m_Layer: 0
-  m_Name: '|---- FRUITS ----|'
+  m_Name: '|------- FRUITS -------|'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -65209,6 +65597,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fruit: {fileID: 584691462861986545, guid: 815e10dd209f9f843b59e914646fdeff, type: 3}
+  Canvas: {fileID: 254170883}
 --- !u!135 &1947227673
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -66222,6 +66611,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fruit: {fileID: 4273658600591002761, guid: 42e3875d20e50834593679dc176bdc96, type: 3}
+  Canvas: {fileID: 254170883}
 --- !u!135 &1978153869
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -66332,6 +66722,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fruit: {fileID: 4273658600591002761, guid: 42e3875d20e50834593679dc176bdc96, type: 3}
+  Canvas: {fileID: 254170883}
 --- !u!135 &1978783365
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -66601,6 +66992,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fruit: {fileID: 4273658600591002761, guid: 42e3875d20e50834593679dc176bdc96, type: 3}
+  Canvas: {fileID: 254170883}
 --- !u!135 &1989390389
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -68450,6 +68842,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fruit: {fileID: 8186705383050258052, guid: b320233f79d705f44942500773a2ee87, type: 3}
+  Canvas: {fileID: 254170883}
 --- !u!135 &2055628987
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -70520,6 +70913,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fruit: {fileID: 3731209105362631546, guid: a24013af9c1692946b67d7fbd64c4ee6, type: 3}
+  Canvas: {fileID: 254170883}
 --- !u!135 &2133319566
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -70947,6 +71341,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fruit: {fileID: 584691462861986545, guid: 815e10dd209f9f843b59e914646fdeff, type: 3}
+  Canvas: {fileID: 254170883}
 --- !u!135 &2141572308
 SphereCollider:
   m_ObjectHideFlags: 0
