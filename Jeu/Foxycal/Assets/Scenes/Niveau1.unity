@@ -10900,8 +10900,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sliderFaim: {fileID: 293686251}
-  faimMax: 100
-  faim: 0
 --- !u!114 &293686251
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35657,6 +35655,7 @@ GameObject:
   - component: {fileID: 1007259791}
   - component: {fileID: 1007259792}
   - component: {fileID: 1007259793}
+  - component: {fileID: 1007259794}
   m_Layer: 20
   m_Name: Fox Principal
   m_TagString: Player
@@ -35819,6 +35818,21 @@ MonoBehaviour:
   vieMax: 15
   nbVie: 0
   barreDeVie: {fileID: 1198346935}
+--- !u!114 &1007259794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1007259784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35afdc2427845824fbb793f8c1f5ccea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  faimMax: 100
+  faim: 0
+  sliderFaim: {fileID: 293686250}
 --- !u!1 &1010500819 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 149186, guid: 6c7e01809ee343847a660faeaa78d718, type: 3}

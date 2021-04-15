@@ -663,8 +663,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 864a65719859b3042892482b7b9bd407, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lumiere: {fileID: 275009402}
-  vitesseRotation: 0
 --- !u!1 &295003582
 GameObject:
   m_ObjectHideFlags: 0
@@ -1166,6 +1164,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fruit: {fileID: 4273658600591002761, guid: 42e3875d20e50834593679dc176bdc96, type: 3}
+  Canvas: {fileID: 0}
 --- !u!65 &482510427
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2071,6 +2070,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fruit: {fileID: 1597447872277026323, guid: 3f1b9e3a9efac0146b0e616dab72daf0, type: 3}
+  Canvas: {fileID: 0}
 --- !u!65 &854342831
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2625,8 +2625,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sliderFaim: {fileID: 1130932453}
-  faimMax: 100
-  faim: 0
 --- !u!1 &1163001913
 GameObject:
   m_ObjectHideFlags: 0
@@ -3009,6 +3007,8 @@ GameObject:
   - component: {fileID: 1509619493}
   - component: {fileID: 1509619492}
   - component: {fileID: 1509619498}
+  - component: {fileID: 1509619499}
+  - component: {fileID: 1509619500}
   m_Layer: 2
   m_Name: Fox Principal
   m_TagString: Player
@@ -3136,6 +3136,33 @@ MonoBehaviour:
   - {fileID: 1929249727}
   - {fileID: 615860356}
   - {fileID: 1213467675}
+--- !u!114 &1509619499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1509619491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebb9861b8284de047b6f41f14b54e338, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1509619500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1509619491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35afdc2427845824fbb793f8c1f5ccea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  faimMax: 100
+  faim: 0
+  sliderFaim: {fileID: 1130932454}
 --- !u!1 &1639260521
 GameObject:
   m_ObjectHideFlags: 0

@@ -14,20 +14,15 @@ public class barreDeFaimScript : MonoBehaviour
 {
     public Slider sliderFaim;
 
-    public float faimMax = 100f;
-    public float faim;
-
-    // Reset la valeur de faim lors du lancement du jeu
-    void Start()
+    public void faimMax(float faim)
     {
-        faim = faimMax;
+        sliderFaim.maxValue = faim;
+        sliderFaim.value = faim;
     }
 
-    // Associer le slider avec la valeur de faim
-    // Valeur diminue au fil du temps
-    void Update()
+    public void barreFaimFixe(float faim)
     {
         sliderFaim.value = faim;
-        faim -= 1f * Time.deltaTime;
     }
+
 }
