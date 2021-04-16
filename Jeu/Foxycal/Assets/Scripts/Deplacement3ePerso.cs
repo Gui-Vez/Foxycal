@@ -70,6 +70,7 @@ public class Deplacement3ePerso : MonoBehaviour
             // Oriente le personnage vers la direction des touches
             transform.forward = deplacement;
             rig.velocity = (transform.forward * vitesse) + new Vector3(0, rig.velocity.y, 0);
+            
         }
 
         else

@@ -31,13 +31,13 @@ public class CollisionAttaque : MonoBehaviour
             if (other.name == "Comete" || other.name == "Appel du Ciel")
             {
                 // Diminuer la vie
-                DiminuerVie(3);
+                DiminuerVie(2);
             }
 
             else if (other.name == "Souffle Électrique" || other.name == "Foudre Mystique")
             {
                 // Diminuer la vie
-                DiminuerVie(2);
+                DiminuerVie(3);
             }
 
             else

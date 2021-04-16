@@ -14,6 +14,8 @@ public class CycleJour : MonoBehaviour
     public Slider slider; //Slider indiquant le temps restant avant que le jour ou la nuit arrive.
     public float vitesseSlider; //Indique la vitesse du slider (manuelle)
     public GameObject sonNuit; // Permet d'activer le son se trouvant dans son audio source.
+    public cameraShake cameraShake; // Référence au camerashake
+    public bool test;
 
     void Start()
     {
@@ -29,6 +31,11 @@ public class CycleJour : MonoBehaviour
             tempsJournee = true; // True = la nuit est tombée.
             slider.value -= vitesseSlider; // La vitesse du slider.
             sonNuit.SetActive(true); // Active le son une seule fois la nuit.
+            if (test)
+            {
+                test = false;
+                StartCoroutine(cameraShake.Shake(.45f, .1f)); // Appeler une fonction dans la coroutine d'un autre script
+            }
             
 
         }
@@ -37,6 +44,7 @@ public class CycleJour : MonoBehaviour
             tempsJournee = false; // False = c'est le jour.
             slider.value += vitesseSlider;
             sonNuit.SetActive(false);
+            test = true;
         }
     }
 
