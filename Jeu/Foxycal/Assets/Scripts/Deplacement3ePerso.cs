@@ -27,6 +27,9 @@ public class Deplacement3ePerso : MonoBehaviour
     public GameObject pivotVide;
     public GameObject cam3ePerso;
 
+    //Variable pour charger détecter la collision avec le portail
+    public static bool fin = false;
+
     // Petit raccourcis
     // Valeurs pour le saut
     // Valeurs booléennes pour gérer si le personnage peut bouger (en liaison avec le script des animations) ou sauter
@@ -70,7 +73,7 @@ public class Deplacement3ePerso : MonoBehaviour
             // Oriente le personnage vers la direction des touches
             transform.forward = deplacement;
             rig.velocity = (transform.forward * vitesse) + new Vector3(0, rig.velocity.y, 0);
-            
+
         }
 
         else
@@ -85,4 +88,15 @@ public class Deplacement3ePerso : MonoBehaviour
             peutSauter = false;
         }
     }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        // Si le portail entre en contact avec le renard,
+        if (collision.gameObject.name == "portail")
+        {
+            fin = true;
+            print("portail touché");
+        }
+    }
+
 }

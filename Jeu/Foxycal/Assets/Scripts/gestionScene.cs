@@ -6,13 +6,37 @@ using UnityEngine.SceneManagement;
 public class gestionScene : MonoBehaviour
 {
     public GameObject Canvas;
-    /// Auteur : Tristan Lapointe (Son intégré par Jonathan Rivest)
-    /// Description : Gère les évènements au clic des boutons "Jouer" et "Quitter".
+    public Animator transition;
+    public float tempsTransition = 1f;
+    public bool chargerFinFait = false;
+    /// Auteur : Tristan Lapointe et Jonathan Rivest
+    /// Description : Gère les évènements au clic des boutons "Jouer" et "Quitter", ainsi que les transitions de scène.
+
+
+    void Update()
+    {
+        if (chargerFinFait == false && Deplacement3ePerso.fin == true) //Charger la scène de fin
+        {
+            chargerFinFait = true;
+            Deplacement3ePerso.fin = false;
+            print("Chargement de la scène de fin");
+            StartCoroutine(ChargerNiveau(SceneManager.GetActiveScene().buildIndex + 1));
+            Cursor.lockState = CursorLockMode.None;
+        }
+    }
+
+    public void RecommencerJeu() //Pour retourner à la scène d'intro
+    {
+        //Commencer le jeu
+        SceneManager.LoadScene("Intro"); // Chargement du menu de début du jeu
+        AudioSource audio = GetComponent<AudioSource>();
+        audio.Play();  // Son au clic des boutons
+    }
 
     public void ActiverJeu() //Pour débuter le niveau un.
     {
-        //Commencer le jeu
-        SceneManager.LoadScene("Niveau1");
+        //Commencer la coroutine qui appelle la fonction qui load la scène.
+        StartCoroutine(ChargerNiveau(SceneManager.GetActiveScene().buildIndex + 1));
         AudioSource audio = GetComponent<AudioSource>();
         audio.Play();  // Son au clic des boutons
     }
@@ -21,6 +45,20 @@ public class gestionScene : MonoBehaviour
     {
         Application.Quit();
         AudioSource audio = GetComponent<AudioSource>();
-        audio.Play();
+        audio.Play(); // Son au clic des boutons
+    }
+
+    IEnumerator ChargerNiveau(int indexNiveau) //Charge le prochain niveau, et fait la transition de scène
+    {
+        // Jouer l'animation
+        transition.SetTrigger("Debut");
+
+        // Attendre
+        yield return new WaitForSeconds(tempsTransition);
+
+        // Charger la scène
+        SceneManager.LoadScene(indexNiveau);
+
+        print(SceneManager.GetActiveScene().buildIndex);
     }
 }
