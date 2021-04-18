@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class gestionScene : MonoBehaviour
 {
     public GameObject Canvas;
+    public GameObject SonPortail;
     public Animator transition;
     public float tempsTransition = 1f;
     public bool chargerFinFait = false;
@@ -22,6 +23,7 @@ public class gestionScene : MonoBehaviour
             print("Chargement de la scène de fin");
             StartCoroutine(ChargerNiveau(SceneManager.GetActiveScene().buildIndex + 1));
             Cursor.lockState = CursorLockMode.None;
+            SonPortail.SetActive(true);
         }
     }
 
