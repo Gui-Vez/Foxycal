@@ -1108,6 +1108,100 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.862767, y: 7.2860045, z: 0.80295783}
   m_Center: {x: 74.49888, y: 2.8215282, z: 3.3285697}
+--- !u!1001 &28757326
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1364755784}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 715c3d7b6362835409770cd3514d6921, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 715c3d7b6362835409770cd3514d6921, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 21.259
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 715c3d7b6362835409770cd3514d6921, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 21.259
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 715c3d7b6362835409770cd3514d6921, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 21.259
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 715c3d7b6362835409770cd3514d6921, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 125.961
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 715c3d7b6362835409770cd3514d6921, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.48515
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 715c3d7b6362835409770cd3514d6921, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -219.25
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 715c3d7b6362835409770cd3514d6921, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 715c3d7b6362835409770cd3514d6921, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 715c3d7b6362835409770cd3514d6921, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 715c3d7b6362835409770cd3514d6921, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 715c3d7b6362835409770cd3514d6921, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 715c3d7b6362835409770cd3514d6921, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 715c3d7b6362835409770cd3514d6921, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7447460911687858041, guid: 715c3d7b6362835409770cd3514d6921, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 81c812a78cb368b4c913376dc72fa339, type: 2}
+    - target: {fileID: -6067185528594298527, guid: 715c3d7b6362835409770cd3514d6921, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 81c812a78cb368b4c913376dc72fa339, type: 2}
+    - target: {fileID: -2682167134973850427, guid: 715c3d7b6362835409770cd3514d6921, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 81c812a78cb368b4c913376dc72fa339, type: 2}
+    - target: {fileID: 919132149155446097, guid: 715c3d7b6362835409770cd3514d6921, type: 3}
+      propertyPath: m_Name
+      value: Portail
+      objectReference: {fileID: 0}
+    - target: {fileID: 4191509097384965755, guid: 715c3d7b6362835409770cd3514d6921, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 81c812a78cb368b4c913376dc72fa339, type: 2}
+    - target: {fileID: 9104363954461589850, guid: 715c3d7b6362835409770cd3514d6921, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 81c812a78cb368b4c913376dc72fa339, type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 715c3d7b6362835409770cd3514d6921, type: 3}
+--- !u!4 &28757327 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 715c3d7b6362835409770cd3514d6921, type: 3}
+  m_PrefabInstance: {fileID: 28757326}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &31072550
 GameObject:
   m_ObjectHideFlags: 0
@@ -2536,6 +2630,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a65c853e895ee240a6f873e143d2c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fruit: {fileID: 8186705383050258052, guid: b320233f79d705f44942500773a2ee87, type: 3}
   Canvas: {fileID: 254170883}
 --- !u!135 &75964187
 SphereCollider:
@@ -5831,6 +5926,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a65c853e895ee240a6f873e143d2c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fruit: {fileID: 4273658600591002761, guid: 42e3875d20e50834593679dc176bdc96, type: 3}
   Canvas: {fileID: 254170883}
 --- !u!135 &167680711
 SphereCollider:
@@ -6017,6 +6113,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a65c853e895ee240a6f873e143d2c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fruit: {fileID: 4273658600591002761, guid: 42e3875d20e50834593679dc176bdc96, type: 3}
   Canvas: {fileID: 254170883}
 --- !u!135 &169194420
 SphereCollider:
@@ -6376,6 +6473,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a65c853e895ee240a6f873e143d2c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fruit: {fileID: 3731209105362631546, guid: a24013af9c1692946b67d7fbd64c4ee6, type: 3}
   Canvas: {fileID: 254170883}
 --- !u!135 &180185297
 SphereCollider:
@@ -7086,6 +7184,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a65c853e895ee240a6f873e143d2c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fruit: {fileID: 8186705383050258052, guid: b320233f79d705f44942500773a2ee87, type: 3}
   Canvas: {fileID: 254170883}
 --- !u!135 &207316523
 SphereCollider:
@@ -7859,6 +7958,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a65c853e895ee240a6f873e143d2c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fruit: {fileID: 584691462861986545, guid: 815e10dd209f9f843b59e914646fdeff, type: 3}
   Canvas: {fileID: 254170883}
 --- !u!135 &224822739
 SphereCollider:
@@ -8301,7 +8401,7 @@ Transform:
   m_Children:
   - {fileID: 1178182746}
   m_Father: {fileID: 1364755784}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &230980603
 BoxCollider:
@@ -9375,6 +9475,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a65c853e895ee240a6f873e143d2c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fruit: {fileID: 4273658600591002761, guid: 42e3875d20e50834593679dc176bdc96, type: 3}
   Canvas: {fileID: 254170883}
 --- !u!135 &257119257
 SphereCollider:
@@ -10666,6 +10767,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a65c853e895ee240a6f873e143d2c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fruit: {fileID: 1597447872277026323, guid: 3f1b9e3a9efac0146b0e616dab72daf0, type: 3}
   Canvas: {fileID: 254170883}
 --- !u!135 &288608534
 SphereCollider:
@@ -11949,6 +12051,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a65c853e895ee240a6f873e143d2c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fruit: {fileID: 4273658600591002761, guid: 42e3875d20e50834593679dc176bdc96, type: 3}
   Canvas: {fileID: 254170883}
 --- !u!135 &322736096
 SphereCollider:
@@ -13525,6 +13628,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a65c853e895ee240a6f873e143d2c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fruit: {fileID: 4273658600591002761, guid: 42e3875d20e50834593679dc176bdc96, type: 3}
   Canvas: {fileID: 254170883}
 --- !u!135 &365069340
 SphereCollider:
@@ -17231,6 +17335,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a65c853e895ee240a6f873e143d2c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fruit: {fileID: 3731209105362631546, guid: a24013af9c1692946b67d7fbd64c4ee6, type: 3}
   Canvas: {fileID: 254170883}
 --- !u!135 &432718513
 SphereCollider:
@@ -18719,6 +18824,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a65c853e895ee240a6f873e143d2c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fruit: {fileID: 3731209105362631546, guid: a24013af9c1692946b67d7fbd64c4ee6, type: 3}
   Canvas: {fileID: 254170883}
 --- !u!135 &476045989
 SphereCollider:
@@ -24805,6 +24911,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a65c853e895ee240a6f873e143d2c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fruit: {fileID: 584691462861986545, guid: 815e10dd209f9f843b59e914646fdeff, type: 3}
   Canvas: {fileID: 254170883}
 --- !u!135 &621552222
 SphereCollider:
@@ -25124,6 +25231,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a65c853e895ee240a6f873e143d2c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fruit: {fileID: 8186705383050258052, guid: b320233f79d705f44942500773a2ee87, type: 3}
   Canvas: {fileID: 254170883}
 --- !u!1 &636338953 stripped
 GameObject:
@@ -26607,6 +26715,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a65c853e895ee240a6f873e143d2c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fruit: {fileID: 4273658600591002761, guid: 42e3875d20e50834593679dc176bdc96, type: 3}
   Canvas: {fileID: 254170883}
 --- !u!135 &673081331
 SphereCollider:
@@ -28374,6 +28483,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a65c853e895ee240a6f873e143d2c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fruit: {fileID: 1597447872277026323, guid: 3f1b9e3a9efac0146b0e616dab72daf0, type: 3}
   Canvas: {fileID: 254170883}
 --- !u!135 &761620593
 SphereCollider:
@@ -29155,6 +29265,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a65c853e895ee240a6f873e143d2c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fruit: {fileID: 584691462861986545, guid: 815e10dd209f9f843b59e914646fdeff, type: 3}
   Canvas: {fileID: 254170883}
 --- !u!135 &786178876
 SphereCollider:
@@ -30382,6 +30493,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a65c853e895ee240a6f873e143d2c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fruit: {fileID: 1597447872277026323, guid: 3f1b9e3a9efac0146b0e616dab72daf0, type: 3}
   Canvas: {fileID: 254170883}
 --- !u!135 &831989759
 SphereCollider:
@@ -30612,6 +30724,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a65c853e895ee240a6f873e143d2c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fruit: {fileID: 584691462861986545, guid: 815e10dd209f9f843b59e914646fdeff, type: 3}
   Canvas: {fileID: 254170883}
 --- !u!135 &835641295
 SphereCollider:
@@ -30728,6 +30841,99 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 442534, guid: 6c7e01809ee343847a660faeaa78d718, type: 3}
   m_PrefabInstance: {fileID: 2130818123}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &849851634
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 849851635}
+  - component: {fileID: 849851636}
+  m_Layer: 0
+  m_Name: Lumiere (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &849851635
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 849851634}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.0067, y: 0.1116, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 28757327}
+  m_RootOrder: 25
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!108 &849851636
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 849851634}
+  m_Enabled: 1
+  serializedVersion: 10
+  m_Type: 2
+  m_Shape: 0
+  m_Color: {r: 0.98089784, g: 1, b: 0.4009434, a: 1}
+  m_Intensity: 1
+  m_Range: 3
+  m_SpotAngle: 30
+  m_InnerSpotAngle: 21.80208
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 4
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
 --- !u!1 &855125586 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: e3711799a0b8c1f4686b7eec05d569fd, type: 3}
@@ -31098,7 +31304,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1364755784}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &866455721
 AudioSource:
@@ -31484,6 +31690,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a65c853e895ee240a6f873e143d2c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fruit: {fileID: 3731209105362631546, guid: a24013af9c1692946b67d7fbd64c4ee6, type: 3}
   Canvas: {fileID: 254170883}
 --- !u!135 &875450789
 SphereCollider:
@@ -33636,6 +33843,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a65c853e895ee240a6f873e143d2c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fruit: {fileID: 1597447872277026323, guid: 3f1b9e3a9efac0146b0e616dab72daf0, type: 3}
   Canvas: {fileID: 254170883}
 --- !u!135 &922300303
 SphereCollider:
@@ -35297,6 +35505,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a65c853e895ee240a6f873e143d2c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fruit: {fileID: 3731209105362631546, guid: a24013af9c1692946b67d7fbd64c4ee6, type: 3}
   Canvas: {fileID: 254170883}
 --- !u!135 &986591730
 SphereCollider:
@@ -36840,6 +37049,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a65c853e895ee240a6f873e143d2c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fruit: {fileID: 584691462861986545, guid: 815e10dd209f9f843b59e914646fdeff, type: 3}
   Canvas: {fileID: 254170883}
 --- !u!135 &1032862858
 SphereCollider:
@@ -37996,6 +38206,99 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 442534, guid: 6c7e01809ee343847a660faeaa78d718, type: 3}
   m_PrefabInstance: {fileID: 1719734056}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1064283197
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1064283198}
+  - component: {fileID: 1064283199}
+  m_Layer: 0
+  m_Name: Lumiere (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1064283198
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1064283197}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.0203, y: 0.1116, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 28757327}
+  m_RootOrder: 27
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!108 &1064283199
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1064283197}
+  m_Enabled: 1
+  serializedVersion: 10
+  m_Type: 2
+  m_Shape: 0
+  m_Color: {r: 0.98089784, g: 1, b: 0.4009434, a: 1}
+  m_Intensity: 1
+  m_Range: 3
+  m_SpotAngle: 30
+  m_InnerSpotAngle: 21.80208
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 4
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
 --- !u!1001 &1073732876
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -38897,6 +39200,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a65c853e895ee240a6f873e143d2c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fruit: {fileID: 8186705383050258052, guid: b320233f79d705f44942500773a2ee87, type: 3}
   Canvas: {fileID: 254170883}
 --- !u!135 &1097154153
 SphereCollider:
@@ -41147,6 +41451,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a65c853e895ee240a6f873e143d2c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fruit: {fileID: 4273658600591002761, guid: 42e3875d20e50834593679dc176bdc96, type: 3}
   Canvas: {fileID: 254170883}
 --- !u!135 &1151283921
 SphereCollider:
@@ -43693,6 +43998,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a65c853e895ee240a6f873e143d2c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fruit: {fileID: 1597447872277026323, guid: 3f1b9e3a9efac0146b0e616dab72daf0, type: 3}
   Canvas: {fileID: 254170883}
 --- !u!135 &1199839926
 SphereCollider:
@@ -43923,6 +44229,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a65c853e895ee240a6f873e143d2c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fruit: {fileID: 3731209105362631546, guid: a24013af9c1692946b67d7fbd64c4ee6, type: 3}
   Canvas: {fileID: 254170883}
 --- !u!135 &1218307995
 SphereCollider:
@@ -47925,6 +48232,7 @@ Transform:
   - {fileID: 705507995}
   - {fileID: 765513064}
   - {fileID: 1437493013}
+  - {fileID: 28757327}
   - {fileID: 230980601}
   - {fileID: 866455719}
   m_Father: {fileID: 0}
@@ -48994,6 +49302,99 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 8911429290685839654, guid: f9d7075a823f97e42a436008cf48c4b3, type: 3}
+--- !u!1 &1402042739
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1402042740}
+  - component: {fileID: 1402042741}
+  m_Layer: 0
+  m_Name: Lumiere (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1402042740
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1402042739}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.0078, y: 0.1116, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 28757327}
+  m_RootOrder: 26
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!108 &1402042741
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1402042739}
+  m_Enabled: 1
+  serializedVersion: 10
+  m_Type: 2
+  m_Shape: 0
+  m_Color: {r: 0.98089784, g: 1, b: 0.4009434, a: 1}
+  m_Intensity: 1
+  m_Range: 3
+  m_SpotAngle: 30
+  m_InnerSpotAngle: 21.80208
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 4
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
 --- !u!1001 &1409818851
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -50566,6 +50967,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a65c853e895ee240a6f873e143d2c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fruit: {fileID: 584691462861986545, guid: 815e10dd209f9f843b59e914646fdeff, type: 3}
   Canvas: {fileID: 254170883}
 --- !u!135 &1439193420
 SphereCollider:
@@ -52980,6 +53382,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a65c853e895ee240a6f873e143d2c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fruit: {fileID: 1597447872277026323, guid: 3f1b9e3a9efac0146b0e616dab72daf0, type: 3}
   Canvas: {fileID: 254170883}
 --- !u!135 &1487538683
 SphereCollider:
@@ -54212,6 +54615,7 @@ GameObject:
   - component: {fileID: 1529915550}
   - component: {fileID: 1529915552}
   - component: {fileID: 1529915551}
+  - component: {fileID: 1529915553}
   m_Layer: 5
   m_Name: Boite
   m_TagString: Untagged
@@ -54276,6 +54680,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1529915549}
   m_CullTransparentMesh: 1
+--- !u!114 &1529915553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1529915549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44b44e9a741eeaf45b68049c073b1556, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1533601407
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -54557,6 +54973,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a65c853e895ee240a6f873e143d2c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fruit: {fileID: 1597447872277026323, guid: 3f1b9e3a9efac0146b0e616dab72daf0, type: 3}
   Canvas: {fileID: 254170883}
 --- !u!135 &1539410951
 SphereCollider:
@@ -55771,6 +56188,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a65c853e895ee240a6f873e143d2c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fruit: {fileID: 8186705383050258052, guid: b320233f79d705f44942500773a2ee87, type: 3}
   Canvas: {fileID: 254170883}
 --- !u!135 &1565214683
 SphereCollider:
@@ -55947,6 +56365,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a65c853e895ee240a6f873e143d2c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fruit: {fileID: 1597447872277026323, guid: 3f1b9e3a9efac0146b0e616dab72daf0, type: 3}
   Canvas: {fileID: 254170883}
 --- !u!135 &1574869750
 SphereCollider:
@@ -56052,6 +56471,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a65c853e895ee240a6f873e143d2c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fruit: {fileID: 3731209105362631546, guid: a24013af9c1692946b67d7fbd64c4ee6, type: 3}
   Canvas: {fileID: 254170883}
 --- !u!135 &1579418740
 SphereCollider:
@@ -56141,6 +56561,99 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1581085120}
   m_CullTransparentMesh: 1
+--- !u!1 &1582018446
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1582018447}
+  - component: {fileID: 1582018448}
+  m_Layer: 0
+  m_Name: Lumiere
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1582018447
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1582018446}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.0206, y: 0.1116, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 28757327}
+  m_RootOrder: 24
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!108 &1582018448
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1582018446}
+  m_Enabled: 1
+  serializedVersion: 10
+  m_Type: 2
+  m_Shape: 0
+  m_Color: {r: 0.98089784, g: 1, b: 0.4009434, a: 1}
+  m_Intensity: 1
+  m_Range: 3
+  m_SpotAngle: 30
+  m_InnerSpotAngle: 21.80208
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 4
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
 --- !u!1001 &1583073425
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -57859,6 +58372,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a65c853e895ee240a6f873e143d2c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fruit: {fileID: 3731209105362631546, guid: a24013af9c1692946b67d7fbd64c4ee6, type: 3}
   Canvas: {fileID: 254170883}
 --- !u!135 &1635926518
 SphereCollider:
@@ -57964,6 +58478,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a65c853e895ee240a6f873e143d2c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fruit: {fileID: 8186705383050258052, guid: b320233f79d705f44942500773a2ee87, type: 3}
   Canvas: {fileID: 254170883}
 --- !u!135 &1636925418
 SphereCollider:
@@ -58023,6 +58538,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a65c853e895ee240a6f873e143d2c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fruit: {fileID: 584691462861986545, guid: 815e10dd209f9f843b59e914646fdeff, type: 3}
   Canvas: {fileID: 254170883}
 --- !u!135 &1644472958
 SphereCollider:
@@ -58613,6 +59129,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a65c853e895ee240a6f873e143d2c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fruit: {fileID: 4273658600591002761, guid: 42e3875d20e50834593679dc176bdc96, type: 3}
   Canvas: {fileID: 254170883}
 --- !u!135 &1662141306
 SphereCollider:
@@ -59283,6 +59800,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a65c853e895ee240a6f873e143d2c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fruit: {fileID: 1597447872277026323, guid: 3f1b9e3a9efac0146b0e616dab72daf0, type: 3}
   Canvas: {fileID: 254170883}
 --- !u!135 &1694909260
 SphereCollider:
@@ -60592,6 +61110,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a65c853e895ee240a6f873e143d2c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fruit: {fileID: 3731209105362631546, guid: a24013af9c1692946b67d7fbd64c4ee6, type: 3}
   Canvas: {fileID: 254170883}
 --- !u!135 &1756205133
 SphereCollider:
@@ -60725,6 +61244,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a65c853e895ee240a6f873e143d2c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fruit: {fileID: 8186705383050258052, guid: b320233f79d705f44942500773a2ee87, type: 3}
   Canvas: {fileID: 254170883}
 --- !u!135 &1759190719
 SphereCollider:
@@ -61916,6 +62436,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a65c853e895ee240a6f873e143d2c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fruit: {fileID: 8186705383050258052, guid: b320233f79d705f44942500773a2ee87, type: 3}
   Canvas: {fileID: 254170883}
 --- !u!135 &1798345556
 SphereCollider:
@@ -66296,6 +66817,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a65c853e895ee240a6f873e143d2c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fruit: {fileID: 584691462861986545, guid: 815e10dd209f9f843b59e914646fdeff, type: 3}
   Canvas: {fileID: 254170883}
 --- !u!135 &1947227673
 SphereCollider:
@@ -67309,6 +67831,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a65c853e895ee240a6f873e143d2c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fruit: {fileID: 4273658600591002761, guid: 42e3875d20e50834593679dc176bdc96, type: 3}
   Canvas: {fileID: 254170883}
 --- !u!135 &1978153869
 SphereCollider:
@@ -67419,6 +67942,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a65c853e895ee240a6f873e143d2c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fruit: {fileID: 4273658600591002761, guid: 42e3875d20e50834593679dc176bdc96, type: 3}
   Canvas: {fileID: 254170883}
 --- !u!135 &1978783365
 SphereCollider:
@@ -67688,6 +68212,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a65c853e895ee240a6f873e143d2c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fruit: {fileID: 4273658600591002761, guid: 42e3875d20e50834593679dc176bdc96, type: 3}
   Canvas: {fileID: 254170883}
 --- !u!135 &1989390389
 SphereCollider:
@@ -69609,6 +70134,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a65c853e895ee240a6f873e143d2c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fruit: {fileID: 8186705383050258052, guid: b320233f79d705f44942500773a2ee87, type: 3}
   Canvas: {fileID: 254170883}
 --- !u!135 &2055628987
 SphereCollider:
@@ -71679,6 +72205,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a65c853e895ee240a6f873e143d2c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fruit: {fileID: 3731209105362631546, guid: a24013af9c1692946b67d7fbd64c4ee6, type: 3}
   Canvas: {fileID: 254170883}
 --- !u!135 &2133319566
 SphereCollider:
@@ -72106,6 +72633,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a65c853e895ee240a6f873e143d2c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fruit: {fileID: 584691462861986545, guid: 815e10dd209f9f843b59e914646fdeff, type: 3}
   Canvas: {fileID: 254170883}
 --- !u!135 &2141572308
 SphereCollider:

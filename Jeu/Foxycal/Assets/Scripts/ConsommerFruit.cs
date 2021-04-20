@@ -11,15 +11,11 @@ using UnityEngine;
 
 public class ConsommerFruit : MonoBehaviour
 {
-
-    // Si le personnage a un objet dans l'inventaire, ça disparait et ajuste la barre de faim
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Alpha1) && GetComponent<GestionInventaire>().rempli[0] == true)
+        if (Input.GetKeyDown(KeyCode.Alpha1))
         {
-            GetComponent<GestionInventaire>().rempli[0] = false;
-            GetComponent<barreDeFaimScript>().sliderFaim.value += 10f;
-            Destroy(RamasserFruit.fruit);
+            GetComponent<Boite>().detruireEnfant();
         }
     }
 }
