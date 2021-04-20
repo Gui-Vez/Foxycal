@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.6806765, g: 0.74878466, b: 0.8195164, a: 1}
+  m_IndirectSpecularColor: {r: 0.6806765, g: 0.74878466, b: 0.81951636, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2536,7 +2536,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a65c853e895ee240a6f873e143d2c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fruit: {fileID: 8186705383050258052, guid: b320233f79d705f44942500773a2ee87, type: 3}
   Canvas: {fileID: 254170883}
 --- !u!135 &75964187
 SphereCollider:
@@ -5832,7 +5831,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a65c853e895ee240a6f873e143d2c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fruit: {fileID: 4273658600591002761, guid: 42e3875d20e50834593679dc176bdc96, type: 3}
   Canvas: {fileID: 254170883}
 --- !u!135 &167680711
 SphereCollider:
@@ -6019,7 +6017,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a65c853e895ee240a6f873e143d2c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fruit: {fileID: 4273658600591002761, guid: 42e3875d20e50834593679dc176bdc96, type: 3}
   Canvas: {fileID: 254170883}
 --- !u!135 &169194420
 SphereCollider:
@@ -6379,7 +6376,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a65c853e895ee240a6f873e143d2c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fruit: {fileID: 3731209105362631546, guid: a24013af9c1692946b67d7fbd64c4ee6, type: 3}
   Canvas: {fileID: 254170883}
 --- !u!135 &180185297
 SphereCollider:
@@ -7090,7 +7086,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a65c853e895ee240a6f873e143d2c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fruit: {fileID: 8186705383050258052, guid: b320233f79d705f44942500773a2ee87, type: 3}
   Canvas: {fileID: 254170883}
 --- !u!135 &207316523
 SphereCollider:
@@ -7864,7 +7859,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a65c853e895ee240a6f873e143d2c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fruit: {fileID: 584691462861986545, guid: 815e10dd209f9f843b59e914646fdeff, type: 3}
   Canvas: {fileID: 254170883}
 --- !u!135 &224822739
 SphereCollider:
@@ -9381,7 +9375,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a65c853e895ee240a6f873e143d2c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fruit: {fileID: 4273658600591002761, guid: 42e3875d20e50834593679dc176bdc96, type: 3}
   Canvas: {fileID: 254170883}
 --- !u!135 &257119257
 SphereCollider:
@@ -10673,7 +10666,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a65c853e895ee240a6f873e143d2c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fruit: {fileID: 1597447872277026323, guid: 3f1b9e3a9efac0146b0e616dab72daf0, type: 3}
   Canvas: {fileID: 254170883}
 --- !u!135 &288608534
 SphereCollider:
@@ -11957,7 +11949,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a65c853e895ee240a6f873e143d2c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fruit: {fileID: 4273658600591002761, guid: 42e3875d20e50834593679dc176bdc96, type: 3}
   Canvas: {fileID: 254170883}
 --- !u!135 &322736096
 SphereCollider:
@@ -13534,7 +13525,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a65c853e895ee240a6f873e143d2c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fruit: {fileID: 4273658600591002761, guid: 42e3875d20e50834593679dc176bdc96, type: 3}
   Canvas: {fileID: 254170883}
 --- !u!135 &365069340
 SphereCollider:
@@ -17241,7 +17231,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a65c853e895ee240a6f873e143d2c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fruit: {fileID: 3731209105362631546, guid: a24013af9c1692946b67d7fbd64c4ee6, type: 3}
   Canvas: {fileID: 254170883}
 --- !u!135 &432718513
 SphereCollider:
@@ -18730,7 +18719,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a65c853e895ee240a6f873e143d2c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fruit: {fileID: 3731209105362631546, guid: a24013af9c1692946b67d7fbd64c4ee6, type: 3}
   Canvas: {fileID: 254170883}
 --- !u!135 &476045989
 SphereCollider:
@@ -24817,7 +24805,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a65c853e895ee240a6f873e143d2c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fruit: {fileID: 584691462861986545, guid: 815e10dd209f9f843b59e914646fdeff, type: 3}
   Canvas: {fileID: 254170883}
 --- !u!135 &621552222
 SphereCollider:
@@ -25137,7 +25124,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a65c853e895ee240a6f873e143d2c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fruit: {fileID: 8186705383050258052, guid: b320233f79d705f44942500773a2ee87, type: 3}
   Canvas: {fileID: 254170883}
 --- !u!1 &636338953 stripped
 GameObject:
@@ -26621,7 +26607,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a65c853e895ee240a6f873e143d2c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fruit: {fileID: 4273658600591002761, guid: 42e3875d20e50834593679dc176bdc96, type: 3}
   Canvas: {fileID: 254170883}
 --- !u!135 &673081331
 SphereCollider:
@@ -28375,7 +28360,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a65c853e895ee240a6f873e143d2c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fruit: {fileID: 1597447872277026323, guid: 3f1b9e3a9efac0146b0e616dab72daf0, type: 3}
   Canvas: {fileID: 254170883}
 --- !u!135 &761620593
 SphereCollider:
@@ -29157,7 +29141,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a65c853e895ee240a6f873e143d2c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fruit: {fileID: 584691462861986545, guid: 815e10dd209f9f843b59e914646fdeff, type: 3}
   Canvas: {fileID: 254170883}
 --- !u!135 &786178876
 SphereCollider:
@@ -30385,7 +30368,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a65c853e895ee240a6f873e143d2c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fruit: {fileID: 1597447872277026323, guid: 3f1b9e3a9efac0146b0e616dab72daf0, type: 3}
   Canvas: {fileID: 254170883}
 --- !u!135 &831989759
 SphereCollider:
@@ -30616,7 +30598,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a65c853e895ee240a6f873e143d2c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fruit: {fileID: 584691462861986545, guid: 815e10dd209f9f843b59e914646fdeff, type: 3}
   Canvas: {fileID: 254170883}
 --- !u!135 &835641295
 SphereCollider:
@@ -31489,7 +31470,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a65c853e895ee240a6f873e143d2c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fruit: {fileID: 3731209105362631546, guid: a24013af9c1692946b67d7fbd64c4ee6, type: 3}
   Canvas: {fileID: 254170883}
 --- !u!135 &875450789
 SphereCollider:
@@ -33642,7 +33622,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a65c853e895ee240a6f873e143d2c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fruit: {fileID: 1597447872277026323, guid: 3f1b9e3a9efac0146b0e616dab72daf0, type: 3}
   Canvas: {fileID: 254170883}
 --- !u!135 &922300303
 SphereCollider:
@@ -35304,7 +35283,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a65c853e895ee240a6f873e143d2c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fruit: {fileID: 3731209105362631546, guid: a24013af9c1692946b67d7fbd64c4ee6, type: 3}
   Canvas: {fileID: 254170883}
 --- !u!135 &986591730
 SphereCollider:
@@ -35988,6 +35966,7 @@ GameObject:
   - component: {fileID: 1007259792}
   - component: {fileID: 1007259793}
   - component: {fileID: 1007259794}
+  - component: {fileID: 1007259795}
   m_Layer: 20
   m_Name: Fox Principal
   m_TagString: Player
@@ -36165,6 +36144,18 @@ MonoBehaviour:
   faimMax: 100
   faim: 0
   sliderFaim: {fileID: 293686250}
+--- !u!114 &1007259795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1007259784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebb9861b8284de047b6f41f14b54e338, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1010500819 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 149186, guid: 6c7e01809ee343847a660faeaa78d718, type: 3}
@@ -36836,7 +36827,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a65c853e895ee240a6f873e143d2c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fruit: {fileID: 584691462861986545, guid: 815e10dd209f9f843b59e914646fdeff, type: 3}
   Canvas: {fileID: 254170883}
 --- !u!135 &1032862858
 SphereCollider:
@@ -38894,7 +38884,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a65c853e895ee240a6f873e143d2c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fruit: {fileID: 8186705383050258052, guid: b320233f79d705f44942500773a2ee87, type: 3}
   Canvas: {fileID: 254170883}
 --- !u!135 &1097154153
 SphereCollider:
@@ -41145,7 +41134,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a65c853e895ee240a6f873e143d2c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fruit: {fileID: 4273658600591002761, guid: 42e3875d20e50834593679dc176bdc96, type: 3}
   Canvas: {fileID: 254170883}
 --- !u!135 &1151283921
 SphereCollider:
@@ -43692,7 +43680,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a65c853e895ee240a6f873e143d2c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fruit: {fileID: 1597447872277026323, guid: 3f1b9e3a9efac0146b0e616dab72daf0, type: 3}
   Canvas: {fileID: 254170883}
 --- !u!135 &1199839926
 SphereCollider:
@@ -43923,7 +43910,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a65c853e895ee240a6f873e143d2c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fruit: {fileID: 3731209105362631546, guid: a24013af9c1692946b67d7fbd64c4ee6, type: 3}
   Canvas: {fileID: 254170883}
 --- !u!135 &1218307995
 SphereCollider:
@@ -50567,7 +50553,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a65c853e895ee240a6f873e143d2c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fruit: {fileID: 584691462861986545, guid: 815e10dd209f9f843b59e914646fdeff, type: 3}
   Canvas: {fileID: 254170883}
 --- !u!135 &1439193420
 SphereCollider:
@@ -52982,7 +52967,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a65c853e895ee240a6f873e143d2c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fruit: {fileID: 1597447872277026323, guid: 3f1b9e3a9efac0146b0e616dab72daf0, type: 3}
   Canvas: {fileID: 254170883}
 --- !u!135 &1487538683
 SphereCollider:
@@ -54560,7 +54544,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a65c853e895ee240a6f873e143d2c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fruit: {fileID: 1597447872277026323, guid: 3f1b9e3a9efac0146b0e616dab72daf0, type: 3}
   Canvas: {fileID: 254170883}
 --- !u!135 &1539410951
 SphereCollider:
@@ -55775,7 +55758,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a65c853e895ee240a6f873e143d2c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fruit: {fileID: 8186705383050258052, guid: b320233f79d705f44942500773a2ee87, type: 3}
   Canvas: {fileID: 254170883}
 --- !u!135 &1565214683
 SphereCollider:
@@ -55952,7 +55934,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a65c853e895ee240a6f873e143d2c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fruit: {fileID: 1597447872277026323, guid: 3f1b9e3a9efac0146b0e616dab72daf0, type: 3}
   Canvas: {fileID: 254170883}
 --- !u!135 &1574869750
 SphereCollider:
@@ -56058,7 +56039,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a65c853e895ee240a6f873e143d2c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fruit: {fileID: 3731209105362631546, guid: a24013af9c1692946b67d7fbd64c4ee6, type: 3}
   Canvas: {fileID: 254170883}
 --- !u!135 &1579418740
 SphereCollider:
@@ -57866,7 +57846,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a65c853e895ee240a6f873e143d2c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fruit: {fileID: 3731209105362631546, guid: a24013af9c1692946b67d7fbd64c4ee6, type: 3}
   Canvas: {fileID: 254170883}
 --- !u!135 &1635926518
 SphereCollider:
@@ -57972,7 +57951,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a65c853e895ee240a6f873e143d2c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fruit: {fileID: 8186705383050258052, guid: b320233f79d705f44942500773a2ee87, type: 3}
   Canvas: {fileID: 254170883}
 --- !u!135 &1636925418
 SphereCollider:
@@ -58032,7 +58010,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a65c853e895ee240a6f873e143d2c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fruit: {fileID: 584691462861986545, guid: 815e10dd209f9f843b59e914646fdeff, type: 3}
   Canvas: {fileID: 254170883}
 --- !u!135 &1644472958
 SphereCollider:
@@ -58623,7 +58600,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a65c853e895ee240a6f873e143d2c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fruit: {fileID: 4273658600591002761, guid: 42e3875d20e50834593679dc176bdc96, type: 3}
   Canvas: {fileID: 254170883}
 --- !u!135 &1662141306
 SphereCollider:
@@ -59294,7 +59270,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a65c853e895ee240a6f873e143d2c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fruit: {fileID: 1597447872277026323, guid: 3f1b9e3a9efac0146b0e616dab72daf0, type: 3}
   Canvas: {fileID: 254170883}
 --- !u!135 &1694909260
 SphereCollider:
@@ -60604,7 +60579,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a65c853e895ee240a6f873e143d2c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fruit: {fileID: 3731209105362631546, guid: a24013af9c1692946b67d7fbd64c4ee6, type: 3}
   Canvas: {fileID: 254170883}
 --- !u!135 &1756205133
 SphereCollider:
@@ -60738,7 +60712,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a65c853e895ee240a6f873e143d2c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fruit: {fileID: 8186705383050258052, guid: b320233f79d705f44942500773a2ee87, type: 3}
   Canvas: {fileID: 254170883}
 --- !u!135 &1759190719
 SphereCollider:
@@ -61930,7 +61903,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a65c853e895ee240a6f873e143d2c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fruit: {fileID: 8186705383050258052, guid: b320233f79d705f44942500773a2ee87, type: 3}
   Canvas: {fileID: 254170883}
 --- !u!135 &1798345556
 SphereCollider:
@@ -66311,7 +66283,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a65c853e895ee240a6f873e143d2c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fruit: {fileID: 584691462861986545, guid: 815e10dd209f9f843b59e914646fdeff, type: 3}
   Canvas: {fileID: 254170883}
 --- !u!135 &1947227673
 SphereCollider:
@@ -67325,7 +67296,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a65c853e895ee240a6f873e143d2c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fruit: {fileID: 4273658600591002761, guid: 42e3875d20e50834593679dc176bdc96, type: 3}
   Canvas: {fileID: 254170883}
 --- !u!135 &1978153869
 SphereCollider:
@@ -67436,7 +67406,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a65c853e895ee240a6f873e143d2c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fruit: {fileID: 4273658600591002761, guid: 42e3875d20e50834593679dc176bdc96, type: 3}
   Canvas: {fileID: 254170883}
 --- !u!135 &1978783365
 SphereCollider:
@@ -67706,7 +67675,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a65c853e895ee240a6f873e143d2c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fruit: {fileID: 4273658600591002761, guid: 42e3875d20e50834593679dc176bdc96, type: 3}
   Canvas: {fileID: 254170883}
 --- !u!135 &1989390389
 SphereCollider:
@@ -69628,7 +69596,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a65c853e895ee240a6f873e143d2c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fruit: {fileID: 8186705383050258052, guid: b320233f79d705f44942500773a2ee87, type: 3}
   Canvas: {fileID: 254170883}
 --- !u!135 &2055628987
 SphereCollider:
@@ -71699,7 +71666,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a65c853e895ee240a6f873e143d2c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fruit: {fileID: 3731209105362631546, guid: a24013af9c1692946b67d7fbd64c4ee6, type: 3}
   Canvas: {fileID: 254170883}
 --- !u!135 &2133319566
 SphereCollider:
@@ -72127,7 +72093,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a65c853e895ee240a6f873e143d2c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fruit: {fileID: 584691462861986545, guid: 815e10dd209f9f843b59e914646fdeff, type: 3}
   Canvas: {fileID: 254170883}
 --- !u!135 &2141572308
 SphereCollider:

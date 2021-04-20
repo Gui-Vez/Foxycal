@@ -8,7 +8,7 @@ public class RamasserFruit : MonoBehaviour
     /// Description : Script qui permet au renard de ramasser les fruits
 
     private GestionInventaire inventaire;
-    public GameObject fruit;
+    public static GameObject fruit;
     public GameObject Canvas;
 
     void Start()

@@ -18,8 +18,8 @@ public class ConsommerFruit : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Alpha1) && GetComponent<GestionInventaire>().rempli[0] == true)
         {
             GetComponent<GestionInventaire>().rempli[0] = false;
-            // GetComponent<barreDeFaimScript>().sliderFaim.value = 10f;
-            // Destroy(GetComponent<RamasserFruit>().fruit);
+            GetComponent<barreDeFaimScript>().sliderFaim.value += 10f;
+            Destroy(RamasserFruit.fruit);
         }
     }
 }
