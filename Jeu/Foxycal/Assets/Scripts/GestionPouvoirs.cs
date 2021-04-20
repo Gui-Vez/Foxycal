@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GestionPouvoirs : MonoBehaviour
 {
@@ -19,6 +20,28 @@ public class GestionPouvoirs : MonoBehaviour
 
     public float vitessePouvoirT;
     public float dureePouvoirT;
+
+    public Image FondPouvoir1;
+    public Image FondPouvoir2;
+    public Image FondPouvoir3;
+
+    public float TempsPouvoir1 = 5;
+    public float TempsPouvoir2 = 8;
+    public float TempsPouvoir3 = 13;
+
+
+    void Start()
+    {
+        // Remettre la valeur du fond à 0 pour le rendre vide
+        FondPouvoir1.fillAmount = 0;
+        FondPouvoir2.fillAmount = 0;
+        FondPouvoir3.fillAmount = 0;
+    }
+
+    void Update()
+    {
+        FondPouvoir3.fillAmount += 0.01f;
+    }
 
     public IEnumerator LancerPouvoir(string Pouvoir)
     {
