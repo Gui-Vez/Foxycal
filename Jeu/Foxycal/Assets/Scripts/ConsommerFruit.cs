@@ -13,9 +13,11 @@ public class ConsommerFruit : MonoBehaviour
 {
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Alpha1))
+        if (Input.GetKeyDown(KeyCode.Alpha1) && GetComponent<GestionInventaire>().rempli[0] == true)
         {
+            GetComponent<GestionInventaire>().rempli[0] = false;
             GetComponent<Boite>().detruireEnfant();
+            print("haha");
         }
     }
 }
