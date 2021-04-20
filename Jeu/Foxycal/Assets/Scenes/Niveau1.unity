@@ -27550,6 +27550,7 @@ GameObject:
   - component: {fileID: 720522196}
   - component: {fileID: 720522195}
   - component: {fileID: 720522194}
+  - component: {fileID: 720522198}
   m_Layer: 0
   m_Name: Prefab Comete
   m_TagString: Pouvoir
@@ -27595,10 +27596,10 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 720522192}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1.5
+  m_Radius: 0.7
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &720522196
 MeshRenderer:
@@ -27649,6 +27650,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 720522192}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &720522198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 720522192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eab17d9d50cd1f540bee79c02e79554f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RefPouvoirR: {fileID: 789204442}
 --- !u!1001 &720923750
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -36087,7 +36101,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RefPouvoirLMC: {fileID: 431062973}
   RefPouvoirE: {fileID: 1080930569}
-  RefPouvoirR: {fileID: 789204442}
   RefPouvoirT: {fileID: 880782489}
   RefComete: {fileID: 720522192}
   vitessePouvoirT: 10
