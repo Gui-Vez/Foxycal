@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
+
 
 public class menuPause : MonoBehaviour
 {
@@ -8,8 +10,7 @@ public class menuPause : MonoBehaviour
     public GameObject leMenuPause;
     public GameObject lePivot;
     public GameObject cameraPause;
-    public GameObject barreFaim;
-    public GameObject barrevie;
+    public AudioMixer niveauSon;
     // Start is called before the first frame update
     void Start()
     {
@@ -50,5 +51,10 @@ public class menuPause : MonoBehaviour
         lePivot.SetActive(false);
         cameraPause.SetActive(true);
         Cursor.lockState = CursorLockMode.None;
+    }
+
+    public void controleAudio(float audio)
+    {
+        niveauSon.SetFloat("niveauAudio", audio);
     }
 }
