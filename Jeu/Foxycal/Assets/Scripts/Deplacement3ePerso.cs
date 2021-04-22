@@ -63,7 +63,7 @@ public class Deplacement3ePerso : MonoBehaviour
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
 
-        Vector3 deplacement = cam3ePerso.transform.forward * vertical​ + cam3ePerso.transform.right * horizontal;
+        Vector3 deplacement = cam3ePerso.transform.forward * vertical + cam3ePerso.transform.right * horizontal;
 
         deplacement.y = 0;
 

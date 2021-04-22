@@ -36868,7 +36868,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: 7c05beb634bfdce4092d676300bd461d, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 1
-  m_ApplyRootMotion: 1
+  m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
@@ -36933,7 +36933,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85f3f1fb0cd367c49813a2da21a0ca1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vitesse: 10
+  vitesse: 6
   forceSaut: 2.5
   isGrounded: 0
   saut: {x: 0, y: 0, z: 0}

@@ -2317,7 +2317,7 @@ MonoBehaviour:
   cam3ePerso: {fileID: 308230570}
   positionRayCastCam: {fileID: 1295105494}
   hauteurPivot: 0.665
-  distanceCamLoin: -1
+  distanceCamLoin: -2
   distanceCamProche: -0.5
   rotationVert: 0
 --- !u!4 &997208207
@@ -2891,7 +2891,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1373570605
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3009,6 +3009,7 @@ GameObject:
   - component: {fileID: 1509619498}
   - component: {fileID: 1509619499}
   - component: {fileID: 1509619500}
+  - component: {fileID: 1509619501}
   m_Layer: 2
   m_Name: Fox Principal
   m_TagString: Player
@@ -3057,9 +3058,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vitesse: 10
-  forceSaut: 2.5
+  forceSaut: 1
   isGrounded: 0
-  saut: {x: 0, y: 0, z: 0}
+  saut: {x: 0, y: 2, z: 0}
   pivotVide: {fileID: 997208205}
   cam3ePerso: {fileID: 308230570}
 --- !u!54 &1509619495
@@ -3086,12 +3087,12 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1509619491}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: b4dc3c74541def84191303ea727d9a51, type: 3}
   m_Controller: {fileID: 9100000, guid: 7c05beb634bfdce4092d676300bd461d, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 1
-  m_ApplyRootMotion: 1
+  m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
@@ -3163,6 +3164,21 @@ MonoBehaviour:
   faimMax: 100
   faim: 0
   sliderFaim: {fileID: 1130932454}
+--- !u!114 &1509619501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1509619491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 668f28305d799ec46a4709d8c122c915, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TempsE: 0
+  TempsR: 0
+  TempsT: 0
 --- !u!1 &1639260521
 GameObject:
   m_ObjectHideFlags: 0
@@ -3848,7 +3864,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 37.8}
+  m_AnchoredPosition: {x: 0, y: 37.80005}
   m_SizeDelta: {x: 1024, y: 128}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1953437871
