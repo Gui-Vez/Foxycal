@@ -65,6 +65,9 @@ public class CollisionAttaque : MonoBehaviour
             // Enlever le set destination
             GetComponent<NavMeshAgent>().isStopped = true;
 
+            // Incrémenter le score
+            GestionScore.score++;
+
             // Enlever l'ennemi après un délai
             Invoke("EnleverEnnemi", 2.5f);
         }

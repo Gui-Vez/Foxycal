@@ -107,13 +107,6 @@ public class GestionAnimations : MonoBehaviour
         // Si l'on touche n'importe quelle touche du clavier ET que le renard n'agit pas,
         if (Input.anyKeyDown && !action)
         {
-            // Si une attaque n'est pas en cours,
-            if (!attaque)
-            {
-                // Touche des attaques
-                if (LMC) StartCoroutine(GestionAttaques("LMC"));
-            }
-
             // Si le renard n'est pas en train de manger,
             if (!manger)
             {
@@ -121,9 +114,23 @@ public class GestionAnimations : MonoBehaviour
                 if (RMC) StartCoroutine(GestionAttaques("RMC"));
             }
 
+            // Si le renard ne saute pas,
+            if (!saute)
+            {
+                // Touche du saut
+                if (Space) StartCoroutine(GestionAttaques("Space"));
+            }
+
             // Si c'est la nuit,
             if (CycleJour.tempsJournee)
             {
+                // Si une attaque n'est pas en cours,
+                if (!attaque)
+                {
+                    // Touche des attaques
+                    if (LMC) StartCoroutine(GestionAttaques("LMC"));
+                }
+
                 // Si un pouvoir n'est pas activé,
                 if (!pouvoirE)
                 {
@@ -144,13 +151,6 @@ public class GestionAnimations : MonoBehaviour
                     // Touches des pouvoirs
                     if (T) StartCoroutine(GestionAttaques("T"));
                 }
-            }
-
-            // Si le renard ne saute pas,
-            if (!saute)
-            {
-                // Touche du saut
-                if (Space) StartCoroutine(GestionAttaques("Space"));
             }
         }
     }

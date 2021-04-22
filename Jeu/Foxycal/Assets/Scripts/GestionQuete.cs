@@ -14,6 +14,7 @@ public class GestionQuete : MonoBehaviour
     public List<int> listeNombreMaxQuete;
     public GameObject portail;
     public static bool portailOuvert;
+    public GameObject[] Lanternes;
 
     void Update()
     {
@@ -43,11 +44,21 @@ public class GestionQuete : MonoBehaviour
             listeNombreQuete[numero]++;
         }
 
-        if(listeNombreMaxQuete[numero] == listeNombreQuete[numero])
+        // Si la quête touche à son maximum,
+        if (listeNombreQuete[numero] == listeNombreMaxQuete[numero])
         {
+            // Ouvrir le portail
             portailOuvert = true;
+
+            // Changer la couleur du portail pour être vert
             portail.GetComponent<Renderer>().material.color = Color.green;
 
+            // Pour chaque lanterne du portail,
+            foreach (GameObject lanterne in Lanternes)
+            {
+                // Activer la lumière de la lanterne
+                lanterne.GetComponent<Light>().enabled = true;
+            }
         }
 
     }

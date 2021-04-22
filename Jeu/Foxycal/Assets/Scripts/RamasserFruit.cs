@@ -37,6 +37,9 @@ public class RamasserFruit : MonoBehaviour
                     // Augmenter le numéro de la quête
                     Canvas.GetComponent<GestionQuete>().AugmenterNumeroQuete(1);
 
+                    // Augmenter le score
+                    GestionScore.score++;
+
                     // Détruire l'objet
                     Destroy(gameObject);
 
