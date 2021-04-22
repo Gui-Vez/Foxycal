@@ -428,6 +428,96 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &545306303
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 545306304}
+  - component: {fileID: 545306306}
+  - component: {fileID: 545306305}
+  m_Layer: 5
+  m_Name: Histoire_Test
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &545306304
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 545306303}
+  m_LocalRotation: {x: 0, y: -0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.26085335, y: -0.019113375, z: 0.26085335}
+  m_Children: []
+  m_Father: {fileID: 1871805103}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 126.665955, y: -12.29216}
+  m_SizeDelta: {x: 598.2459, y: 36.5737}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &545306305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 545306303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 3d0ea8ba2476f7a49a93dc13c39a78be, type: 3}
+    m_FontSize: 37
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 76
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 1
+    m_LineSpacing: 1.21
+  m_Text: "Les rayons du soleil se font capturer par la peau et la fourrure du renard,
+    se transmettant en joie et en essence de premi\xE8re conscience humaine aux animaux,
+    partout dans le corps. Ces renards ont \xE9t\xE9 plac\xE9s dans un autre endroit
+    de la plan\xE8te pour voir comment ils allaient se comporter, et pour voir s\u2019ils
+    \xE9taient capable de d\xE9velopper une civilisation semblable \xE0 celle des
+    humains. Ce que l\u2019organisation FOX-ADN ne savaient pas, c\u2019\xE9tait
+    que la nuit, l\u2019absence de lumi\xE8re causait l\u2019agressivit\xE9, for\xE7ant
+    les renards \xE0 se transformer en b\xEAte sauvage, attaquant tous ceux qui ne
+    brillent pas comme eux la nuit. Il faut donc d\u2019autres renards normaux \xE9tant
+    capables de se d\xE9fendre et d\u2019absorber la radiation magique pour an\xE9antir
+    ces b\xEAtes et mettre fin \xE0 l\u2019exp\xE9rimentation. Vous avez r\xE9ussi
+    / \xE9chou\xE9.\n"
+--- !u!222 &545306306
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 545306303}
+  m_CullTransparentMesh: 1
 --- !u!1 &616528501
 GameObject:
   m_ObjectHideFlags: 0
@@ -1928,6 +2018,7 @@ RectTransform:
   m_LocalScale: {x: 1.4017026, y: -19.13, z: 1.4017026}
   m_Children:
   - {fileID: 235245134}
+  - {fileID: 545306304}
   m_Father: {fileID: 1110514153}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

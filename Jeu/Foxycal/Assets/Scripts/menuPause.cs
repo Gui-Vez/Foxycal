@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
+using UnityEngine.SceneManagement;
 
 
 public class menuPause : MonoBehaviour
@@ -41,6 +42,18 @@ public class menuPause : MonoBehaviour
         lePivot.SetActive(true);
         cameraPause.SetActive(false);
         Cursor.lockState = CursorLockMode.Locked;
+        AudioSource audio = GetComponent<AudioSource>();
+        audio.Play();
+    }
+
+    public void retourMenu()
+    {
+        SceneManager.LoadScene("Intro");
+        Time.timeScale = 1f;
+        AudioSource audio = GetComponent<AudioSource>();
+        audio.Play();
+        enPause = false;
+        leMenuPause.SetActive(false);
     }
 
     void Pause()
