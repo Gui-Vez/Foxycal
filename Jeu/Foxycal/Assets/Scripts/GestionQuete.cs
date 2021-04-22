@@ -12,6 +12,8 @@ public class GestionQuete : MonoBehaviour
     public List<Text> listeNomsQuetes;
     public List<int> listeNombreQuete;
     public List<int> listeNombreMaxQuete;
+    public GameObject portail;
+    public static bool portailOuvert;
 
     void Update()
     {
@@ -28,6 +30,8 @@ public class GestionQuete : MonoBehaviour
                 listeNomsQuetes[i].text += " (" + listeNombreQuete[i] + "/" + listeNombreMaxQuete[i] + " )";
             }
         }
+        
+
     }
 
     public void AugmenterNumeroQuete(int numero)
@@ -38,5 +42,14 @@ public class GestionQuete : MonoBehaviour
             // Augmenter le numero de la quête
             listeNombreQuete[numero]++;
         }
+
+        if(listeNombreMaxQuete[numero] == listeNombreQuete[numero])
+        {
+            print(":)");
+            portailOuvert = true;
+            portail.GetComponent<Renderer>().material.color = Color.green;
+
+        }
+
     }
 }

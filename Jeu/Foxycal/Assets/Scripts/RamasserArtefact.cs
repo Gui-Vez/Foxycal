@@ -8,6 +8,7 @@ public class RamasserArtefact : MonoBehaviour
     /// Description : Script qui permet au renard de ramasser les atréfacts
 
     public GameObject Canvas;
+    public GameObject portailActive;
 
     void OnTriggerEnter(Collider other)
     {

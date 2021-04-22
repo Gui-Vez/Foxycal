@@ -89,10 +89,10 @@ public class Deplacement3ePerso : MonoBehaviour
         }
     }
 
-    void OnCollisionEnter(Collision collision)
+    public void OnCollisionEnter(Collision collision)
     {
         // Si le portail entre en contact avec le renard,
-        if (collision.gameObject.name == "portail")
+        if (collision.gameObject.name == "portail" && GestionQuete.portailOuvert == true)
         {
             fin = true;
             print("portail touché");

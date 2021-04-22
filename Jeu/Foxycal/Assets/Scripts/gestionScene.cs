@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class gestionScene : MonoBehaviour
 {
     public GameObject Canvas;
-    public GameObject SonPortail;
+    public AudioClip SonPortail;
     public Animator transition;
     public float tempsTransition = 1f;
     public bool chargerFinFait = false;
@@ -14,16 +14,18 @@ public class gestionScene : MonoBehaviour
     /// Description : Gère les évènements au clic des boutons "Jouer" et "Quitter", ainsi que les transitions de scène.
 
 
+    public void Start()
+    {
+        
+    }
     void Update()
     {
-        if (chargerFinFait == false && Deplacement3ePerso.fin == true) //Charger la scène de fin
+        if (chargerFinFait == false && Deplacement3ePerso.fin == true && GestionQuete.portailOuvert == true) //Charger la scène de fin
         {
-            chargerFinFait = true;
-            Deplacement3ePerso.fin = false;
-            print("Chargement de la scène de fin");
-            StartCoroutine(ChargerNiveau(SceneManager.GetActiveScene().buildIndex + 1));
-            Cursor.lockState = CursorLockMode.None;
-            SonPortail.SetActive(true);
+            Invoke("ProchainNiveau", 4f);
+            GestionQuete.portailOuvert = false;
+            GetComponent<AudioSource>().PlayOneShot(SonPortail);
+            
         }
     }
 
@@ -48,6 +50,14 @@ public class gestionScene : MonoBehaviour
         Application.Quit();
         AudioSource audio = GetComponent<AudioSource>();
         audio.Play(); // Son au clic des boutons
+    }
+
+    public void ProchainNiveau()
+    {
+        chargerFinFait = true;
+        Deplacement3ePerso.fin = false;
+        StartCoroutine(ChargerNiveau(SceneManager.GetActiveScene().buildIndex + 1));
+        Cursor.lockState = CursorLockMode.None;
     }
 
     IEnumerator ChargerNiveau(int indexNiveau) //Charge le prochain niveau, et fait la transition de scène
