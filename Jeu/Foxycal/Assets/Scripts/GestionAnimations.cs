@@ -40,7 +40,9 @@ public class GestionAnimations : MonoBehaviour
     // Liste des actions
     bool action;
     bool attaque;
-    bool pouvoir;
+    bool pouvoirE;
+    bool pouvoirR;
+    bool pouvoirT;
     bool manger;
     bool saute;
 
@@ -119,13 +121,29 @@ public class GestionAnimations : MonoBehaviour
                 if (RMC) StartCoroutine(GestionAttaques("RMC"));
             }
 
-            // Si un pouvoir n'est pas activé,
-            if (!pouvoir)
+            // Si c'est la nuit,
+            if (CycleJour.tempsJournee)
             {
-                // Touches des pouvoirs
-                if (E) StartCoroutine(GestionAttaques("E"));
-                if (R) StartCoroutine(GestionAttaques("R"));
-                if (T) StartCoroutine(GestionAttaques("T"));
+                // Si un pouvoir n'est pas activé,
+                if (!pouvoirE)
+                {
+                    // Touches des pouvoirs
+                    if (E) StartCoroutine(GestionAttaques("E"));
+                }
+
+                // Si un pouvoir n'est pas activé,
+                if (!pouvoirR)
+                {
+                    // Touches des pouvoirs
+                    if (R) StartCoroutine(GestionAttaques("R"));
+                }
+
+                // Si un pouvoir n'est pas activé,
+                if (!pouvoirT)
+                {
+                    // Touches des pouvoirs
+                    if (T) StartCoroutine(GestionAttaques("T"));
+                }
             }
 
             // Si le renard ne saute pas,
@@ -255,7 +273,10 @@ public class GestionAnimations : MonoBehaviour
             case "E":
 
                 // Le renard envoie un pouvoir
-                pouvoir = true;
+                pouvoirE = true;
+
+                // Vider la barre du pouvoir 1
+                GetComponent<GestionPouvoirs>().ViderPouvoir(1);
 
                 // Activer l'animation de pouvoir
                 GetComponent<Animator>().SetBool("Pouvoir", true);
@@ -276,7 +297,7 @@ public class GestionAnimations : MonoBehaviour
                 yield return new WaitForSeconds(TempsE);
 
                 // Le renard n'agit plus
-                pouvoir = false;
+                pouvoirE = false;
 
                 break;
 
@@ -284,7 +305,10 @@ public class GestionAnimations : MonoBehaviour
             case "R":
 
                 // Le renard envoie un pouvoir
-                pouvoir = true;
+                pouvoirR = true;
+
+                // Vider la barre du pouvoir 2
+                GetComponent<GestionPouvoirs>().ViderPouvoir(2);
 
                 // Activer l'animation de pouvoir
                 GetComponent<Animator>().SetBool("Pouvoir", true);
@@ -305,7 +329,7 @@ public class GestionAnimations : MonoBehaviour
                 yield return new WaitForSeconds(TempsR);
 
                 // Le renard n'agit plus
-                pouvoir = false;
+                pouvoirR = false;
 
                 break;
 
@@ -313,7 +337,10 @@ public class GestionAnimations : MonoBehaviour
             case "T":
 
                 // Le renard envoie un pouvoir
-                pouvoir = true;
+                pouvoirT = true;
+
+                // Vider la barre du pouvoir 3
+                GetComponent<GestionPouvoirs>().ViderPouvoir(3);
 
                 // Activer l'animation de pouvoir
                 GetComponent<Animator>().SetBool("Pouvoir", true);
@@ -334,7 +361,7 @@ public class GestionAnimations : MonoBehaviour
                 yield return new WaitForSeconds(TempsT);
 
                 // Le renard n'agit plus
-                pouvoir = false;
+                pouvoirT = false;
 
                 break;
         }

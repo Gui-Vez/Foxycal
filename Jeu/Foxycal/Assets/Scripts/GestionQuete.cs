@@ -45,7 +45,6 @@ public class GestionQuete : MonoBehaviour
 
         if(listeNombreMaxQuete[numero] == listeNombreQuete[numero])
         {
-            print(":)");
             portailOuvert = true;
             portail.GetComponent<Renderer>().material.color = Color.green;
 
