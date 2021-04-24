@@ -9497,6 +9497,8 @@ MonoBehaviour:
   lePivot: {fileID: 291248739}
   cameraPause: {fileID: 628530658}
   niveauSon: {fileID: 24100000, guid: 15adc22c2aa73224eabb52e5341ce2b9, type: 2}
+  slider: {fileID: 471482954}
+  valeurSlider: 0
 --- !u!82 &254170890
 AudioSource:
   m_ObjectHideFlags: 0
@@ -19408,6 +19410,18 @@ MonoBehaviour:
       - m_Target: {fileID: 254170889}
         m_TargetAssemblyTypeName: menuPause, Assembly-CSharp
         m_MethodName: controleAudio
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 254170889}
+        m_TargetAssemblyTypeName: menuPause, Assembly-CSharp
+        m_MethodName: maintenirValeur
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
