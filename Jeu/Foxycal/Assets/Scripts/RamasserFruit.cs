@@ -22,6 +22,7 @@ public class RamasserFruit : MonoBehaviour
         // Si le trigger est le joueur,
         if (other.CompareTag("Player"))
         {
+            
             // En comptant chaque boite de l'inventaire,
             for (int i = 0; i < inventaire.boites.Length; i++)
             {
@@ -41,12 +42,23 @@ public class RamasserFruit : MonoBehaviour
                     GestionScore.score++;
 
                     // Détruire l'objet
-                    Destroy(gameObject);
+                    GetComponent<Collider>().enabled = false;
+                    Invoke("DetruireObjet", 0.25f); //Ajoute un court délai à la destruction de l'objet pour jouer le son
+
+                    AudioSource audio = GetComponent<AudioSource>();
+                    audio.Play();
+
+                    // Jouer le son
+
 
                     // Arrêter la boucle
                     break;
                 }
             }
         }
+    }
+    public void DetruireObjet()
+    {
+        Destroy(gameObject);
     }
 }

@@ -19,7 +19,15 @@ public class RamasserArtefact : MonoBehaviour
             Canvas.GetComponent<GestionQuete>().AugmenterNumeroQuete(0);
 
             // Détruire l'objet
-            Destroy(gameObject);
+            GetComponent<Collider>().enabled = false;
+            Invoke("DetruireObjet", 0.25f); //Ajoute un court délai à la destruction de l'objet pour jouer le son
+
+            AudioSource audio = GetComponent<AudioSource>();
+            audio.Play();
         }
+    }
+    public void DetruireObjet()
+    {
+        Destroy(gameObject);
     }
 }

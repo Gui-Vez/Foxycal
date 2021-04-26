@@ -29,12 +29,17 @@ public class CycleJour : MonoBehaviour
         if(lumiere.eulerAngles.x > 179) // Si la rotation de la lumière atteint cette valeur, la nuit est tombée.
         {
             tempsJournee = true; // True = la nuit est tombée.
-            slider.value -= vitesseSlider; // La vitesse du slider.
+            
             sonNuit.SetActive(true); // Active le son une seule fois la nuit.
             if (test)
             {
                 test = false;
                 StartCoroutine(cameraShake.Shake(.45f, .1f)); // Appeler une fonction dans la coroutine d'un autre script
+            }
+
+            if(menuPause.enPause == false)
+            {
+                slider.value -= vitesseSlider; // La vitesse du slider.
             }
             
 
@@ -42,9 +47,15 @@ public class CycleJour : MonoBehaviour
         else
         {
             tempsJournee = false; // False = c'est le jour.
-            slider.value += vitesseSlider;
+            
             sonNuit.SetActive(false);
             test = true;
+            if (menuPause.enPause == false)
+            {
+                slider.value += vitesseSlider;
+            }
+
+
         }
     }
 

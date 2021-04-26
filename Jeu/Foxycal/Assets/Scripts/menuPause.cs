@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -12,13 +11,11 @@ public class menuPause : MonoBehaviour
     public GameObject leMenuPause;
     public GameObject lePivot;
     public GameObject cameraPause;
-    public AudioMixer niveauSon;
-    public Slider slider;
-    public float valeurSlider;
+    
     // Start is called before the first frame update
     void Start()
     {
-        slider.value = PlayerPrefs.GetFloat("save", valeurSlider);
+        
     }
 
     // Update is called once per frame
@@ -69,14 +66,5 @@ public class menuPause : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
     }
 
-    public void controleAudio(float audio)
-    {
-        niveauSon.SetFloat("niveauAudio", audio);
-    }
-
-    public void maintenirValeur(float valeur)
-    {
-        valeurSlider = valeur;
-        PlayerPrefs.SetFloat("save", valeurSlider);
-    }
+    
 }

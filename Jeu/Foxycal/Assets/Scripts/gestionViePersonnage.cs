@@ -38,4 +38,14 @@ public class gestionViePersonnage : MonoBehaviour
         nbVie -= degat;
         barreDeVie.barreVieFixe(nbVie);
     }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "Ennemi" && CycleJour.tempsJournee == true)
+        {
+            prendDegats(1);
+            AudioSource audio = GetComponent<AudioSource>();
+            audio.Play();
+        }
+    }
 }
