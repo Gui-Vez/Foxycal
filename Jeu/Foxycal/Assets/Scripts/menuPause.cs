@@ -11,7 +11,11 @@ public class menuPause : MonoBehaviour
     public GameObject leMenuPause;
     public GameObject lePivot;
     public GameObject cameraPause;
-    
+    // public GameObject interfaceJoueur;
+    // public GameObject inventaire;
+    // public GameObject minimap;
+    // public GameObject score;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -44,6 +48,8 @@ public class menuPause : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         AudioSource audio = GetComponent<AudioSource>();
         audio.Play();
+       // interfaceJoueur.SetActive(true);
+      //  inventaire.SetActive(true);
     }
 
     public void retourMenu()
@@ -54,6 +60,7 @@ public class menuPause : MonoBehaviour
         audio.Play();
         enPause = false;
         leMenuPause.SetActive(false);
+
     }
 
     void Pause()
@@ -64,7 +71,10 @@ public class menuPause : MonoBehaviour
         lePivot.SetActive(false);
         cameraPause.SetActive(true);
         Cursor.lockState = CursorLockMode.None;
+        // interfaceJoueur.SetActive(false);
+        // inventaire.SetActive(false);
+
     }
 
-    
+
 }
