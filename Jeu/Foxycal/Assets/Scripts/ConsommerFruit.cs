@@ -11,13 +11,9 @@ using UnityEngine;
 
 public class ConsommerFruit : MonoBehaviour
 {
-    void Update()
+    public void consommerFruit()
     {
-        if (Input.GetKeyDown(KeyCode.Alpha1) && GetComponent<GestionInventaire>().rempli[0] == true)
-        {
-            GetComponent<GestionInventaire>().rempli[0] = false;
-            GetComponent<Boite>().detruireEnfant();
-            print("haha");
-        }
+        Destroy(gameObject);
+        gestionFaimPersonnage.faim += 10f;
     }
 }

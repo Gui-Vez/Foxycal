@@ -10,22 +10,42 @@ using UnityEngine;
  ****************************************************************************************************/
 public class InventaireApparition : MonoBehaviour
 {
-    public bool visible = true;
-    public GameObject Inventaire;
+    public GameObject inventaireMenu;
+    public bool ouvert;
+    void Start()
+    {
+        inventaireMenu.SetActive(false);
+    }
 
-    // Si l'inventaire est visible, le rendre invisible avec la touche 'I' et vice-versa 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.I) && visible == true)
+        if (Input.GetKeyDown(KeyCode.I))
         {
-            Inventaire.SetActive(false);
-            visible = false;
-        }
+            if (ouvert)
+            {
+                fermerInventaire();
+            }
 
-        else if (Input.GetKeyDown(KeyCode.I) && visible == false)
-        {
-            Inventaire.SetActive(true);
-            visible = true;
+            else
+            {
+                ouvrirInventaire();
+            }
         }
+    }
+
+    public void ouvrirInventaire()
+    {
+        inventaireMenu.SetActive(true);
+        ouvert = true;
+        Cursor.lockState = CursorLockMode.None;
+        Time.timeScale = 0f;
+    }
+
+    public void fermerInventaire()
+    {
+        inventaireMenu.SetActive(false);
+        ouvert = false;
+        Cursor.lockState = CursorLockMode.Locked;
+        Time.timeScale = 1f;
     }
 }

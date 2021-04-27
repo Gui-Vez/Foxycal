@@ -13,7 +13,7 @@ public class gestionFaimPersonnage : MonoBehaviour
 {
 
     public float faimMax = 100;
-    public float faim;
+    public static float faim;
     public barreDeFaimScript sliderFaim;
 
     // Start is called before the first frame update
