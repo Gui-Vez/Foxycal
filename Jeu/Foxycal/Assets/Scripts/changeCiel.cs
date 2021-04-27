@@ -27,7 +27,7 @@ public class changeCiel : MonoBehaviour
             lumiereNuit.SetActive(true);
             foreach (GameObject torche in torches)
             {
-                torche.SetActive(true);
+                //torche.SetActive(true);
             }
             
 
@@ -44,7 +44,7 @@ public class changeCiel : MonoBehaviour
             lumiereJour.GetComponent<Light>().intensity = 1f;
             foreach (GameObject torche in torches)
             {
-                torche.SetActive(false);
+                //torche.SetActive(false);
             }
         }
     }
