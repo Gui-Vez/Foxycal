@@ -9,7 +9,6 @@ public class menuPause : MonoBehaviour
 {
     public static bool enPause = false;
     public GameObject leMenuPause;
-    public GameObject lePivot;
     public GameObject cameraPause;
     // public GameObject interfaceJoueur;
     // public GameObject inventaire;
@@ -43,7 +42,6 @@ public class menuPause : MonoBehaviour
         Time.timeScale = 1f;
         leMenuPause.SetActive(false);
         enPause = false;
-        lePivot.SetActive(true);
         cameraPause.SetActive(false);
         Cursor.lockState = CursorLockMode.Locked;
         AudioSource audio = GetComponent<AudioSource>();
@@ -68,7 +66,6 @@ public class menuPause : MonoBehaviour
         Time.timeScale = 0f;
         leMenuPause.SetActive(true);
         enPause = true;
-        lePivot.SetActive(false);
         cameraPause.SetActive(true);
         Cursor.lockState = CursorLockMode.None;
         // interfaceJoueur.SetActive(false);

@@ -19,12 +19,12 @@ public class Boite : MonoBehaviour
             inventaire.rempli[i] = false;
         }
     }
-
-    public void detruireEnfant()
+    public void TomberItem()
     {
-        foreach (Transform child in transform)
+        foreach(Transform child in transform)
         {
-            DestroyImmediate(child.gameObject);
+            GameObject.Destroy(child.gameObject);
+            print("bye fruit");
         }
     }
 }

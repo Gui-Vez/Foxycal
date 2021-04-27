@@ -23,8 +23,7 @@ public class Deplacement3ePerso : MonoBehaviour
     // Accès de Rigidbody
     private Rigidbody rig;
 
-    // Variables pour la gestion de la caméra 3e personne
-    public GameObject pivotVide;
+    // Variable pour la gestion de la caméra 3e personne
     public GameObject cam3ePerso;
 
     //Variable pour charger détecter la collision avec le portail
