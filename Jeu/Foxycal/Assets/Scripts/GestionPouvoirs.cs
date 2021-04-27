@@ -25,6 +25,15 @@ public class GestionPouvoirs : MonoBehaviour
     public Image FondPouvoir2;
     public Image FondPouvoir3;
 
+    public Sprite SpritePouvoir1;
+    public Sprite SpritePouvoir2;
+    public Sprite SpritePouvoir3;
+    public Sprite SpritePouvoirIndisponible;
+
+    public Image ImagePouvoir1;
+    public Image ImagePouvoir2;
+    public Image ImagePouvoir3;
+
     public float TempsPouvoir1;
     public float TempsPouvoir2;
     public float TempsPouvoir3;
@@ -60,6 +69,29 @@ public class GestionPouvoirs : MonoBehaviour
         FondPouvoir1.fillAmount -= 1 / TempsPouvoir1 * Time.deltaTime;
         FondPouvoir2.fillAmount -= 1 / TempsPouvoir2 * Time.deltaTime;
         FondPouvoir3.fillAmount -= 1 / TempsPouvoir3 * Time.deltaTime;
+
+        // Si le fond est enlevé et que c'est la nuit,
+        if (CycleJour.tempsJournee)
+        {
+            // Afficher les pouvoirs disponibles
+            if (FondPouvoir1.fillAmount == 0)
+                ImagePouvoir1.sprite = SpritePouvoir1;
+
+            if (FondPouvoir2.fillAmount == 0)
+                ImagePouvoir2.sprite = SpritePouvoir2;
+
+            if (FondPouvoir3.fillAmount == 0)
+                ImagePouvoir3.sprite = SpritePouvoir3;
+        }
+
+        // Sinon,
+        else
+        {
+            // Afficher les pouvoirs indisponibles
+            ImagePouvoir1.sprite = SpritePouvoirIndisponible;
+            ImagePouvoir2.sprite = SpritePouvoirIndisponible;
+            ImagePouvoir3.sprite = SpritePouvoirIndisponible;
+        }
     }
 
     public IEnumerator LancerPouvoir(string Pouvoir)

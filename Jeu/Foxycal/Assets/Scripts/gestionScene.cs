@@ -71,6 +71,6 @@ public class gestionScene : MonoBehaviour
         // Charger la scène
         SceneManager.LoadScene(indexNiveau);
 
-        print(SceneManager.GetActiveScene().buildIndex);
+        // print(SceneManager.GetActiveScene().buildIndex);
     }
 }
