@@ -24,15 +24,6 @@ public class gestionViePersonnage : MonoBehaviour
         barreDeVie.vieMax(vieMax);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.L))
-        {
-            prendDegats(5);
-        }
-    }
-
     void prendDegats(int degat)
     {
         nbVie -= degat;
