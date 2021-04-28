@@ -213,7 +213,7 @@ public class GestionAnimations : MonoBehaviour
 
                 // Activer l'animation de manger
                 GetComponent<Animator>().SetBool("Mange", true);
-                GetComponent<AudioSource>().PlayOneShot(sonManger, 1f);
+                GetComponent<AudioSource>().PlayOneShot(sonManger, 2f);
 
                 Deplacement3ePerso.peutBouger = false;
 
