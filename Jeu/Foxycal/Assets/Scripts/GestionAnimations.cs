@@ -6,6 +6,7 @@ public class GestionAnimations : MonoBehaviour
 {
     /// Auteur : Guillaume Vézina
     /// Description : Gère les animations de déplacement du personnage
+    public AudioClip sonManger;
 
     // Liste des touches (Inutilisée)
     List<List<bool>> ListeTouches;
@@ -212,6 +213,7 @@ public class GestionAnimations : MonoBehaviour
 
                 // Activer l'animation de manger
                 GetComponent<Animator>().SetBool("Mange", true);
+                GetComponent<AudioSource>().PlayOneShot(sonManger, 1f);
 
                 Deplacement3ePerso.peutBouger = false;
 

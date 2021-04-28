@@ -96,101 +96,104 @@ public class GestionPouvoirs : MonoBehaviour
 
     public IEnumerator LancerPouvoir(string Pouvoir)
     {
-        // Selon le pouvoir,
-        switch (Pouvoir)
+        if (menuPause.enPause == false)
         {
-            case "LMC":
+            // Selon le pouvoir,
+            switch (Pouvoir)
+            {
+                case "LMC":
 
-                // Faire un clone à ce pouvoir
-                ClonePouvoirLMC = Instantiate(RefPouvoirLMC);
+                    // Faire un clone à ce pouvoir
+                    ClonePouvoirLMC = Instantiate(RefPouvoirLMC);
 
-                // Changer le parent du pouvoir
-                ClonePouvoirLMC.transform.parent = RefPouvoirLMC.transform.parent;
+                    // Changer le parent du pouvoir
+                    ClonePouvoirLMC.transform.parent = RefPouvoirLMC.transform.parent;
 
-                // Réétablir la position du pouvoir
-                ClonePouvoirLMC.transform.position = RefPouvoirLMC.transform.position;
+                    // Réétablir la position du pouvoir
+                    ClonePouvoirLMC.transform.position = RefPouvoirLMC.transform.position;
 
-                // Changer le nom du clone
-                ClonePouvoirLMC.name = "Morsure";
+                    // Changer le nom du clone
+                    ClonePouvoirLMC.name = "Morsure";
 
-                // Activer le clone
-                ClonePouvoirLMC.SetActive(true);
+                    // Activer le clone
+                    ClonePouvoirLMC.SetActive(true);
 
-                // Détruire l'objet après 1 seconde
-                Destroy(ClonePouvoirLMC, 1f);
+                    // Détruire l'objet après 1 seconde
+                    Destroy(ClonePouvoirLMC, 1f);
 
-                break;
-
-
-            case "E":
-
-                // Faire un clone à ce pouvoir
-                ClonePouvoirE = Instantiate(RefPouvoirE);
-
-                // Changer le parent du pouvoir
-                ClonePouvoirE.transform.parent = RefPouvoirE.transform.parent;
-
-                // Réétablir la position du pouvoir
-                ClonePouvoirE.transform.position = RefPouvoirE.transform.position;
-
-                // Changer le nom du clone
-                ClonePouvoirE.name = "Foudre Mystique";
-
-                // Activer le clone
-                ClonePouvoirE.SetActive(true);
-
-                break;
+                    break;
 
 
-            case "R":
+                case "E":
 
-                // Faire un clone à la comete
-                CloneComete = Instantiate(RefComete);
+                    // Faire un clone à ce pouvoir
+                    ClonePouvoirE = Instantiate(RefPouvoirE);
 
-                // Changer le parent de la comete
-                CloneComete.transform.parent = RefComete.transform.parent;
+                    // Changer le parent du pouvoir
+                    ClonePouvoirE.transform.parent = RefPouvoirE.transform.parent;
 
-                // Réétablir la position de la comete
-                CloneComete.transform.position = RefComete.transform.position;
+                    // Réétablir la position du pouvoir
+                    ClonePouvoirE.transform.position = RefPouvoirE.transform.position;
 
-                // Changer le nom du clone
-                CloneComete.name = "Comete";
+                    // Changer le nom du clone
+                    ClonePouvoirE.name = "Foudre Mystique";
 
-                // Activer le clone
-                CloneComete.SetActive(true);
+                    // Activer le clone
+                    ClonePouvoirE.SetActive(true);
 
-                break;
+                    break;
 
 
-            case "T":
+                case "R":
 
-                // Faire un clone à ce pouvoir
-                ClonePouvoirT = Instantiate(RefPouvoirT);
+                    // Faire un clone à la comete
+                    CloneComete = Instantiate(RefComete);
 
-                // Changer le parent du pouvoir
-                ClonePouvoirT.transform.parent = RefPouvoirT.transform.parent;
+                    // Changer le parent de la comete
+                    CloneComete.transform.parent = RefComete.transform.parent;
 
-                // Réétablir la position du pouvoir
-                ClonePouvoirT.transform.position = RefPouvoirT.transform.position;
+                    // Réétablir la position de la comete
+                    CloneComete.transform.position = RefComete.transform.position;
 
-                // Changer le nom du clone
-                ClonePouvoirT.name = "Souffle Électrique";
+                    // Changer le nom du clone
+                    CloneComete.name = "Comete";
 
-                // Activer le clone
-                ClonePouvoirT.SetActive(true);
+                    // Activer le clone
+                    CloneComete.SetActive(true);
 
-                // Appliquer une vélocité pour le pouvoir
-                ClonePouvoirT.GetComponent<Rigidbody>().velocity = (transform.forward * vitessePouvoirT);
+                    break;
 
-                // Retirer le parent du clone
-                ClonePouvoirT.transform.parent = null;
 
-                // Détruire le clone après un certain temps
-                Destroy(ClonePouvoirT, dureePouvoirT);
+                case "T":
 
-                break;
+                    // Faire un clone à ce pouvoir
+                    ClonePouvoirT = Instantiate(RefPouvoirT);
+
+                    // Changer le parent du pouvoir
+                    ClonePouvoirT.transform.parent = RefPouvoirT.transform.parent;
+
+                    // Réétablir la position du pouvoir
+                    ClonePouvoirT.transform.position = RefPouvoirT.transform.position;
+
+                    // Changer le nom du clone
+                    ClonePouvoirT.name = "Souffle Électrique";
+
+                    // Activer le clone
+                    ClonePouvoirT.SetActive(true);
+
+                    // Appliquer une vélocité pour le pouvoir
+                    ClonePouvoirT.GetComponent<Rigidbody>().velocity = (transform.forward * vitessePouvoirT);
+
+                    // Retirer le parent du clone
+                    ClonePouvoirT.transform.parent = null;
+
+                    // Détruire le clone après un certain temps
+                    Destroy(ClonePouvoirT, dureePouvoirT);
+
+                    break;
+            }
+
+            yield return null;
         }
-
-        yield return null;
     }
 }
