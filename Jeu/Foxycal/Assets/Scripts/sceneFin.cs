@@ -5,18 +5,19 @@ using UnityEngine.UI;
 
 public class sceneFin : MonoBehaviour
 {
-    public GameObject titreVictoire;
-    public GameObject titreDefaite;
+    
     public Material cielJour;
     public Material cielNuit;
     public GameObject lumiereJour;
     public GameObject lumiereNuit;
     public GameObject parcheminVictoire;
     public GameObject parcheminDefaite;
+    public GameObject titreVictoire;
+    public GameObject titreDefaite;
     // Start is called before the first frame update
     void Start()
     {
-        if (GestionScore.score <= 3)
+        if (GestionScore.score <= 3 || gestionFaimPersonnage.mort == true)
         {
             titreDefaite.SetActive(true);
             titreVictoire.SetActive(false);
