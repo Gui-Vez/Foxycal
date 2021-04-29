@@ -15,6 +15,7 @@ public class CycleJour : MonoBehaviour
     public float vitesseSlider; //Indique la vitesse du slider (manuelle)
     public GameObject sonNuit; // Permet d'activer le son se trouvant dans son audio source.
     public cameraShake cameraShake; // Référence au camerashake
+    public GameObject GrandesTorches;
     public bool test;
 
     void Start()
@@ -29,7 +30,8 @@ public class CycleJour : MonoBehaviour
         if(lumiere.eulerAngles.x > 179) // Si la rotation de la lumière atteint cette valeur, la nuit est tombée.
         {
             tempsJournee = true; // True = la nuit est tombée.
-            
+            GrandesTorches.GetComponent<GestionFeuTorches>().GererFlames(true); // Activer les flames
+
             sonNuit.SetActive(true); // Active le son une seule fois la nuit.
             if (test)
             {
@@ -47,7 +49,8 @@ public class CycleJour : MonoBehaviour
         else
         {
             tempsJournee = false; // False = c'est le jour.
-            
+            GrandesTorches.GetComponent<GestionFeuTorches>().GererFlames(false); // Désactiver les flames
+
             sonNuit.SetActive(false);
             test = true;
             if (menuPause.enPause == false)

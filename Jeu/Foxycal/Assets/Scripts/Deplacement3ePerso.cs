@@ -12,7 +12,8 @@ using UnityEngine;
 public class Deplacement3ePerso : MonoBehaviour
 {
     // Variables pour le déplacement du personnage
-    public float vitesse;
+    public static float vitesse;
+    public static float vitesseMax;
     public float forceSaut;
     public bool isGrounded;
     public Vector3 saut;
@@ -34,6 +35,8 @@ public class Deplacement3ePerso : MonoBehaviour
     // Valeurs booléennes pour gérer si le personnage peut bouger (en liaison avec le script des animations) ou sauter
     void Start()
     {
+        vitesseMax = 6;
+        vitesse = vitesseMax;
         rig = GetComponent<Rigidbody>();
         saut = new Vector3(0f, 2f, 0f);
         // Verouiller la souris

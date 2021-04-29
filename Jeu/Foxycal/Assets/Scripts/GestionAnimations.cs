@@ -185,8 +185,14 @@ public class GestionAnimations : MonoBehaviour
                 // Lancer un pouvoir
                 GetComponent<GestionPouvoirs>().StartCoroutine("LancerPouvoir", "LMC");
 
+                // Baisser la vitesse de déplacement
+                Deplacement3ePerso.vitesse /= 3;
+
                 // Attendre 1 seconde
                 yield return new WaitForSeconds(1f);
+
+                // Augmenter la vitesse de déplacement
+                Deplacement3ePerso.vitesse = Deplacement3ePerso.vitesseMax;
 
                 // Désactiver l'animation d'attaque
                 GetComponent<Animator>().SetBool("Attaque", false);
@@ -286,8 +292,14 @@ public class GestionAnimations : MonoBehaviour
                 // Lancer un pouvoir
                 GetComponent<GestionPouvoirs>().StartCoroutine("LancerPouvoir", "E");
 
+                // Baisser la vitesse de déplacement
+                Deplacement3ePerso.vitesse /= 2;
+
                 // Attendre 1 seconde
                 yield return new WaitForSeconds(1f);
+
+                // Augmenter la vitesse de déplacement
+                Deplacement3ePerso.vitesse = Deplacement3ePerso.vitesseMax;
 
                 // Désactiver l'animation de pouvoir
                 GetComponent<Animator>().SetBool("Pouvoir", false);
@@ -318,8 +330,14 @@ public class GestionAnimations : MonoBehaviour
                 // Lancer un pouvoir
                 GetComponent<GestionPouvoirs>().StartCoroutine("LancerPouvoir", "R");
 
+                // Baisser la vitesse de déplacement
+                Deplacement3ePerso.vitesse /= 2;
+
                 // Attendre 1 seconde
                 yield return new WaitForSeconds(1f);
+
+                // Augmenter la vitesse de déplacement
+                Deplacement3ePerso.vitesse = Deplacement3ePerso.vitesseMax;
 
                 // Désactiver l'animation de pouvoir
                 GetComponent<Animator>().SetBool("Pouvoir", false);
@@ -350,8 +368,14 @@ public class GestionAnimations : MonoBehaviour
                 // Lancer un pouvoir
                 GetComponent<GestionPouvoirs>().StartCoroutine("LancerPouvoir", "T");
 
+                // Baisser la vitesse de déplacement
+                Deplacement3ePerso.vitesse /= 2;
+
                 // Attendre 1 seconde
                 yield return new WaitForSeconds(1f);
+
+                // Augmenter la vitesse de déplacement
+                Deplacement3ePerso.vitesse = Deplacement3ePerso.vitesseMax;
 
                 // Désactiver l'animation de pouvoir
                 GetComponent<Animator>().SetBool("Pouvoir", false);
@@ -368,6 +392,7 @@ public class GestionAnimations : MonoBehaviour
                 break;
         }
 
+        // Le renard peut sauter
         Deplacement3ePerso.peutSauter = true;
     }
 }
