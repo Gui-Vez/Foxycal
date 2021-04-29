@@ -9,6 +9,7 @@ TagManager:
   - arbre
   - Pouvoir
   - Ennemi
+  - Artefact
   layers:
   - Default
   - TransparentFX

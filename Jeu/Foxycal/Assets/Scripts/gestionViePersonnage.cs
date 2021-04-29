@@ -24,6 +24,15 @@ public class gestionViePersonnage : MonoBehaviour
         barreDeVie.vieMax(vieMax);
     }
 
+    void Update()
+    {
+        if (nbVie <= 0)
+        {
+            gestionFaimPersonnage.mort = true;
+            print("Rip");
+        }
+    }
+
     void prendDegats(int degat)
     {
         nbVie -= degat;

@@ -15,6 +15,7 @@ public class gestionFaimPersonnage : MonoBehaviour
     public float faimMax = 100;
     public static float faim;
     public barreDeFaimScript sliderFaim;
+    public static bool mort;
 
     // Start is called before the first frame update
     void Start()
@@ -27,6 +28,12 @@ public class gestionFaimPersonnage : MonoBehaviour
     void Update()
     {
         gestionFaim(1);
+
+        if (faim <= 0)
+        {
+            mort = true;
+            print("Rip");
+        }
     }
 
     public void gestionFaim(float gestion)
