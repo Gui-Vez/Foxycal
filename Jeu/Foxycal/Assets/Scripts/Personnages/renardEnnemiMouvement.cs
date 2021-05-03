@@ -49,6 +49,10 @@ public class renardEnnemiMouvement : MonoBehaviour
             // Chercher un arbre
             chercheArbre();
         }
+        if(gestionFaimPersonnage.mort == true)
+        {
+            navAgent.enabled = false;
+        }
     }
 
     void chercheArbre() 

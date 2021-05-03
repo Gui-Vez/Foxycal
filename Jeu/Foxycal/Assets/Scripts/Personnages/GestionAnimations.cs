@@ -98,15 +98,18 @@ public class GestionAnimations : MonoBehaviour
 
 
         // Animation de marche
-        if      (W || Up)    GetComponent<Animator>().SetBool("Marche", true);
-        else if (A || Left)  GetComponent<Animator>().SetBool("Marche", true);
-        else if (S || Down)  GetComponent<Animator>().SetBool("Marche", true);
-        else if (D || Right) GetComponent<Animator>().SetBool("Marche", true);
-        else                 GetComponent<Animator>().SetBool("Marche", false);
+        if (gestionFaimPersonnage.mort != true)
+        {
+            if (W || Up) GetComponent<Animator>().SetBool("Marche", true);
+            else if (A || Left) GetComponent<Animator>().SetBool("Marche", true);
+            else if (S || Down) GetComponent<Animator>().SetBool("Marche", true);
+            else if (D || Right) GetComponent<Animator>().SetBool("Marche", true);
+            else GetComponent<Animator>().SetBool("Marche", false);
+        }
 
 
-        // Si l'on touche n'importe quelle touche du clavier ET que le renard n'agit pas,
-        if (Input.anyKeyDown && !action)
+        // Si l'on touche n'importe quelle touche du clavier ET que le renard n'agit pas, ET que le renard n'est pas mort,
+        if (Input.anyKeyDown && !action && gestionFaimPersonnage.mort != true)
         {
             // Si le renard n'est pas en train de manger,
             if (!manger)
@@ -154,11 +157,14 @@ public class GestionAnimations : MonoBehaviour
                 }
             }
         }
+
+        
     }
 
 
     IEnumerator GestionAttaques(string Animation)
     {
+
         // Le renard agit
         action = true;
 

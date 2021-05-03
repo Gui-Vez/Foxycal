@@ -60,7 +60,11 @@ public class Deplacement3ePerso : MonoBehaviour
 
     // Les mouvements de base
     void Update()
-    {
+    {   if(gestionFaimPersonnage.mort == true)
+        {
+            peutBouger = false;
+            peutSauter = false;
+        }
         // Gestion du mouvement WASD
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");

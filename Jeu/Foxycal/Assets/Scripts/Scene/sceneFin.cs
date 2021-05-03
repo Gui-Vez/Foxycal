@@ -17,6 +17,7 @@ public class sceneFin : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Cursor.lockState = CursorLockMode.None;
         if (GestionScore.score <= 3 || gestionFaimPersonnage.mort == true)
         {
             titreDefaite.SetActive(true);

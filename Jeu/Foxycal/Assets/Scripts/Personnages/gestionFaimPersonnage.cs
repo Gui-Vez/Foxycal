@@ -22,6 +22,7 @@ public class gestionFaimPersonnage : MonoBehaviour
     {
         faim = faimMax;
         sliderFaim.faimMax(faimMax);
+        mort = false;
     }
 
     // Update is called once per frame
