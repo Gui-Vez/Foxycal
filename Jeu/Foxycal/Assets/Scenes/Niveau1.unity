@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.5
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.36145097, g: 0.38058963, b: 0.47585875, a: 0.5}
+  m_IndirectSpecularColor: {r: 0.36147696, g: 0.38058835, b: 0.47594762, a: 0.5}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -51737,6 +51737,7 @@ GameObject:
   - component: {fileID: 1007259795}
   - component: {fileID: 1007259796}
   - component: {fileID: 1007259797}
+  - component: {fileID: 1007259798}
   m_Layer: 20
   m_Name: Fox Principal
   m_TagString: Player
@@ -52046,6 +52047,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lumiere: {fileID: 705507995}
   barreVie: {fileID: 1198346936}
+--- !u!114 &1007259798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1007259784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88755c33ee5f90e46a40fda03ae94010, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1009113436
 PrefabInstance:
   m_ObjectHideFlags: 0
