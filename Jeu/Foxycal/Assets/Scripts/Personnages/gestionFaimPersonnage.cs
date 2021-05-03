@@ -34,6 +34,11 @@ public class gestionFaimPersonnage : MonoBehaviour
             mort = true;
             print("Rip");
         }
+
+        if (faim > faimMax)
+        {
+            faim = faimMax;
+        }
     }
 
     public void gestionFaim(float gestion)

@@ -34,9 +34,9 @@ public class GestionPouvoirs : MonoBehaviour
     public Image ImagePouvoir2;
     public Image ImagePouvoir3;
 
-    public float TempsPouvoir1;
-    public float TempsPouvoir2;
-    public float TempsPouvoir3;
+    public static float TempsPouvoir1;
+    public static float TempsPouvoir2;
+    public static float TempsPouvoir3;
 
 
     void Start()
@@ -50,6 +50,10 @@ public class GestionPouvoirs : MonoBehaviour
         FondPouvoir1.fillAmount = 0;
         FondPouvoir2.fillAmount = 0;
         FondPouvoir3.fillAmount = 0;
+
+        TempsPouvoir1 = 4;
+        TempsPouvoir2 = 3;
+        TempsPouvoir3 = 6;
     }
 
     public void ViderPouvoir(int pouvoir)

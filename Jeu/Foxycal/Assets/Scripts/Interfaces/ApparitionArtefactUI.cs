@@ -30,10 +30,6 @@ public class ApparitionArtefactUI : MonoBehaviour
             case "Artefact2":
                 interfaceArtefacts[1].SetActive(true);
                 break;
-
-            default:
-                Debug.Log("ceci est un artefact");
-                break;
         }
 
         if (colliderArtefact.gameObject.tag == "Artefact")

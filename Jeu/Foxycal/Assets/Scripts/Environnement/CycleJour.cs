@@ -25,6 +25,9 @@ public class CycleJour : MonoBehaviour
 
     void Update()
     {
+        // Ajuster vitesse slider
+        vitesseSlider = (vitesseRotation * Time.deltaTime) / 100;
+
         vitesseRotation = 15; // La vitesse à laquelle la lumière principale du niveau tourne.
         lumiere.Rotate(vitesseRotation * Time.deltaTime, 0, 0);
         if(lumiere.eulerAngles.x > 179) // Si la rotation de la lumière atteint cette valeur, la nuit est tombée.

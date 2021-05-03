@@ -15,7 +15,7 @@ public class gestionViePersonnage : MonoBehaviour
 {
 
     public int vieMax = 15;
-    public int nbVie;
+    public static int nbVie;
     public barreDeVieScript barreDeVie;
     // Start is called before the first frame update
     void Start()
@@ -30,6 +30,11 @@ public class gestionViePersonnage : MonoBehaviour
         {
             gestionFaimPersonnage.mort = true;
             print("Rip");
+        }
+
+        if (nbVie > vieMax)
+        {
+            nbVie = vieMax;
         }
     }
 
