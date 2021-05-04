@@ -68,15 +68,6 @@ public class GestionEffetFruit : MonoBehaviour
             case "Fidiame":
 
                 // Vide
-                GestionAnimations.TempsE -= 5;
-                GestionAnimations.TempsR -= 3;
-                GestionAnimations.TempsT -= 4;
-
-                yield return new WaitForSeconds(10);
-
-                GestionAnimations.TempsE += 6;
-                GestionAnimations.TempsR += 4;
-                GestionAnimations.TempsT += 5;
 
                 break;
                 
@@ -97,12 +88,15 @@ public class GestionEffetFruit : MonoBehaviour
             // Temps de recharge 1 seconde
             case "Luju":
 
-                
+                GestionAnimations.TempsE -= 5;
+                GestionAnimations.TempsR -= 3;
+                GestionAnimations.TempsT -= 4;
 
-                
+                yield return new WaitForSeconds(10);
 
-                
-
+                GestionAnimations.TempsE += 6;
+                GestionAnimations.TempsR += 4;
+                GestionAnimations.TempsT += 5;
 
                 break;
 
