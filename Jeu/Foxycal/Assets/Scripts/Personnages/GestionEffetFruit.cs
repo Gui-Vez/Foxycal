@@ -7,13 +7,13 @@ using UnityEngine.UI;
 
 public class GestionEffetFruit : MonoBehaviour
 {
-    GameObject[] Ennemis;
+    
     public Transform lumiere;
     public Slider barreVie;
 
     void Start()
     {
-        Ennemis = GameObject.FindGameObjectsWithTag("Ennemi");
+        
     }
 
     void OnTriggerEnter(Collider other)
@@ -38,18 +38,9 @@ public class GestionEffetFruit : MonoBehaviour
         {
             // Arrêter les ennemis pendant quelques secondes
             case "Boumis":
-
-                for (int i = 0; i < Ennemis.Length; i++)
-                {
-                    Ennemis[i].GetComponent<NavMeshAgent>().speed = 0;
-                    Ennemis[i].GetComponent<Animator>().enabled = false;
-
-                    yield return new WaitForSeconds(12);
-
-                    Ennemis[i].GetComponent<NavMeshAgent>().speed = 2.5f;
-                    Ennemis[i].GetComponent<Animator>().enabled = true;
-                }
-
+                effetBoumis();
+                yield return new WaitForSeconds(12);
+                effetBoumisRetour();
                 break;
 
 
@@ -140,5 +131,27 @@ public class GestionEffetFruit : MonoBehaviour
         }
 
         yield return null;
+    }
+
+    public void effetBoumis()
+    {
+        GameObject[] Ennemis = GameObject.FindGameObjectsWithTag("Ennemi");
+
+        for (int i = 0; i < Ennemis.Length; i++){
+            print(i);
+            Ennemis[i].gameObject.GetComponent<NavMeshAgent>().speed = 0f;
+            Ennemis[i].gameObject.GetComponent<Animator>().enabled = false;
+            }
+    }
+
+    public void effetBoumisRetour()
+    {
+        GameObject[] Ennemis = GameObject.FindGameObjectsWithTag("Ennemi");
+        for (int i = 0; i < Ennemis.Length; i++)
+        {
+            print(i);
+            Ennemis[i].gameObject.GetComponent<NavMeshAgent>().speed = 2.5f;
+            Ennemis[i].gameObject.GetComponent<Animator>().enabled = true;
+        }
     }
 }

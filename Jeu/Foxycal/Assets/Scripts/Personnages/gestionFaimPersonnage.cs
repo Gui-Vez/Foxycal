@@ -33,7 +33,6 @@ public class gestionFaimPersonnage : MonoBehaviour
         if (faim <= 0)
         {
             mort = true;
-            print("Rip");
         }
 
         if (faim > faimMax)

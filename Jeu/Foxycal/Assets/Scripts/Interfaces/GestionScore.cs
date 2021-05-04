@@ -31,7 +31,7 @@ public class GestionScore : MonoBehaviour
     {
         if (SceneManager.GetActiveScene().name != "sceneFin")
         {
-            GestionnaireScoreJeu.GetComponent<Text>().text = score.ToString();
+            GestionnaireScoreJeu.GetComponent<Text>().text = "Score : " + score.ToString();
         }
 
     }

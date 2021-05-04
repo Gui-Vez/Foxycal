@@ -26,7 +26,7 @@ public class CycleJour : MonoBehaviour
     void Update()
     {
         // Ajuster vitesse slider
-        vitesseSlider = (vitesseRotation * Time.deltaTime) / 100;
+        vitesseSlider = 0.003f;
 
         vitesseRotation = 15; // La vitesse à laquelle la lumière principale du niveau tourne.
         lumiere.Rotate(vitesseRotation * Time.deltaTime, 0, 0);
