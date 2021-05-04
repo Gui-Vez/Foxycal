@@ -64,12 +64,22 @@ public class GestionEffetFruit : MonoBehaviour
                 break;
 
 
-            // Riiiieeeen
+            // Rien
             case "Fidiame":
-                
 
-                
+                // Vide
+                GestionAnimations.TempsE -= 5;
+                GestionAnimations.TempsR -= 3;
+                GestionAnimations.TempsT -= 4;
+
+                yield return new WaitForSeconds(10);
+
+                GestionAnimations.TempsE += 6;
+                GestionAnimations.TempsR += 4;
+                GestionAnimations.TempsT += 5;
+
                 break;
+                
 
 
             // Bonus de vie
@@ -87,17 +97,12 @@ public class GestionEffetFruit : MonoBehaviour
             // Temps de recharge 1 seconde
             case "Luju":
 
-                /*
-                GestionPouvoirs.TempsPouvoir1 = 1;
-                GestionPouvoirs.TempsPouvoir2 = 1;
-                GestionPouvoirs.TempsPouvoir3 = 1;
+                
 
-                yield return new WaitForSeconds(6);
+                
 
-                GestionPouvoirs.TempsPouvoir1 = 4;
-                GestionPouvoirs.TempsPouvoir2 = 3;
-                GestionPouvoirs.TempsPouvoir3 = 6;
-                */
+                
+
 
                 break;
 
@@ -125,7 +130,11 @@ public class GestionEffetFruit : MonoBehaviour
             // Augmenter saut
             case "Lubana":
 
+                Deplacement3ePerso.forceSaut += 1.5f;
 
+                yield return new WaitForSeconds(8);
+
+                Deplacement3ePerso.forceSaut -= 1.75f;
 
                 break;
         }

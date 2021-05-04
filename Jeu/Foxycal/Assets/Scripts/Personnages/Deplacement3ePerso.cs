@@ -14,7 +14,7 @@ public class Deplacement3ePerso : MonoBehaviour
     // Variables pour le déplacement du personnage
     public static float vitesse;
     public static float vitesseMax;
-    public float forceSaut;
+    public static float forceSaut;
     public bool isGrounded;
     public Vector3 saut;
 
@@ -36,6 +36,7 @@ public class Deplacement3ePerso : MonoBehaviour
     void Start()
     {
         vitesseMax = 6;
+        forceSaut = 2.5f;
         vitesse = vitesseMax;
         rig = GetComponent<Rigidbody>();
         saut = new Vector3(0f, 2f, 0f);

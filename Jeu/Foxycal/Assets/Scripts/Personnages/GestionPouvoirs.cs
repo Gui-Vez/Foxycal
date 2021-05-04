@@ -41,19 +41,12 @@ public class GestionPouvoirs : MonoBehaviour
 
     void Start()
     {
-        // Régler le temps des animations
-        TempsPouvoir1 = GetComponent<GestionAnimations>().TempsE + 1;
-        TempsPouvoir2 = GetComponent<GestionAnimations>().TempsR + 1;
-        TempsPouvoir3 = GetComponent<GestionAnimations>().TempsT + 1;
+        
 
         // Remettre la valeur des fonds à 0 pour les rendre vides
         FondPouvoir1.fillAmount = 0;
         FondPouvoir2.fillAmount = 0;
         FondPouvoir3.fillAmount = 0;
-
-        TempsPouvoir1 = 4;
-        TempsPouvoir2 = 3;
-        TempsPouvoir3 = 6;
     }
 
     public void ViderPouvoir(int pouvoir)
@@ -69,6 +62,10 @@ public class GestionPouvoirs : MonoBehaviour
 
     void Update()
     {
+        // Régler le temps des animations
+        TempsPouvoir1 = GestionAnimations.TempsE + 1;
+        TempsPouvoir2 = GestionAnimations.TempsR + 1;
+        TempsPouvoir3 = GestionAnimations.TempsT + 1;
         // Enlever le fond progressivement par rapport au temps énoncé
         FondPouvoir1.fillAmount -= 1 / TempsPouvoir1 * Time.deltaTime;
         FondPouvoir2.fillAmount -= 1 / TempsPouvoir2 * Time.deltaTime;

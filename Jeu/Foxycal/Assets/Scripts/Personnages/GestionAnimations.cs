@@ -48,9 +48,9 @@ public class GestionAnimations : MonoBehaviour
     bool saute;
 
     // Temps avant les pouvoirs
-    public int TempsE;
-    public int TempsR;
-    public int TempsT;
+    public static int TempsE;
+    public static int TempsR;
+    public static int TempsT;
 
 
 
@@ -58,6 +58,9 @@ public class GestionAnimations : MonoBehaviour
     {
         // Raccourci du rigidbody
         rb = GetComponent<Rigidbody>();
+        TempsE = 5;
+        TempsR = 3;
+        TempsT = 4;
     }
 
     void Update()
