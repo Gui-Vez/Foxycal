@@ -2,13 +2,41 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Cinemachine;
+using Cinemachine.Editor;
+using Cinemachine.Utility;
 
 public class cameraShake : MonoBehaviour
 {
     /// Auteur : Tristan Lapointe
     /// Description : Gère le shake de caméra quand c'est la nuit
     /// 
-    public IEnumerator Shake (float duree, float magnitude)
+
+    public float shakeAmplitude;
+    public float shakeFrequency;
+    public float shakeTemps;
+
+    public CinemachineFreeLook camCinemachine;
+
+    public IEnumerator Shake()
+    {
+        degreeShake(shakeAmplitude, shakeFrequency);
+        yield return new WaitForSeconds(shakeTemps);
+        degreeShake(0, 0);
+    }
+
+    void degreeShake(float amplitude, float frequency)
+    {
+        camCinemachine.GetRig(0).GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_AmplitudeGain = amplitude;
+        camCinemachine.GetRig(1).GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_AmplitudeGain = amplitude;
+        camCinemachine.GetRig(2).GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_AmplitudeGain = amplitude;
+        camCinemachine.GetRig(0).GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_FrequencyGain = frequency;
+        camCinemachine.GetRig(1).GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_FrequencyGain = frequency;
+        camCinemachine.GetRig(2).GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_FrequencyGain = frequency;
+    }
+
+   
+
+   /* public IEnumerator Shake (float duree, float magnitude)
     {
         //Position orginale de la caméra
         Vector3 positionOriginale = transform.localPosition;
@@ -36,5 +64,5 @@ public class cameraShake : MonoBehaviour
         // Remettre la position originale après le shake
         transform.localPosition = positionOriginale;
 
-    }
+    }*/
 }

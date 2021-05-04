@@ -39,7 +39,7 @@ public class CycleJour : MonoBehaviour
             if (test)
             {
                 test = false;
-                //StartCoroutine(cameraShake.Shake(.45f, .1f)); // Appeler une fonction dans la coroutine d'un autre script
+                StartCoroutine(cameraShake.Shake()); // Appeler une fonction dans la coroutine d'un autre script
             }
 
             if(menuPause.enPause == false)

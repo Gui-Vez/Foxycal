@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.5
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.36147696, g: 0.38058835, b: 0.47594762, a: 0.5}
+  m_IndirectSpecularColor: {r: 0.36145097, g: 0.38058963, b: 0.47585875, a: 0.5}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -7002,7 +7002,7 @@ RectTransform:
   m_Children:
   - {fileID: 1527538672}
   m_Father: {fileID: 254170887}
-  m_RootOrder: 6
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -13015,12 +13015,12 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1813915814}
+  - {fileID: 147697983}
   - {fileID: 1927760690}
   - {fileID: 1355776504}
   - {fileID: 462177036}
   - {fileID: 377831373}
   - {fileID: 1037242007}
-  - {fileID: 147697983}
   m_Father: {fileID: 164746125}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -14537,6 +14537,7 @@ GameObject:
   - component: {fileID: 287604917}
   - component: {fileID: 287604916}
   - component: {fileID: 287604915}
+  - component: {fileID: 287604918}
   m_Layer: 0
   m_Name: cm
   m_TagString: Untagged
@@ -14651,6 +14652,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &287604918
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 287604913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68bb026fafb42b14791938953eaace77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_NoiseProfile: {fileID: 11400000, guid: 69ce8388f6785dd4c8c39915efece2f4, type: 2}
+  m_PivotOffset: {x: 0, y: 0, z: 0}
+  m_AmplitudeGain: 0
+  m_FrequencyGain: 1
+  mNoiseOffsets: {x: 0, y: 0, z: 0}
 --- !u!1001 &287965183
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20140,7 +20158,7 @@ RectTransform:
   m_Children:
   - {fileID: 1129302321}
   m_Father: {fileID: 254170887}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -21106,6 +21124,7 @@ GameObject:
   - component: {fileID: 390892461}
   - component: {fileID: 390892460}
   - component: {fileID: 390892459}
+  - component: {fileID: 390892462}
   m_Layer: 0
   m_Name: cm
   m_TagString: Untagged
@@ -21220,6 +21239,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &390892462
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 390892457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68bb026fafb42b14791938953eaace77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_NoiseProfile: {fileID: 11400000, guid: 69ce8388f6785dd4c8c39915efece2f4, type: 2}
+  m_PivotOffset: {x: 0, y: 0, z: 0}
+  m_AmplitudeGain: 0
+  m_FrequencyGain: 1
+  mNoiseOffsets: {x: 0, y: 0, z: 0}
 --- !u!1001 &391818262
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25901,7 +25937,7 @@ RectTransform:
   m_Children:
   - {fileID: 557599853}
   m_Father: {fileID: 254170887}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -38569,7 +38605,7 @@ MonoBehaviour:
   slider: {fileID: 2070752191}
   vitesseSlider: 0.004
   sonNuit: {fileID: 866455718}
-  cameraShake: {fileID: 0}
+  cameraShake: {fileID: 963194229}
   GrandesTorches: {fileID: 1465922464}
   test: 0
 --- !u!1 &707265456 stripped
@@ -50182,6 +50218,7 @@ GameObject:
   - component: {fileID: 963194226}
   - component: {fileID: 963194230}
   - component: {fileID: 963194231}
+  - component: {fileID: 963194229}
   m_Layer: 0
   m_Name: Cam 3e Perso
   m_TagString: MainCamera
@@ -50254,6 +50291,22 @@ Transform:
   m_Father: {fileID: 1526598282}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &963194229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1a980266e5ddb94a8b1d7c2a2cd3f51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shakeAmplitude: 10
+  shakeFrequency: 10
+  shakeTemps: 0.5
+  camCinemachine: {fileID: 1803315951}
 --- !u!114 &963194230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54078,7 +54131,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 254170887}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
@@ -65078,6 +65131,7 @@ GameObject:
   - component: {fileID: 1248475614}
   - component: {fileID: 1248475613}
   - component: {fileID: 1248475612}
+  - component: {fileID: 1248475615}
   m_Layer: 0
   m_Name: cm
   m_TagString: Untagged
@@ -65192,6 +65246,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1248475615
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1248475610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68bb026fafb42b14791938953eaace77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_NoiseProfile: {fileID: 11400000, guid: 69ce8388f6785dd4c8c39915efece2f4, type: 2}
+  m_PivotOffset: {x: 0, y: 0, z: 0}
+  m_AmplitudeGain: 0
+  m_FrequencyGain: 1
+  mNoiseOffsets: {x: 0, y: 0, z: 0}
 --- !u!1001 &1248697056
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -69850,7 +69921,7 @@ RectTransform:
   m_Children:
   - {fileID: 1431387835}
   m_Father: {fileID: 254170887}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -97940,7 +98011,7 @@ RectTransform:
   - {fileID: 1077153167}
   - {fileID: 471482953}
   m_Father: {fileID: 254170887}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
