@@ -12,14 +12,17 @@ using UnityEngine.UI;
 
 public class barreDeFaimScript : MonoBehaviour
 {
+    // Variable pour glisser le slider
     public Slider sliderFaim;
 
+    // Gère la valeur de faim maximale avec son slider
     public void faimMax(float faim)
     {
         sliderFaim.maxValue = faim;
         sliderFaim.value = faim;
     }
 
+    // Gère la valeur de faim avec le slider
     public void barreFaimFixe(float faim)
     {
         sliderFaim.value = faim;

@@ -13,6 +13,7 @@ using UnityEngine.UI;
 
 public class barreDeVieScript : MonoBehaviour
 {
+    // Variable pour glisser le slider
     public Slider barreVie;
 
     // Reset la valeur maximale pour assurer qu'à chaque fois le personnage revient à sa vie maximale au lancement du jeu

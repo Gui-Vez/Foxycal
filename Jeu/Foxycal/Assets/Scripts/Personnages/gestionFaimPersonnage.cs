@@ -17,7 +17,7 @@ public class gestionFaimPersonnage : MonoBehaviour
     public barreDeFaimScript sliderFaim;
     public static bool mort;
 
-    // Start is called before the first frame update
+    // On s'assure que lorsque le jeu est relancé, le personnage a toute sa vie
     void Start()
     {
         faim = faimMax;
@@ -25,7 +25,7 @@ public class gestionFaimPersonnage : MonoBehaviour
         mort = false;
     }
 
-    // Update is called once per frame
+    // Le personnage perd de la faim par seconde, s'il a moins que 0, le personnage meurt, ne peut pas gagner plus que 100% de sa faim maximale
     void Update()
     {
         gestionFaim(1);
@@ -41,6 +41,7 @@ public class gestionFaimPersonnage : MonoBehaviour
         }
     }
 
+    // Fonction qui met la perte de faim en marche en synchronisant avec le slider
     public void gestionFaim(float gestion)
     {
         faim -= gestion * Time.deltaTime;

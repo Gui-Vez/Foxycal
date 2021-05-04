@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 
 
 public class menuPause : MonoBehaviour
@@ -12,12 +11,6 @@ public class menuPause : MonoBehaviour
     public GameObject cameraPause;
     public GameObject interfaceJoueur;
     public GameObject inventaire;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
