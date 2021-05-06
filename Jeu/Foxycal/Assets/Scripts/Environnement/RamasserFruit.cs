@@ -48,9 +48,6 @@ public class RamasserFruit : MonoBehaviour
                     AudioSource audio = GetComponent<AudioSource>();
                     audio.Play();
 
-                    // Jouer le son
-
-
                     // Arrêter la boucle
                     break;
                 }

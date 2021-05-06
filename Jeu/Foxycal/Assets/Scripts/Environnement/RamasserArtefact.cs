@@ -7,23 +7,51 @@ public class RamasserArtefact : MonoBehaviour
     /// Auteur : Guillaume Vézina
     /// Description : Script qui permet au renard de ramasser les atréfacts
 
+    private GestionInventaire inventaire;
+    public GameObject artefact;
     public GameObject Canvas;
     public GameObject portailActive;
+
+    void Start()
+    {
+        // Raccourci au script GestionInventaire
+        inventaire = GameObject.FindGameObjectWithTag("Player").GetComponent<GestionInventaire>();
+    }
 
     void OnTriggerEnter(Collider other)
     {
         // Si le trigger est le joueur,
         if (other.CompareTag("Player"))
         {
-            // Augmenter le numéro de la quête
-            Canvas.GetComponent<GestionQuete>().AugmenterNumeroQuete(0);
+            // En comptant chaque boite de l'inventaire,
+            for (int i = 0; i < inventaire.boites.Length; i++)
+            {
+                // Si cette boite n'est pas remplie,
+                if (inventaire.rempli[i] == false)
+                {
+                    // L'objet est rentré dans l'inventaire
+                    inventaire.rempli[i] = true;
 
-            // Détruire l'objet
-            GetComponent<Collider>().enabled = false;
-            Invoke("DetruireObjet", 0.25f); //Ajoute un court délai à la destruction de l'objet pour jouer le son
+                    // Instancier le fruit dans l'inventaire
+                    Instantiate(artefact, inventaire.boites[i].transform, false);
 
-            AudioSource audio = GetComponent<AudioSource>();
-            audio.Play();
+                    // Augmenter le numéro de la quête
+                    Canvas.GetComponent<GestionQuete>().AugmenterNumeroQuete(0);
+
+                    // Augmenter le score
+                    GestionScore.score++;
+
+                    // Détruire l'objet
+                    GetComponent<Collider>().enabled = false;
+                    Invoke("DetruireObjet", 0.25f); //Ajoute un court délai à la destruction de l'objet pour jouer le son
+
+                    AudioSource audio = GetComponent<AudioSource>();
+                    audio.Play();
+
+                    // Arrêter la boucle
+                    break;
+                }
+            }
         }
     }
     public void DetruireObjet()
