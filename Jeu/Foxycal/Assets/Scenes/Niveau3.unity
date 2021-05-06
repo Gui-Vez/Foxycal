@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.5
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.36147696, g: 0.38058835, b: 0.47594762, a: 0.5}
+  m_IndirectSpecularColor: {r: 0.36145097, g: 0.38058963, b: 0.47585875, a: 0.5}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1245,7 +1245,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 58632856}
-  m_LocalRotation: {x: 0.16256239, y: -0.000000008488754, z: 0.0000000013985552, w: 0.98669827}
+  m_LocalRotation: {x: 0.16256239, y: 0.000000008488754, z: -0.0000000013985552, w: 0.98669827}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -7966,8 +7966,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -15.4, y: -54.9}
-  m_SizeDelta: {x: 259.2923, y: 48.6173}
+  m_AnchoredPosition: {x: -15.399, y: -86.624435}
+  m_SizeDelta: {x: 259.2923, y: 151.8662}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &304357072
 MonoBehaviour:
@@ -8002,7 +8002,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Sommes-nous r\xE9ellement sur Terre?"
+  m_Text: "Les renards deviennent agressifs d\xFB au manque de lumi\xE8re et de plaisir
+    qu\u2019ils ont le jour. Ils d\xE9sirent constamment une source de bonheur. "
 --- !u!222 &304357073
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8608,7 +8609,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 327163478}
-  m_LocalRotation: {x: 0.13423564, y: 0.000000008525329, z: -0.000000001154855, w: 0.99094945}
+  m_LocalRotation: {x: 0.13423564, y: -0.000000008525326, z: 0.0000000011548545, w: 0.99094945}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -9452,7 +9453,7 @@ GameObject:
   m_Component:
   - component: {fileID: 377831373}
   m_Layer: 5
-  m_Name: Artefact Empty 2
+  m_Name: Artefact Empty 6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11755,7 +11756,7 @@ GameObject:
   m_Component:
   - component: {fileID: 462177036}
   m_Layer: 5
-  m_Name: Artefact Empty 1
+  m_Name: Artefact Empty 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14989,7 +14990,7 @@ GameObject:
   - component: {fileID: 557599855}
   - component: {fileID: 557599854}
   m_Layer: 5
-  m_Name: Artefact 1
+  m_Name: Artefact 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16351,6 +16352,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b204f2cfd43113642877c6ec92b42c41, type: 3}
       propertyPath: m_Name
       value: Artefact6
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b204f2cfd43113642877c6ec92b42c41, type: 3}
+      propertyPath: m_TagString
+      value: Artefact
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b204f2cfd43113642877c6ec92b42c41, type: 3}
@@ -26633,8 +26638,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Apparemment, l\u2019organisation FOX-ADN aurait annul\xE9 de vitesse cette
-    recherche \xE0 cause de l\u2019agressivit\xE9 des renards."
+  m_Text: " La radiation magique contenue dans ce village transmet \xE0 tout autre
+    renard normal la possibilit\xE9 de d\xE9velopper des pouvoirs. "
 --- !u!222 &904255055
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -26961,6 +26966,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ad65c02611ee85746bf49a417e01084e, type: 3}
       propertyPath: m_Name
       value: Artefact5
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ad65c02611ee85746bf49a417e01084e, type: 3}
+      propertyPath: m_TagString
+      value: Artefact
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad65c02611ee85746bf49a417e01084e, type: 3}
@@ -28517,7 +28526,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.15690695, y: -0.0000000101959525, z: 0.0000000016198806, w: 0.9876134}
+  m_LocalRotation: {x: 0.15690695, y: 0.0000000101959525, z: -0.0000000016198806, w: 0.9876134}
   m_LocalPosition: {x: -78.8, y: 2.11, z: -206.55234}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -29093,7 +29102,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "A R T \xC9 F A C T    #1"
+  m_Text: "A R T \xC9 F A C T    #5"
 --- !u!222 &967430299
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -34585,7 +34594,7 @@ GameObject:
   - component: {fileID: 1129302323}
   - component: {fileID: 1129302322}
   m_Layer: 5
-  m_Name: Artefact 2
+  m_Name: Artefact 6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -43191,6 +43200,7 @@ Transform:
   - {fileID: 2111574493}
   - {fileID: 566585254}
   - {fileID: 180444116}
+  - {fileID: 1961376012}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -49715,8 +49725,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 29.4, y: -84.4}
-  m_SizeDelta: {x: 285.4766, y: 55.3156}
+  m_AnchoredPosition: {x: 29.4, y: -102.31051}
+  m_SizeDelta: {x: 285.4766, y: 91.1366}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1551239746
 MonoBehaviour:
@@ -49751,7 +49761,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Dr\xF4lement, ils r\xF4dent encore entre ces g\xE9antes cl\xF4tures."
+  m_Text: "Ces pouvoirs sont dit de contenir une fausse lumi\xE8re \xE9tant capable
+    de blesser les renards magiques. Et vous, vous avez tous les crit\xE8res pour
+    d\xE9velopper ces pouvoirs."
 --- !u!222 &1551239747
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -51183,8 +51195,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -30.628, y: 32.94012}
-  m_SizeDelta: {x: 289.75, y: 71.8013}
+  m_AnchoredPosition: {x: -30.628, y: 40.31507}
+  m_SizeDelta: {x: 289.75, y: 57.0515}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1587658535
 MonoBehaviour:
@@ -51219,8 +51231,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Le vent siffle joyeusement entre les branches le jour... Mais la nuit
-    semble \xEAtre un tout autre univers."
+  m_Text: "Ce que les humains \xE0 l\u2019origine de cette exp\xE9rimentation ne
+    savaient pas, est que l\u2019effet contraire s'applique la nuit. "
 --- !u!222 &1587658536
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -58957,7 +58969,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 21.6, y: -115.9}
+  m_AnchoredPosition: {x: 40, y: -127}
   m_SizeDelta: {x: 231.5289, y: 43.4117}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1849898791
@@ -58993,7 +59005,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Pourquoi est-ce que ces renards se transforment dans l\u2019ombre... ?"
+  m_Text: 'Tous ceux qui ne brillent pas la nuit deviennent des proies. '
 --- !u!222 &1849898792
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -62956,6 +62968,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1955749393}
   m_CullTransparentMesh: 1
+--- !u!4 &1961376012 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4005808538926482, guid: daa6cceb1b087d74aad6916dac2805ea, type: 3}
+  m_PrefabInstance: {fileID: 2055752584}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1965081788
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -64479,7 +64496,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "A R T \xC9 F A C T    #2"
+  m_Text: "A R T \xC9 F A C T    #6\n"
 --- !u!222 &2011245889
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -66068,6 +66085,75 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.3354967, y: 3.3519428, z: 0.3636024}
   m_Center: {x: -1.4318227, y: 1.6767925, z: 0.006851107}
+--- !u!1001 &2055752584
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1364755784}
+    m_Modifications:
+    - target: {fileID: 1781930563638536, guid: daa6cceb1b087d74aad6916dac2805ea, type: 3}
+      propertyPath: m_Name
+      value: Lucioles vertes
+      objectReference: {fileID: 0}
+    - target: {fileID: 4005808538926482, guid: daa6cceb1b087d74aad6916dac2805ea, type: 3}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 4005808538926482, guid: daa6cceb1b087d74aad6916dac2805ea, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 69.484375
+      objectReference: {fileID: 0}
+    - target: {fileID: 4005808538926482, guid: daa6cceb1b087d74aad6916dac2805ea, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.09375
+      objectReference: {fileID: 0}
+    - target: {fileID: 4005808538926482, guid: daa6cceb1b087d74aad6916dac2805ea, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -85.671875
+      objectReference: {fileID: 0}
+    - target: {fileID: 4005808538926482, guid: daa6cceb1b087d74aad6916dac2805ea, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4005808538926482, guid: daa6cceb1b087d74aad6916dac2805ea, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4005808538926482, guid: daa6cceb1b087d74aad6916dac2805ea, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4005808538926482, guid: daa6cceb1b087d74aad6916dac2805ea, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4005808538926482, guid: daa6cceb1b087d74aad6916dac2805ea, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4005808538926482, guid: daa6cceb1b087d74aad6916dac2805ea, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4005808538926482, guid: daa6cceb1b087d74aad6916dac2805ea, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198163637374424290, guid: daa6cceb1b087d74aad6916dac2805ea, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198163637374424290, guid: daa6cceb1b087d74aad6916dac2805ea, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 198163637374424290, guid: daa6cceb1b087d74aad6916dac2805ea, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.12606835
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: daa6cceb1b087d74aad6916dac2805ea, type: 3}
 --- !u!1001 &2056559926
 PrefabInstance:
   m_ObjectHideFlags: 0

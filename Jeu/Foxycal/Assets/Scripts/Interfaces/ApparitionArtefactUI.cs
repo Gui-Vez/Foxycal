@@ -27,6 +27,22 @@ public class ApparitionArtefactUI : MonoBehaviour
             case "Artefact2":
                 interfaceArtefacts[1].SetActive(true);
                 break;
+
+            case "Artefact3":
+                interfaceArtefacts[0].SetActive(true);
+                break;
+
+            case "Artefact4":
+                interfaceArtefacts[1].SetActive(true);
+                break;
+
+            case "Artefact5":
+                interfaceArtefacts[0].SetActive(true);
+                break;
+
+            case "Artefact6":
+                interfaceArtefacts[1].SetActive(true);
+                break;
         }
 
         // Pour chaque artéfact contenant le tag Artefact, on active le bouton, le curseur et on met le jeu en pause
