@@ -4643,7 +4643,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 327163478}
-  m_LocalRotation: {x: 0.13423564, y: -0.000000008525326, z: 0.0000000011548545, w: 0.99094945}
+  m_LocalRotation: {x: 0.13423564, y: 0.000000008525329, z: -0.000000001154855, w: 0.99094945}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -13701,7 +13701,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.15690695, y: 0.0000000101959525, z: -0.0000000016198806, w: 0.9876134}
+  m_LocalRotation: {x: 0.15690695, y: 0.000000016993253, z: -0.0000000026998006, w: 0.9876134}
   m_LocalPosition: {x: -40, y: 1.5576686, z: -224.85234}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -14533,7 +14533,6 @@ GameObject:
   - component: {fileID: 1007259785}
   - component: {fileID: 1007259788}
   - component: {fileID: 1007259789}
-  - component: {fileID: 1007259787}
   - component: {fileID: 1007259790}
   - component: {fileID: 1007259791}
   - component: {fileID: 1007259792}
@@ -14543,6 +14542,7 @@ GameObject:
   - component: {fileID: 1007259796}
   - component: {fileID: 1007259797}
   - component: {fileID: 1007259798}
+  - component: {fileID: 1007259787}
   m_Layer: 20
   m_Name: Fox Principal
   m_TagString: Player
@@ -14587,8 +14587,8 @@ Transform:
   m_Father: {fileID: 1526598282}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1007259787
-BoxCollider:
+--- !u!136 &1007259787
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -14597,9 +14597,10 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.33266258, y: 0.67834204, z: 1.4022522}
-  m_Center: {x: 0.014683723, y: 0.35426006, z: 0.2011261}
+  m_Radius: 0.3882637
+  m_Height: 0.49
+  m_Direction: 1
+  m_Center: {x: 0.03, y: 0.39, z: 0.25}
 --- !u!54 &1007259788
 Rigidbody:
   m_ObjectHideFlags: 0

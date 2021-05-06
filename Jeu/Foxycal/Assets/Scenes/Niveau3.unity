@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.5
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.36145097, g: 0.38058963, b: 0.47585875, a: 0.5}
+  m_IndirectSpecularColor: {r: 0.36147696, g: 0.38058835, b: 0.47594762, a: 0.5}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3098,7 +3098,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1638.0673, y: 250.82097}
+  m_AnchoredPosition: {x: 1620, y: 250.82097}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &160894624
@@ -7095,7 +7095,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 5d2c172a87e07b14f9a7be04ce39d550, type: 3}
       propertyPath: m_Name
-      value: Fidiame (4)
+      value: Fidiame
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d2c172a87e07b14f9a7be04ce39d550, type: 3}
@@ -9675,7 +9675,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: a709ab573b45a7f4e9ef0aa91b7c4f05, type: 3}
       propertyPath: m_Name
-      value: Gidius (7)
+      value: Gidius
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a709ab573b45a7f4e9ef0aa91b7c4f05, type: 3}
@@ -10102,7 +10102,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: abc4542cf84aebd4e8e7113ae2e32dfa, type: 3}
       propertyPath: m_Name
-      value: Boumis (6)
+      value: Boumis
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: abc4542cf84aebd4e8e7113ae2e32dfa, type: 3}
@@ -11556,7 +11556,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: abc4542cf84aebd4e8e7113ae2e32dfa, type: 3}
       propertyPath: m_Name
-      value: Boumis (1)
+      value: Boumis
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: abc4542cf84aebd4e8e7113ae2e32dfa, type: 3}
@@ -11846,7 +11846,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: a4512b2d9ffc34943bbecd4fd23e3007, type: 3}
       propertyPath: m_Name
-      value: Etilius (5)
+      value: Etilius
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a4512b2d9ffc34943bbecd4fd23e3007, type: 3}
@@ -13237,7 +13237,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: e8eadde582ed4f9439db0eaeaf445ac2, type: 3}
       propertyPath: m_Name
-      value: Galins (4)
+      value: Galins
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e8eadde582ed4f9439db0eaeaf445ac2, type: 3}
@@ -13506,7 +13506,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: a4512b2d9ffc34943bbecd4fd23e3007, type: 3}
       propertyPath: m_Name
-      value: Etilius (1)
+      value: Etilius
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a4512b2d9ffc34943bbecd4fd23e3007, type: 3}
@@ -14047,7 +14047,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: a709ab573b45a7f4e9ef0aa91b7c4f05, type: 3}
       propertyPath: m_Name
-      value: Gidius (4)
+      value: Gidius
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a709ab573b45a7f4e9ef0aa91b7c4f05, type: 3}
@@ -15231,7 +15231,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 5d2c172a87e07b14f9a7be04ce39d550, type: 3}
       propertyPath: m_Name
-      value: Fidiame (3)
+      value: Fidiame
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d2c172a87e07b14f9a7be04ce39d550, type: 3}
@@ -16038,7 +16038,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: aff45c6de8f698f4da37ae8b9d1916ff, type: 3}
       propertyPath: m_Name
-      value: Pitarus (7)
+      value: Pitarus
       objectReference: {fileID: 0}
     - target: {fileID: 3075607213160688380, guid: aff45c6de8f698f4da37ae8b9d1916ff, type: 3}
       propertyPath: m_LocalPosition.x
@@ -17362,7 +17362,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 6a3283f59f18f8e409c1b8322fadaab1, type: 3}
       propertyPath: m_Name
-      value: Machi (5)
+      value: Machi
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a3283f59f18f8e409c1b8322fadaab1, type: 3}
@@ -17668,7 +17668,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: e8eadde582ed4f9439db0eaeaf445ac2, type: 3}
       propertyPath: m_Name
-      value: Galins (1)
+      value: Galins
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e8eadde582ed4f9439db0eaeaf445ac2, type: 3}
@@ -18754,7 +18754,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: a709ab573b45a7f4e9ef0aa91b7c4f05, type: 3}
       propertyPath: m_Name
-      value: Gidius (5)
+      value: Gidius
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a709ab573b45a7f4e9ef0aa91b7c4f05, type: 3}
@@ -20530,7 +20530,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: a709ab573b45a7f4e9ef0aa91b7c4f05, type: 3}
       propertyPath: m_Name
-      value: Gidius (6)
+      value: Gidius
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a709ab573b45a7f4e9ef0aa91b7c4f05, type: 3}
@@ -21195,7 +21195,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 6a3283f59f18f8e409c1b8322fadaab1, type: 3}
       propertyPath: m_Name
-      value: Machi (7)
+      value: Machi
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a3283f59f18f8e409c1b8322fadaab1, type: 3}
@@ -21525,9 +21525,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lumiere: {fileID: 705507995}
-  vitesseRotation: 15
+  vitesseRotation: 10
   slider: {fileID: 2070752191}
-  vitesseSlider: 0.004
+  vitesseSlider: 0.001
   sonNuit: {fileID: 866455718}
   cameraShake: {fileID: 963194229}
   GrandesTorches: {fileID: 1465922464}
@@ -23936,7 +23936,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 5d2c172a87e07b14f9a7be04ce39d550, type: 3}
       propertyPath: m_Name
-      value: Fidiame (2)
+      value: Fidiame
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d2c172a87e07b14f9a7be04ce39d550, type: 3}
@@ -27568,7 +27568,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 5d2c172a87e07b14f9a7be04ce39d550, type: 3}
       propertyPath: m_Name
-      value: Fidiame (7)
+      value: Fidiame
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d2c172a87e07b14f9a7be04ce39d550, type: 3}
@@ -28028,7 +28028,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: a709ab573b45a7f4e9ef0aa91b7c4f05, type: 3}
       propertyPath: m_Name
-      value: Gidius (2)
+      value: Gidius
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a709ab573b45a7f4e9ef0aa91b7c4f05, type: 3}
@@ -28819,7 +28819,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: a4512b2d9ffc34943bbecd4fd23e3007, type: 3}
       propertyPath: m_Name
-      value: Etilius (6)
+      value: Etilius
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a4512b2d9ffc34943bbecd4fd23e3007, type: 3}
@@ -30146,7 +30146,6 @@ GameObject:
   - component: {fileID: 1007259785}
   - component: {fileID: 1007259788}
   - component: {fileID: 1007259789}
-  - component: {fileID: 1007259787}
   - component: {fileID: 1007259790}
   - component: {fileID: 1007259791}
   - component: {fileID: 1007259792}
@@ -30156,6 +30155,7 @@ GameObject:
   - component: {fileID: 1007259796}
   - component: {fileID: 1007259797}
   - component: {fileID: 1007259798}
+  - component: {fileID: 1007259787}
   m_Layer: 20
   m_Name: Fox Principal
   m_TagString: Player
@@ -30200,8 +30200,8 @@ Transform:
   m_Father: {fileID: 1526598282}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1007259787
-BoxCollider:
+--- !u!136 &1007259787
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -30210,9 +30210,10 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.33266258, y: 0.67834204, z: 1.4022522}
-  m_Center: {x: 0.014683723, y: 0.35426006, z: 0.2011261}
+  m_Radius: 0.3882637
+  m_Height: 0.49
+  m_Direction: 1
+  m_Center: {x: 0.03, y: 0.39, z: 0.25}
 --- !u!54 &1007259788
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -31188,7 +31189,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: aff45c6de8f698f4da37ae8b9d1916ff, type: 3}
       propertyPath: m_Name
-      value: Pitarus (4)
+      value: Pitarus
       objectReference: {fileID: 0}
     - target: {fileID: 3075607213160688380, guid: aff45c6de8f698f4da37ae8b9d1916ff, type: 3}
       propertyPath: m_LocalPosition.x
@@ -31477,7 +31478,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 448.6272, y: 247.62099}
+  m_AnchoredPosition: {x: 502, y: 247.62099}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1048302181
@@ -32871,7 +32872,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: aff45c6de8f698f4da37ae8b9d1916ff, type: 3}
       propertyPath: m_Name
-      value: Pitarus (6)
+      value: Pitarus
       objectReference: {fileID: 0}
     - target: {fileID: 3075607213160688380, guid: aff45c6de8f698f4da37ae8b9d1916ff, type: 3}
       propertyPath: m_LocalPosition.x
@@ -33191,7 +33192,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: abc4542cf84aebd4e8e7113ae2e32dfa, type: 3}
       propertyPath: m_Name
-      value: Boumis (2)
+      value: Boumis
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: abc4542cf84aebd4e8e7113ae2e32dfa, type: 3}
@@ -33699,7 +33700,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 5d2c172a87e07b14f9a7be04ce39d550, type: 3}
       propertyPath: m_Name
-      value: Fidiame (5)
+      value: Fidiame
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d2c172a87e07b14f9a7be04ce39d550, type: 3}
@@ -35111,7 +35112,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 6a3283f59f18f8e409c1b8322fadaab1, type: 3}
       propertyPath: m_Name
-      value: Machi (4)
+      value: Machi
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a3283f59f18f8e409c1b8322fadaab1, type: 3}
@@ -35744,7 +35745,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: a4512b2d9ffc34943bbecd4fd23e3007, type: 3}
       propertyPath: m_Name
-      value: Etilius (4)
+      value: Etilius
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a4512b2d9ffc34943bbecd4fd23e3007, type: 3}
@@ -37280,7 +37281,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 5d2c172a87e07b14f9a7be04ce39d550, type: 3}
       propertyPath: m_Name
-      value: Fidiame (1)
+      value: Fidiame
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d2c172a87e07b14f9a7be04ce39d550, type: 3}
@@ -37882,7 +37883,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 5d2c172a87e07b14f9a7be04ce39d550, type: 3}
       propertyPath: m_Name
-      value: Fidiame (6)
+      value: Fidiame
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d2c172a87e07b14f9a7be04ce39d550, type: 3}
@@ -38833,7 +38834,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: e8eadde582ed4f9439db0eaeaf445ac2, type: 3}
       propertyPath: m_Name
-      value: Galins (5)
+      value: Galins
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e8eadde582ed4f9439db0eaeaf445ac2, type: 3}
@@ -39252,7 +39253,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 6a3283f59f18f8e409c1b8322fadaab1, type: 3}
       propertyPath: m_Name
-      value: Machi (6)
+      value: Machi
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a3283f59f18f8e409c1b8322fadaab1, type: 3}
@@ -40002,7 +40003,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: abc4542cf84aebd4e8e7113ae2e32dfa, type: 3}
       propertyPath: m_Name
-      value: Boumis (3)
+      value: Boumis
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: abc4542cf84aebd4e8e7113ae2e32dfa, type: 3}
@@ -42394,7 +42395,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: a4512b2d9ffc34943bbecd4fd23e3007, type: 3}
       propertyPath: m_Name
-      value: Etilius (3)
+      value: Etilius
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a4512b2d9ffc34943bbecd4fd23e3007, type: 3}
@@ -44427,7 +44428,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: a709ab573b45a7f4e9ef0aa91b7c4f05, type: 3}
       propertyPath: m_Name
-      value: Gidius (1)
+      value: Gidius
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a709ab573b45a7f4e9ef0aa91b7c4f05, type: 3}
@@ -45006,7 +45007,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: aff45c6de8f698f4da37ae8b9d1916ff, type: 3}
       propertyPath: m_Name
-      value: Pitarus (5)
+      value: Pitarus
       objectReference: {fileID: 0}
     - target: {fileID: 3075607213160688380, guid: aff45c6de8f698f4da37ae8b9d1916ff, type: 3}
       propertyPath: m_LocalPosition.x
@@ -45362,7 +45363,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 6a3283f59f18f8e409c1b8322fadaab1, type: 3}
       propertyPath: m_Name
-      value: Machi (1)
+      value: Machi
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a3283f59f18f8e409c1b8322fadaab1, type: 3}
@@ -47387,7 +47388,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 6a3283f59f18f8e409c1b8322fadaab1, type: 3}
       propertyPath: m_Name
-      value: Machi (2)
+      value: Machi
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a3283f59f18f8e409c1b8322fadaab1, type: 3}
@@ -48396,7 +48397,8 @@ PrefabInstance:
       propertyPath: m_Materials.Array.size
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 11400000, guid: 1c20c7996d683754db1f0f62a361952c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 1c20c7996d683754db1f0f62a361952c, type: 3}
 --- !u!1 &1514981698 stripped
 GameObject:
@@ -49912,7 +49914,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: a709ab573b45a7f4e9ef0aa91b7c4f05, type: 3}
       propertyPath: m_Name
-      value: Gidius (3)
+      value: Gidius
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a709ab573b45a7f4e9ef0aa91b7c4f05, type: 3}
@@ -51434,7 +51436,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: aff45c6de8f698f4da37ae8b9d1916ff, type: 3}
       propertyPath: m_Name
-      value: Pitarus (1)
+      value: Pitarus
       objectReference: {fileID: 0}
     - target: {fileID: 3075607213160688380, guid: aff45c6de8f698f4da37ae8b9d1916ff, type: 3}
       propertyPath: m_LocalPosition.x
@@ -53722,7 +53724,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: abc4542cf84aebd4e8e7113ae2e32dfa, type: 3}
       propertyPath: m_Name
-      value: Boumis (4)
+      value: Boumis
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: abc4542cf84aebd4e8e7113ae2e32dfa, type: 3}
@@ -54079,7 +54081,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: e8eadde582ed4f9439db0eaeaf445ac2, type: 3}
       propertyPath: m_Name
-      value: Galins (3)
+      value: Galins
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e8eadde582ed4f9439db0eaeaf445ac2, type: 3}
@@ -55153,7 +55155,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: abc4542cf84aebd4e8e7113ae2e32dfa, type: 3}
       propertyPath: m_Name
-      value: Boumis (5)
+      value: Boumis
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: abc4542cf84aebd4e8e7113ae2e32dfa, type: 3}
@@ -55551,7 +55553,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 6a3283f59f18f8e409c1b8322fadaab1, type: 3}
       propertyPath: m_Name
-      value: Machi (3)
+      value: Machi
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a3283f59f18f8e409c1b8322fadaab1, type: 3}
@@ -56258,7 +56260,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: a4512b2d9ffc34943bbecd4fd23e3007, type: 3}
       propertyPath: m_Name
-      value: Etilius (2)
+      value: Etilius
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a4512b2d9ffc34943bbecd4fd23e3007, type: 3}
@@ -59081,7 +59083,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: aff45c6de8f698f4da37ae8b9d1916ff, type: 3}
       propertyPath: m_Name
-      value: Pitarus (2)
+      value: Pitarus
       objectReference: {fileID: 0}
     - target: {fileID: 3075607213160688380, guid: aff45c6de8f698f4da37ae8b9d1916ff, type: 3}
       propertyPath: m_LocalPosition.x
@@ -61285,7 +61287,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: e8eadde582ed4f9439db0eaeaf445ac2, type: 3}
       propertyPath: m_Name
-      value: Galins (6)
+      value: Galins
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e8eadde582ed4f9439db0eaeaf445ac2, type: 3}
@@ -66147,7 +66149,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: aff45c6de8f698f4da37ae8b9d1916ff, type: 3}
       propertyPath: m_Name
-      value: Pitarus (3)
+      value: Pitarus
       objectReference: {fileID: 0}
     - target: {fileID: 3075607213160688380, guid: aff45c6de8f698f4da37ae8b9d1916ff, type: 3}
       propertyPath: m_LocalPosition.x
@@ -66490,7 +66492,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: e8eadde582ed4f9439db0eaeaf445ac2, type: 3}
       propertyPath: m_Name
-      value: Galins (2)
+      value: Galins
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e8eadde582ed4f9439db0eaeaf445ac2, type: 3}
