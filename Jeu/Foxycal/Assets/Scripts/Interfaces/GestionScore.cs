@@ -13,7 +13,7 @@ public class GestionScore : MonoBehaviour
     public static int score;
     public static bool dontDestroyFait;
 
-    private void Start()
+   /* private void Start()
     {
         if (dontDestroyFait == false)
         {
@@ -26,7 +26,7 @@ public class GestionScore : MonoBehaviour
             Destroy(gameObject);
             //Destroy(GestionnaireScoreJeu);
         }
-    }
+    } */
     void Update()
     {
         if (SceneManager.GetActiveScene().name != "sceneFin")

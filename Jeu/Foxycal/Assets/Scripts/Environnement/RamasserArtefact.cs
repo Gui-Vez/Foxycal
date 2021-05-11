@@ -41,21 +41,18 @@ public class RamasserArtefact : MonoBehaviour
                     // Augmenter le score
                     GestionScore.score++;
 
-                    // Détruire l'objet
-                    GetComponent<Collider>().enabled = false;
-                    Invoke("DetruireObjet", 0.25f); //Ajoute un court délai à la destruction de l'objet pour jouer le son
-
                     AudioSource audio = GetComponent<AudioSource>();
                     audio.Play();
+
+                    // Détruire l'objet
+                     GetComponent<Collider>().enabled = false;
+                    Destroy(gameObject, 0.25f); //Ajoute un court délai à la destruction de l'objet pour jouer le son
+
 
                     // Arrêter la boucle
                     break;
                 }
             }
         }
-    }
-    public void DetruireObjet()
-    {
-        Destroy(gameObject);
     }
 }

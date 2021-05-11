@@ -14,11 +14,11 @@ public class ApparitionArtefactUI : MonoBehaviour
     // Les variables du script
     public GameObject[] interfaceArtefacts;
     public GameObject boutonFermer;
+    private Collider objetArtefact;
 
-    // Si on touche l'artéfact 1 ou 2, une interface apparaîtra
-    private void OnTriggerEnter(Collider colliderArtefact)
+    void delaiTrigger()
     {
-        switch (colliderArtefact.gameObject.name)
+        switch (objetArtefact.gameObject.name)
         {
             case "Artefact1":
                 interfaceArtefacts[0].SetActive(true);
@@ -46,12 +46,20 @@ public class ApparitionArtefactUI : MonoBehaviour
         }
 
         // Pour chaque artéfact contenant le tag Artefact, on active le bouton, le curseur et on met le jeu en pause
-        if (colliderArtefact.gameObject.tag == "Artefact")
+        if (objetArtefact.gameObject.tag == "Artefact")
         {
+
             boutonFermer.SetActive(true);
             Cursor.lockState = CursorLockMode.None;
             Time.timeScale = 0f;
         }
+    }
+
+    // Si on touche l'artéfact 1 ou 2, une interface apparaîtra
+    void OnTriggerEnter(Collider colliderArtefact)
+    {
+        objetArtefact = colliderArtefact;
+        Invoke("delaiTrigger", 0.2f);
     }
 
     // Quand on clique le bouton X, on ferme l'interface au complet, on désactive le curseur, on remet le jeu en marche et on désactive chaque élément d'interface dans le tableau
