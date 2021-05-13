@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GestionPouvoirs : MonoBehaviour
 {
@@ -41,8 +42,6 @@ public class GestionPouvoirs : MonoBehaviour
 
     void Start()
     {
-        
-
         // Remettre la valeur des fonds à 0 pour les rendre vides
         FondPouvoir1.fillAmount = 0;
         FondPouvoir2.fillAmount = 0;
@@ -75,13 +74,13 @@ public class GestionPouvoirs : MonoBehaviour
         if (CycleJour.tempsJournee)
         {
             // Afficher les pouvoirs disponibles
-            if (FondPouvoir1.fillAmount == 0)
+            if (FondPouvoir1.fillAmount == 0 && SceneManager.GetActiveScene().buildIndex >= 2)
                 ImagePouvoir1.sprite = SpritePouvoir1;
 
-            if (FondPouvoir2.fillAmount == 0)
+            if (FondPouvoir2.fillAmount == 0 && SceneManager.GetActiveScene().buildIndex >= 3)
                 ImagePouvoir2.sprite = SpritePouvoir2;
 
-            if (FondPouvoir3.fillAmount == 0)
+            if (FondPouvoir3.fillAmount == 0 && SceneManager.GetActiveScene().buildIndex == 4)
                 ImagePouvoir3.sprite = SpritePouvoir3;
         }
 

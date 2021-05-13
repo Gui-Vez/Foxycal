@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GestionAnimations : MonoBehaviour
 {
@@ -97,7 +98,7 @@ public class GestionAnimations : MonoBehaviour
         LMC = Input.GetKey(KeyCode.Mouse0);
 
         // Touche Manger
-        RMC = Input.GetKey(KeyCode.Mouse1);
+        // RMC = Input.GetKey(KeyCode.Mouse1);
 
 
         // Animation de marche
@@ -115,11 +116,11 @@ public class GestionAnimations : MonoBehaviour
         if (Input.anyKeyDown && !action && gestionFaimPersonnage.mort != true)
         {
             // Si le renard n'est pas en train de manger,
-            if (!manger)
+           /* if (!manger)
             {
                 // Touche pour manger
                 if (RMC) StartCoroutine(GestionAttaques("RMC"));
-            }
+            } */
 
             // Si le renard ne saute pas,
             if (!saute)
@@ -139,21 +140,21 @@ public class GestionAnimations : MonoBehaviour
                 }
 
                 // Si un pouvoir n'est pas activé,
-                if (!pouvoirE)
+                if (!pouvoirE && SceneManager.GetActiveScene().buildIndex >= 2)
                 {
                     // Touches des pouvoirs
                     if (E) StartCoroutine(GestionAttaques("E"));
                 }
 
                 // Si un pouvoir n'est pas activé,
-                if (!pouvoirR)
+                if (!pouvoirR && SceneManager.GetActiveScene().buildIndex >= 3)
                 {
                     // Touches des pouvoirs
                     if (R) StartCoroutine(GestionAttaques("R"));
                 }
 
                 // Si un pouvoir n'est pas activé,
-                if (!pouvoirT)
+                if (!pouvoirT && SceneManager.GetActiveScene().buildIndex == 4)
                 {
                     // Touches des pouvoirs
                     if (T) StartCoroutine(GestionAttaques("T"));
@@ -220,7 +221,7 @@ public class GestionAnimations : MonoBehaviour
             /* MANGER */
             /**********/
 
-            case "RMC":
+           /* case "RMC":
 
 
                 // Le renard mange
@@ -248,7 +249,7 @@ public class GestionAnimations : MonoBehaviour
                 // Le renard n'agit plus
                 action = false;
 
-                break;
+                break;*/
 
 
 
