@@ -15,12 +15,8 @@ public class ConsommerFruit : MonoBehaviour
     public void consommerFruit()
     {
         GetComponent<Image>().enabled = false;
-        Invoke("delaiDestruction", 0.01f);
+        Destroy(gameObject, 0.25f);
         gestionFaimPersonnage.faim += 10f;
         GetComponent<AudioSource>().Play();
-    }
-    void delaiDestruction()
-    {
-        Destroy(gameObject);
     }
 }

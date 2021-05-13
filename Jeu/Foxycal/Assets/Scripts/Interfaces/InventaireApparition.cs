@@ -12,7 +12,7 @@ public class InventaireApparition : MonoBehaviour
 {
     // Variables pour se script
     public GameObject inventaireMenu;
-    public bool ouvert;
+    public static bool ouvert;
 
     // On commence le jeu avec l'inventaire fermé
     void Start()
@@ -44,7 +44,7 @@ public class InventaireApparition : MonoBehaviour
         inventaireMenu.SetActive(true);
         ouvert = true;
         Cursor.lockState = CursorLockMode.None;
-        Time.timeScale = 0f;
+        //Time.timeScale = 0f;
     }
 
     // Fonction qui gère la fermeture de l'inventaire

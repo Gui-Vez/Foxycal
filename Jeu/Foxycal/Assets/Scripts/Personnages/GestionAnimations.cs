@@ -133,7 +133,7 @@ public class GestionAnimations : MonoBehaviour
             if (CycleJour.tempsJournee)
             {
                 // Si une attaque n'est pas en cours,
-                if (!attaque)
+                if (!attaque && InventaireApparition.ouvert == false)
                 {
                     // Touche des attaques
                     if (LMC) StartCoroutine(GestionAttaques("LMC"));
