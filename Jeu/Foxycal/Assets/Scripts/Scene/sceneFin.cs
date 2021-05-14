@@ -14,6 +14,9 @@ public class sceneFin : MonoBehaviour
     public GameObject parcheminDefaite;
     public GameObject titreVictoire;
     public GameObject titreDefaite;
+    public AudioClip sonVictoire;
+    public AudioClip sonDefaite;
+    public GameObject sourceAudio;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,6 +30,7 @@ public class sceneFin : MonoBehaviour
             lumiereJour.GetComponent<Light>().color = new Color(207f / 255f, 159f / 255f, 245f / 255f);
             lumiereJour.GetComponent<Light>().intensity = 0f;
             parcheminDefaite.SetActive(true);
+            sourceAudio.GetComponent<AudioSource>().PlayOneShot(sonDefaite);
 
         }
         else
@@ -38,6 +42,7 @@ public class sceneFin : MonoBehaviour
             lumiereJour.GetComponent<Light>().color = new Color(250f / 255f, 255f / 255f, 177f / 255f);
             lumiereJour.GetComponent<Light>().intensity = 1f;
             parcheminVictoire.SetActive(true);
+            sourceAudio.GetComponent<AudioSource>().PlayOneShot(sonVictoire);
         }
     }
 

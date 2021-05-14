@@ -8,7 +8,6 @@ public class GestionAnimations : MonoBehaviour
     /// Auteur : Guillaume Vézina
     /// Description : Gère les animations de déplacement du personnage
     public AudioClip sonManger;
-
     // Liste des touches (Inutilisée)
     List<List<bool>> ListeTouches;
 
