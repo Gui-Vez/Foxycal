@@ -14,6 +14,8 @@ public class renardEnnemiMouvement : MonoBehaviour
 
     NavMeshAgent navAgent;
     public bool test;
+    public AudioClip attaqueSubite;
+    AudioSource sourceAudio;
 
     // Au début,
     void Start()
@@ -77,8 +79,21 @@ public class renardEnnemiMouvement : MonoBehaviour
         // Si la collision est le Fox Principal ET que c'est la nuit,
         if (collision.gameObject.name == "Fox Principal" && CycleJour.tempsJournee == true)
         {
-            // Activer l'animation d'attaque
-            GetComponent<Animator>().SetTrigger("attaque");
+            if(GestionAnimations.attaque == false) //si le joueur n'attaque pas..
+            {
+                // Activer l'animation d'attaque
+                GetComponent<Animator>().SetTrigger("attaque"); // L'ennemi attaque
+            }
+            else
+            {
+                // Activer l'animation d'attaque
+                GetComponent<Animator>().SetTrigger("estAttaqué");
+                navAgent.enabled = false;
+                navAgent.speed = 0f;
+                GetComponent<AudioSource>().PlayOneShot(attaqueSubite, 1f);
+                Invoke("reactiveAgent", 1f);
+            }
+
         }
 
         // Si la collision est un arbre,
@@ -87,5 +102,11 @@ public class renardEnnemiMouvement : MonoBehaviour
             // Chercher un autre arbre
             chercheArbre();
         }
+    }
+
+    void reactiveAgent()
+    {
+        navAgent.enabled = true;
+        navAgent.speed = 2f;
     }
 }

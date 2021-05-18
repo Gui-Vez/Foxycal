@@ -49,7 +49,7 @@ public class gestionViePersonnage : MonoBehaviour
     // Si le personnage se fait attaquer par un renard durant la nuit, il va prendre des dégâts
     void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "Ennemi" && CycleJour.tempsJournee == true)
+        if (collision.gameObject.tag == "Ennemi" && CycleJour.tempsJournee == true && GestionAnimations.attaque == false)
         {
             prendDegats(1);
             AudioSource audio = GetComponent<AudioSource>();

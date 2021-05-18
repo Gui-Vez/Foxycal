@@ -4,15 +4,13 @@ using UnityEngine;
 
 public class InterfaceAudioMenus : MonoBehaviour
 {
+
+    /// Auteur : Jonathan Rivest
+    /// Description : Activation de l'interface des paramètres audio dans les menus
     public static bool enPause = false;
     public GameObject interfaceMenu;
     public GameObject menuPause;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
+  
     // Update is called once per frame
     void Update()
     {

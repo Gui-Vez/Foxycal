@@ -40,7 +40,7 @@ public class GestionAnimations : MonoBehaviour
 
     // Liste des actions
     bool action;
-    bool attaque;
+    public static bool attaque;
     bool pouvoirE;
     bool pouvoirR;
     bool pouvoirT;

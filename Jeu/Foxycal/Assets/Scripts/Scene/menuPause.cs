@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class menuPause : MonoBehaviour
 {
+    /// Auteur : Jonathan Rivest
+    /// Description : Activation du menu pause dans la scène de jeu
     public static bool enPause = false;
     public GameObject leMenuPause;
     public GameObject cameraPause;
@@ -54,12 +56,12 @@ public class menuPause : MonoBehaviour
 
     void Pause()
     {
-        Time.timeScale = 0f;
+        Time.timeScale = 0f; // La scène de jeu arrête quand le jeu est en pause
         leMenuPause.SetActive(true);
         enPause = true;
         cameraPause.SetActive(true);
         Cursor.lockState = CursorLockMode.None;
-        interfaceJoueur.SetActive(false);
+        interfaceJoueur.SetActive(false); // Les autres interfaces du jeu sont enlevées
         inventaire.SetActive(false);
 
     }

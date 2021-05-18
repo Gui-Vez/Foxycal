@@ -12,7 +12,7 @@ public class mortPerso : MonoBehaviour
     {
         if (gestionFaimPersonnage.mort == true)
         {
-            GetComponent<Animator>().SetBool("EstMort", true);
+            GetComponent<Animator>().SetBool("EstMort", true); // Le joueur est mort et n'a plus le contrôle du renard.
             GetComponent<Animator>().SetBool("Marche", false);
             GetComponent<Animator>().SetBool("Mange", false);
             GetComponent<Animator>().SetBool("Saute", false);
@@ -20,7 +20,7 @@ public class mortPerso : MonoBehaviour
             GetComponent<Animator>().SetBool("Attaque", false);
             GetComponent<Animator>().SetBool("Attaque_L", false);
             GetComponent<Animator>().SetBool("Attaque_R", false);
-            Invoke("chargementGameOver", 5f); 
+            Invoke("chargementGameOver", 5f); // La scène de défaite s'affichera
         }
     }
 

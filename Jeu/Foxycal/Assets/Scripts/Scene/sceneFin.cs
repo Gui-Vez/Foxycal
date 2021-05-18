@@ -5,7 +5,8 @@ using UnityEngine.UI;
 
 public class sceneFin : MonoBehaviour
 {
-    
+    /// Auteur : Jonathan Rivest
+    /// Description : La scène de fin de jeu change en fonction du résultat de la partie
     public Material cielJour;
     public Material cielNuit;
     public GameObject lumiereJour;
@@ -21,9 +22,9 @@ public class sceneFin : MonoBehaviour
     void Start()
     {
         Cursor.lockState = CursorLockMode.None;
-        if (GestionScore.score <= 3 || gestionFaimPersonnage.mort == true)
+        if (GestionScore.score <= 3 || gestionFaimPersonnage.mort == true) // Si le joueur est mort ou a en bas de trois fruits...
         {
-            titreDefaite.SetActive(true);
+            titreDefaite.SetActive(true); // L'écran de défaite s'affiche.
             titreVictoire.SetActive(false);
             RenderSettings.skybox = cielNuit;
             lumiereNuit.SetActive(true);
@@ -35,7 +36,7 @@ public class sceneFin : MonoBehaviour
         }
         else
         {
-            titreDefaite.SetActive(false);
+            titreDefaite.SetActive(false); // Sinon l'écran de victoire s'affiche.
             titreVictoire.SetActive(true);
             RenderSettings.skybox = cielJour;
             lumiereNuit.SetActive(false);
@@ -46,9 +47,5 @@ public class sceneFin : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 }
