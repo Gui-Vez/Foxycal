@@ -41,12 +41,14 @@ public class renardEnnemiMouvement : MonoBehaviour
 
             // Désactiver la variable de test (?)
             test = false;
+            navAgent.speed = 4f;
         }
 
         else if(CycleJour.tempsJournee == false && test == false )
         {
             // Activer la variable de test (?)
             test = true;
+            navAgent.speed = 2f;
 
             // Chercher un arbre
             chercheArbre();
@@ -91,7 +93,7 @@ public class renardEnnemiMouvement : MonoBehaviour
                 navAgent.enabled = false;
                 navAgent.speed = 0f;
                 GetComponent<AudioSource>().PlayOneShot(attaqueSubite, 1f);
-                Invoke("reactiveAgent", 1f);
+                Invoke("reactiveAgent", 2f);
             }
 
         }
@@ -107,6 +109,6 @@ public class renardEnnemiMouvement : MonoBehaviour
     void reactiveAgent()
     {
         navAgent.enabled = true;
-        navAgent.speed = 2f;
+        navAgent.speed = 4f;
     }
 }

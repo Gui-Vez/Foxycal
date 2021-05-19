@@ -28,29 +28,17 @@ public class CollisionAttaque : MonoBehaviour
         // Si l'ennemi entre en collision avec un pouvoir,
         if (other.CompareTag("Pouvoir"))
         {
-            if (other.name == "Souffle Électrique" || other.name == "Foudre Mystique")
+            if (other.name == "Souffle Électrique" || other.name == "Foudre Mystique" || other.name == "Appel du Ciel")
             {
                 // Diminuer la vie
                 DiminuerVie(3);
-            }
-
-            else if (other.name == "Appel du Ciel")
-            {
-                // Diminuer la vie
-                DiminuerVie(2);
-            }
-
-            else
-            {
-                // Diminuer la vie
-                DiminuerVie(1);
             }
 
             // Jouer l'animation d'être attaqué
             GetComponent<Animator>().SetTrigger("estAttaqué");
         }
     }
-
+    
     void DiminuerVie(int degat)
     {
         // Diminuer le point de vie
@@ -65,6 +53,7 @@ public class CollisionAttaque : MonoBehaviour
             // Enlever le set destination
             GetComponent<NavMeshAgent>().isStopped = true;
 
+
             // Incrémenter le score
             GestionScore.score++;
 
@@ -78,4 +67,5 @@ public class CollisionAttaque : MonoBehaviour
         // Détruire l'objet
         Destroy(gameObject);
     }
+    
 }

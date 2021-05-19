@@ -8,14 +8,14 @@ using UnityEngine.Audio;
 public class controleAudio : MonoBehaviour
 {
     /// Auteur : Jonathan Rivest
-    /// Description : Contrôle du niveau de l'audio
+    /// Description : Synchronise la valeur du slider au niveau de l'audio
     public AudioMixer niveauSon;
     public Slider slider;
     public float valeurSlider;
     // Start is called before the first frame update
     void Start()
     {
-        slider.value = PlayerPrefs.GetFloat("save", valeurSlider); // Sauvegarde de la valeur de l'audio
+        slider.value = PlayerPrefs.GetFloat("save", valeurSlider); // Reconnait la valeur de l'audio précédemment établie par le joueur
 
     }
 
@@ -24,7 +24,7 @@ public class controleAudio : MonoBehaviour
         niveauSon.SetFloat("niveauAudio", audio);
     }
 
-    public void maintenirValeur(float valeur)
+    public void maintenirValeur(float valeur) 
     {
         valeurSlider = valeur;
         PlayerPrefs.SetFloat("save", valeurSlider);

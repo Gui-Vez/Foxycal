@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class menuPause : MonoBehaviour
 {
     /// Auteur : Jonathan Rivest
-    /// Description : Activation du menu pause dans la scène de jeu
+    /// Description : Activation (et désactivation) du menu pause dans la scène de jeu
     public static bool enPause = false;
     public GameObject leMenuPause;
     public GameObject cameraPause;
@@ -43,7 +43,7 @@ public class menuPause : MonoBehaviour
         inventaire.SetActive(true);
     }
 
-    public void retourMenu()
+    public void retourMenu() //Par le bouton "Quitter"
     {
         SceneManager.LoadScene("Intro");
         Time.timeScale = 1f;

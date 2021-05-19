@@ -51,7 +51,7 @@ public class GestionEffetFruit : MonoBehaviour
 
                 yield return new WaitForSeconds(12);
 
-                gestionFaimPersonnage.faim -= 30;
+                gestionFaimPersonnage.faim -= 15;
 
                 break;
 
@@ -80,7 +80,7 @@ public class GestionEffetFruit : MonoBehaviour
 
                 yield return new WaitForSeconds(6);
 
-                barreVie.value -= 3;
+                barreVie.value -= 2;
 
                 break;
 
