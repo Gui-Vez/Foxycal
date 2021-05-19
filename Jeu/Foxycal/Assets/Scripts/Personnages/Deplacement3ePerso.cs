@@ -104,7 +104,6 @@ public class Deplacement3ePerso : MonoBehaviour
         if (collision.gameObject.name == "portail" && GestionQuete.portailOuvert == true)
         {
             fin = true;
-            print("portail touché");
 
             GameObject GestionaireScore = GameObject.Find("GestionScore");
 

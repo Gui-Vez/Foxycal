@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 0.5
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: 1cf32c17fea93ef4fb120e8e0cdfbef1, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: d11d338e6a849d84f85a289f91b3fa00, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.5
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.36145097, g: 0.38058963, b: 0.47585875, a: 0.5}
+  m_IndirectSpecularColor: {r: 0.16147444, g: 0.15887325, b: 0.16320974, a: 0.5}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -22685,7 +22685,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc0aaf92cd40e69409b7c8a3cdfb5030, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cielJour: {fileID: 2100000, guid: 1cf32c17fea93ef4fb120e8e0cdfbef1, type: 2}
+  cielJour: {fileID: 2100000, guid: d11d338e6a849d84f85a289f91b3fa00, type: 2}
   cielNuit: {fileID: 2100000, guid: 97637a2a763b7f24b8da4e139e4144ca, type: 2}
   lumiereJour: {fileID: 705507993}
   lumiereNuit: {fileID: 795432248}

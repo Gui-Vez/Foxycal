@@ -140,11 +140,11 @@ public class GestionEffetFruit : MonoBehaviour
     {
         GameObject[] Ennemis = GameObject.FindGameObjectsWithTag("Ennemi");
 
-        for (int i = 0; i < Ennemis.Length; i++){
-            print(i);
+        for (int i = 0; i < Ennemis.Length; i++)
+        {
             Ennemis[i].gameObject.GetComponent<NavMeshAgent>().speed = 0f;
             Ennemis[i].gameObject.GetComponent<Animator>().enabled = false;
-            }
+        }
     }
 
     public void effetBoumisRetour()
