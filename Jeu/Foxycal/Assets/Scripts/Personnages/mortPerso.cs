@@ -14,7 +14,6 @@ public class mortPerso : MonoBehaviour
         {
             GetComponent<Animator>().SetBool("EstMort", true); // Le joueur est mort et n'a plus le contrôle du renard.
             GetComponent<Animator>().SetBool("Marche", false);
-            GetComponent<Animator>().SetBool("Mange", false);
             GetComponent<Animator>().SetBool("Saute", false);
             GetComponent<Animator>().SetBool("Pouvoir", false);
             GetComponent<Animator>().SetBool("Attaque", false);

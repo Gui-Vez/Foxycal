@@ -13,26 +13,41 @@ public class GestionScore : MonoBehaviour
     public static int score;
     public static bool dontDestroyFait;
 
-   /* private void Start()
+    /* private void Start()
+     {
+         if (dontDestroyFait == false)
+         {
+             DontDestroyOnLoad(gameObject);
+             //DontDestroyOnLoad(GestionnaireScoreJeu);
+             dontDestroyFait = true;
+         }
+         else
+         {
+             Destroy(gameObject);
+             //Destroy(GestionnaireScoreJeu);
+         }
+     } */
+
+    void Awake()
     {
-        if (dontDestroyFait == false)
-        {
-            DontDestroyOnLoad(gameObject);
-            //DontDestroyOnLoad(GestionnaireScoreJeu);
-            dontDestroyFait = true;
-        }
-        else
-        {
-            Destroy(gameObject);
-            //Destroy(GestionnaireScoreJeu);
-        }
-    } */
+        GestionnaireScoreJeu = GameObject.Find("Score");
+    }
+
     void Update()
     {
-        if (SceneManager.GetActiveScene().name != "sceneFin")
+        if (SceneManager.GetActiveScene().name == "Intro")
+        {
+            score = 0;
+        }
+
+        if (SceneManager.GetActiveScene().name != "sceneFin" && GestionnaireScoreJeu != null)
         {
             GestionnaireScoreJeu.GetComponent<Text>().text = "Score : " + score.ToString();
         }
 
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 }

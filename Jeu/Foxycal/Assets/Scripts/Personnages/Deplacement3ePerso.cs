@@ -30,6 +30,7 @@ public class Deplacement3ePerso : MonoBehaviour
     //Variable pour charger détecter la collision avec le portail
     public static bool fin = false;
 
+
     // Petit raccourcis
     // Valeurs pour le saut
     // Valeurs booléennes pour gérer si le personnage peut bouger (en liaison avec le script des animations) ou sauter
@@ -45,6 +46,7 @@ public class Deplacement3ePerso : MonoBehaviour
 
         peutBouger = true;
         peutSauter = true;
+
     }
 
     // Détecte si le personnage touche quelque chose
@@ -103,7 +105,10 @@ public class Deplacement3ePerso : MonoBehaviour
         {
             fin = true;
             print("portail touché");
+
+            GameObject GestionaireScore = GameObject.Find("GestionScore");
+
+            Destroy(GestionaireScore);
         }
     }
-
 }
