@@ -16,6 +16,7 @@ public class ApparitionArtefactUI : MonoBehaviour
     public GameObject boutonFermer;
     private Collider objetArtefact;
 
+    // Fonction qui détecte quand on touche un type d'artéfact
     void delaiTrigger()
     {
         switch (objetArtefact.gameObject.name)
@@ -55,7 +56,7 @@ public class ApparitionArtefactUI : MonoBehaviour
         }
     }
 
-    // Si on touche l'artéfact 1 ou 2, une interface apparaîtra
+    // Si on touche l'artéfact, une interface apparaîtra
     void OnTriggerEnter(Collider colliderArtefact)
     {
         objetArtefact = colliderArtefact;

@@ -12,6 +12,8 @@ using UnityEngine.UI;
 
 public class ConsommerFruit : MonoBehaviour
 {
+    // Fonction qui fait en sorte que quand le joueur clique sur un fruit dans
+    // l'inventaire, il gagne de la faim, détruit l'objet et joue un son
     public void consommerFruit()
     {
         GetComponent<Image>().enabled = false;
