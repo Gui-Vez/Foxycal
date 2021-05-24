@@ -39,7 +39,7 @@ public class GestionEffetFruit : MonoBehaviour
             // Arrêter les ennemis pendant quelques secondes
             case "Boumis":
                 effetBoumis();
-                yield return new WaitForSeconds(12);
+                yield return new WaitForSeconds(10);
                 effetBoumisRetour();
                 break;
 
@@ -142,7 +142,7 @@ public class GestionEffetFruit : MonoBehaviour
 
         for (int i = 0; i < Ennemis.Length; i++)
         {
-            Ennemis[i].gameObject.GetComponent<NavMeshAgent>().speed = 0f;
+            Ennemis[i].gameObject.GetComponent<NavMeshAgent>().isStopped = true;
             Ennemis[i].gameObject.GetComponent<Animator>().enabled = false;
         }
     }
@@ -152,8 +152,7 @@ public class GestionEffetFruit : MonoBehaviour
         GameObject[] Ennemis = GameObject.FindGameObjectsWithTag("Ennemi");
         for (int i = 0; i < Ennemis.Length; i++)
         {
-            print(i);
-            Ennemis[i].gameObject.GetComponent<NavMeshAgent>().speed = 2.5f;
+            Ennemis[i].gameObject.GetComponent<NavMeshAgent>().isStopped = false;
             Ennemis[i].gameObject.GetComponent<Animator>().enabled = true;
         }
     }
